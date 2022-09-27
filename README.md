@@ -1,6 +1,6 @@
 [![REUSE status]()]()
 
-# Contributions to YOUR-DOCUMENTATION
+# Contributions to SAP Job Scheduling Service
 
 Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable be added to our [official documentation on SAP Help Portal](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/22c2df4d22cb4a05af4c9502a67597ae.html). The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to.
 
