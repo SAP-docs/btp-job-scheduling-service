@@ -1,8 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: btp-job-scheduling-service-docs-ext
 Upstream-Contact: Hördt Sylvia (sylvia.hoerdt@sap.com)
-Source: https://github.com/sap-docs/btp-job-scheduling-service-docs-ext
+Source: https://github.com/SAP-docs/btp-job-scheduling-service
 
 Files: *
-Copyright:  2022 SAP SE or an SAP affiliate company and btp-job-scheduling-service-docs-ext contributors
+Copyright:  2022 SAP SE or an SAP affiliate company and btp-job-scheduling-service contributors
 License: CC-BY-4.0
