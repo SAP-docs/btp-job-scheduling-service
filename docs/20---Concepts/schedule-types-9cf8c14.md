@@ -1,0 +1,69 @@
+<!-- loio9cf8c14da0144c84aac628dc56b00ffd -->
+
+# Schedule Types
+
+SAP Job Scheduling service runs one-time and recurring jobs or Cloud Foundry tasks.
+
+
+
+<a name="loio9cf8c14da0144c84aac628dc56b00ffd__section_wr3_p3p_d4b"/>
+
+## **One-time Schedules**
+
+Schedules that run only once. You can create one-time schedules using any one of the following options:
+
+-   **Human-readable text:** A human-readable text, denoting the specified execution time. For more information see, [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
+
+    > ### Example:  
+    > 10 hours from now, 3.30pm
+    > 
+    > Friday at 2am
+
+-   **Date String Formats :**
+
+    A valid date representations in the ISO-8601 or IETF-compliant RFC 2822 format.
+
+    > ### Example:  
+    > 1994-11-05T08:15:30-05:00
+
+
+
+
+<a name="loio9cf8c14da0144c84aac628dc56b00ffd__section_fsb_5hp_d4b"/>
+
+## Recurring Schedules
+
+Schedules that run periodically at specified times, dates, or intervals. You can create recurring schedules using any one of the following options:
+
+-   **repeatInterval:** Denotes the interval between schedules in a human-readable text format \(for example, 5 minutes\).
+
+    If there is a delay, for example, because the load is very large and the run takes longer, the next run starts at a later point of time. The defined interval stays the same.
+
+    For more information, see [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78)
+
+    > ### Example:  
+    > -   "10 hours"
+    > -   "2 days"
+    > -   "5 minutes"
+
+-   **cron:** Denotes a crontab expression, which represents a set of times, that determines when the job is executed.
+
+    For more information, see [Cron Format](schedule-formats-54615f0.md#loio37af46344c4d46a9b8695d2c9775c34f).
+
+-   **repeatAt:** Denotes an exact time, every day, when a job is executed. This field can be specified using Human-Readable Time Format and Date String Formats \(ISO-8601 or IETF-compliant RFC-2822\).
+
+    > ### Example:  
+    > "4.40pm"
+    > 
+    > "18.40"
+    > 
+    > "6.20am"
+
+
+**Related Information**  
+
+
+[Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle states for each run.")
+
+[Service Behavior](../40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916 "This topic helps you understand and analyze the behavior of the SAP Job Scheduling service under specific situations.")
+

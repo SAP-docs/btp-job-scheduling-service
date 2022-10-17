@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: btp-job-scheduling-service-docs-ext
+Upstream-Name: btp-job-scheduling-service
 Upstream-Contact: Hördt Sylvia (sylvia.hoerdt@sap.com)
 Source: https://github.com/SAP-docs/btp-job-scheduling-service
 
