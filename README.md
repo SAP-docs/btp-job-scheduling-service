@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/btp-job-scheduling-service)](https://api.reuse.software/info/github.com/SAP-docs/btp-job-scheduling-service)
 
 # Contributions to SAP Job Scheduling Service
 
