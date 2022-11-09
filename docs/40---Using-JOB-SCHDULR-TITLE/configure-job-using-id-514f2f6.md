@@ -298,8 +298,6 @@ The API was unable to process the request because of invalid data provided.
 **Related Information**  
 
 
-[Rate Limits](rate-limits-a9cb164.md "When you use the SAP Job Scheduling service REST API, rate limits are used to limit the number of requests against the REST API. Requests can be throttled (delayed), and if there is a very high load also denied.")
-
 [Create Job](create-job-2c1ecb6.md "This API creates a job by accepting one or more job schedules to be created.")
 
 [Configure Job \(Using Name\)](configure-job-using-name-5790b8a.md "This API configures a job with the updated runtime information using job name.")

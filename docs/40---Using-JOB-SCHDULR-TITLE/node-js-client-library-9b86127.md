@@ -20,7 +20,7 @@ const JobSchedulerClient = require('@sap/jobs-client');
 
 The following table shows all SAP Job Scheduling service APIs together with a Node.js sample code to access the API.
 
-<a name="loio9b861273d16a41ecbc77b583c7cad5aa__table_uzz_lfc_3bb"/>Node.js Samples for SAP Job Scheduling service APIs
+**Node.js Samples for SAP Job Scheduling service APIs**
 
 
 <table>

@@ -10,7 +10,7 @@ To use the SAP Job Scheduling service with action endpoints in your application 
 
 ## Prerequisites
 
-You've logged on to the SAP BTP cockpit. For more information, see [Navigate to Orgs and Spaces](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Dev/en-US/5bf87353bf994819b8803e5910d8450f.html "To administer your Cloud Foundry environment, navigate to orgs, and spaces in the SAP BTP cockpit.") :arrow_upper_right:.
+You've logged on to the SAP BTP cockpit. For more information, see [Navigate to Orgs and Spaces](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5bf87353bf994819b8803e5910d8450f.html "To administer your Cloud Foundry environment, navigate to orgs, and spaces in the SAP BTP cockpit.") :arrow_upper_right:.
 
 
 
@@ -52,7 +52,7 @@ Your service instance is now bound to your application and you can start using t
 **Related Information**  
 
 
-[Deploy Business Applications in the Cloud Foundry Environment](https://help.sap.com/viewer/6cdb9cff1d9b4877b9da90e5020a32d2/Internal/en-US/4946ea5421374924963ce8575a5f3d05.html "When an application for the Cloud Foundry environment resides in a folder on your local machine, you can deploy it and start it by executing the command line interface (CLI) command push. To deploy business applications bundled in a multitarget application archive, you have to use the command deploy-mta.") :arrow_upper_right:
+[Deploy Business Applications in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/4946ea5421374924963ce8575a5f3d05.html "When an application for the Cloud Foundry environment resides in a folder on your local machine, you can deploy it and start it by executing the command line interface (CLI) command push. To deploy business applications bundled in a multitarget application archive, you have to use the command deploy-mta.") :arrow_upper_right:
 
-[Creating Service Instances in Cloud Foundry](https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Development/en-US/6d6846def3c443aa9f83d127353147ce.html "The service instances that you create in your Cloud Foundry org enable your Cloud Foundry apps to consume services natively from Cloud Foundry.") :arrow_upper_right:
+[Creating Service Instances in Cloud Foundry](https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Validation/en-US/6d6846def3c443aa9f83d127353147ce.html "The service instances that you create in your Cloud Foundry org enable your Cloud Foundry apps to consume services natively from Cloud Foundry.") :arrow_upper_right:
 

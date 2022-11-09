@@ -72,35 +72,7 @@ All of the limits and response effects are stacking, that means absolute limit a
 **Related Information**  
 
 
-[Create Job](create-job-2c1ecb6.md "This API creates a job by accepting one or more job schedules to be created.")
+[Authentication](authentication-5dca60b.md "This section describes different ways how the application accesses the SAP Job Scheduling service REST APIs depending on the service plan you use.")
 
-[Configure Job \(Using ID\)](configure-job-using-id-514f2f6.md "This API configures a job with the updated runtime information using job ID.")
-
-[Configure Job \(Using Name\)](configure-job-using-name-5790b8a.md "This API configures a job with the updated runtime information using job name.")
-
-[Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
-
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
-
-[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job, optionally with its schedules.")
-
-[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the details for a specified job schedule.")
-
-[Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
-
-[Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
-
-[Configure Job Schedule](configure-job-schedule-0a4d939.md "This API configures/updates the runtime information of a job schedule for a specified job.")
-
-[Delete Job Schedule](delete-job-schedule-3066b6d.md "This API deletes the specified job schedule.")
-
-[Activate or Deactivate All Job Schedules](activate-or-deactivate-all-job-schedules-fe9650b.md "This API activates or deactivates all the existing schedules for a job.")
-
-[Delete All Job Schedules](delete-all-job-schedules-0aab1ab.md "This API deletes all the schedules of the specified job.")
-
-[Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
-
-[Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
-
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+[REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 

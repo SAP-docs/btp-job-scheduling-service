@@ -24,7 +24,7 @@
   **Schedule**
  :   A one-time or a recurring entity within a job without an action endpoint.
 
- :   <a name="loio26572ad024c54643a2424524f60669a2__table_ids_12t_d4b"/>
+ :   ****
 
 
 <table>

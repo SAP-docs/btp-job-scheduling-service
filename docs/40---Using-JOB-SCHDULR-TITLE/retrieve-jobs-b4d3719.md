@@ -27,7 +27,7 @@ GET /scheduler/jobs
 
 ### Body
 
-<a name="loiob4d3719173f641b583c97ff0e8f0a7fa__table_il1_xt5_ljb"/>Body of Retrieve Jobs API
+**Body of Retrieve Jobs API**
 
 
 <table>
@@ -214,8 +214,6 @@ The API was unable to process the request due to invalid data provided.
 
 **Related Information**  
 
-
-[Rate Limits](rate-limits-a9cb164.md "When you use the SAP Job Scheduling service REST API, rate limits are used to limit the number of requests against the REST API. Requests can be throttled (delayed), and if there is a very high load also denied.")
 
 [Create Job](create-job-2c1ecb6.md "This API creates a job by accepting one or more job schedules to be created.")
 

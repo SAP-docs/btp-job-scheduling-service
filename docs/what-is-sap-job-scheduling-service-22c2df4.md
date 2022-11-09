@@ -1,5 +1,7 @@
 <!-- loio22c2df4d22cb4a05af4c9502a67597ae -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # What Is SAP Job Scheduling Service?
 
 Define and manage one-time and recurring jobs or Cloud Foundry tasks.
@@ -9,6 +11,26 @@ SAP Job Scheduling service allows you to define and manage jobs that run once or
 By using the SAP Job Scheduling service in the cloud, you benefit from its multitenancy capabilities, its uniform REST API, and you don’t have to switch feature sets.
 
 If you are running your applications on multiple cloud hyperscalers, you don't have to make any changes to the applications when using the SAP Job Scheduling service. Customers who are implementing multitenancy applications can create and process tenant-specific jobs and schedules.
+
+For more information, see also SAP Job Scheduling service on [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/job-scheduling-service?service_plan=standard&region=all&commercialModel=cloud).
+
+> ### Tip:  
+> The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
+> 
+> -   :pencil2:: Contribute to a documentation page. This option opens a pull request on GitHub.
+> 
+> -   <span class="SAP-icons"></span> Feedback: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> 
+> 
+> You need a GitHub account to use these options.
+> 
+> More information:
+> 
+> -   [Contribution Guidelines](https://help.sap.com/docs/open-documentation-initiative/contribution-guidelines/readme.html)
+> 
+> -   [Introduction Video: Open Documentation Initiative](https://www.youtube.com/watch?v=WJ0oarMlVW4)
+> 
+> -   [Blog Post: Introducing the Open Documentation Initiative](https://blogs.sap.com/2021/05/20/introducing-the-open-documentation-initiative/)
 
 
 
@@ -185,6 +207,8 @@ The SAP Job Scheduling service awaits response for the asynchronous job from the
 [Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service using the standard procedures for the Cloud Foundry environment.")
 
 [Getting Started](30---Getting-Started/getting-started-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a service instance and bind it to your application.")
+
+[Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
 
 [Guided Answers](https://ga.support.sap.com/dtp/viewer/#/tree/2797/actions/40871)
 
