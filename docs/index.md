@@ -2,6 +2,7 @@
 
 -   [What Is SAP Job Scheduling Service?](what-is-sap-job-scheduling-service-22c2df4.md#loio22c2df4d22cb4a05af4c9502a67597ae)
 -   [What's New for SAP Job Scheduling Service](10---What-s-New/what-s-new-for-sap-job-scheduling-service-35dd2f8.md)
+    -   [2022 What's New for SAP Job Scheduling Service \(Archive\)](10---What-s-New/2022-what-s-new-for-sap-job-scheduling-service-archive-cd1964a.md)
     -   [2021 What's New for SAP Job Scheduling Service \(Archive\)](10---What-s-New/2021-what-s-new-for-sap-job-scheduling-service-archive-78f6a4b.md)
 -   [Concepts](20---Concepts/concepts-26572ad.md)
     -   [Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)

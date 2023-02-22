@@ -1,5 +1,7 @@
 <!-- loio132fd06caa75451caab9aad00fd0bc1b -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Manage Jobs with Service Dashboard
 
 The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.
@@ -10,7 +12,7 @@ The SAP Job Scheduling service dashboard enables you to manage jobs and tasks fo
 
 ## Prerequisites
 
-You have the `SpaceDeveloper` role. It allows you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
+You've the `SpaceDeveloper` role. It allows you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
 
 > ### Note:  
 > With only one of the BTP roles `SpaceAuditor` or `SpaceManager`, you set read-only access to the SAP Job Scheduling service dashboard for a user. All change operations in the dashboard aren’t visible.
@@ -23,7 +25,7 @@ The service dashboard lists the available jobs. Choose a job or a task to create
 
 -   Create a schedule
 -   Update a job/task or a schedule
--   View action history for a job or schedule
+-   View the history for a job/task or schedule
 -   View run logs
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html) .
@@ -43,12 +45,27 @@ The screens available on the dashboard and their description are as below:
 
     -   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
 
-        Choose a schedule to view its history and logs. To display run logs of schedule, choose *Run Logs*.
+        Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
 
-    -   *Action History:* View the history or schedules of a job/task.
+        For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
+
+    -   *Events:* View the history for a job/task or a schedule.
 
 
- 
+ > ### Tip:  
+> You've the following options to adjust the table columns to your preferences:
+> 
+> -   Sort Ascending/Descending
+> -   Resize column width
+> -   For the job name column only
+> 
+>     -   :arrow_left:
+>     -   :arrow_right:
+>     -   <span class="SAP-icons"></span> View Full Name
+> 
+>     Some jobs have long names that aren't displayed fully by default. You can choose to view the first or last part only, depending on what’s most relevant to you, or to display the full name, without changing the column width.
+
+
 
 ## Procedure
 

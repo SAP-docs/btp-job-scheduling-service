@@ -50,5 +50,5 @@ For the service plan *standard*, SAP Job Scheduling service uses User Account an
 **Related Information**  
 
 
-[Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Cloud/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
+[Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Validation/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
 

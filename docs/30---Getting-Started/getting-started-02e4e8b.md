@@ -64,7 +64,7 @@ If you're using an existing app, proceed as follows:
 
 [Define and Grant Scopes to SAP Job Scheduling Service](../50---Security/define-and-grant-scopes-to-sap-job-scheduling-service-08933d3.md "Create and grant a scope to SAP Job Scheduling service.")
 
-[Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Cloud/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
+[Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Validation/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
 
 [Initial Setup](../initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service using the standard procedures for the Cloud Foundry environment.")
 
