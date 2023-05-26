@@ -196,6 +196,10 @@ Example:
       "signatureVersion": 0,
       "jobType": "HTTP_ENDPOINT",
       "subDomain": null,
+      "ansConfig": {
+        "onError": true,
+        "onSuccess": false
+      },
       "createdAt": "1970-01-01 12:55:55",
       "ACTIVECOUNT": 0,
       "INACTIVECOUNT": 2
@@ -244,4 +248,6 @@ The API was unable to process the request due to invalid data provided.
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
 [Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
+
+[SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

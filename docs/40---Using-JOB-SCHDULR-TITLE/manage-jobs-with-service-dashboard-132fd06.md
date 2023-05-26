@@ -21,41 +21,58 @@ You've the `SpaceDeveloper` role. It allows you to access the dashboard, and to 
 
 ## Context
 
-The service dashboard lists the available jobs. Choose a job or a task to create a schedule or to view existing schedules. You can use the dashboard to perform the following tasks:
+The service dashboard lists the available jobs or tasks. Choose a job or a task to create a schedule or to view existing schedules. You can use the dashboard to perform the following tasks:
 
--   Create a schedule
--   Update a job/task or a schedule
--   View the history for a job/task or schedule
--   View run logs
+-   Create a schedule.
+-   Update a job \(or a task\) or a schedule.
+-   View the history for a job \(or a task\) or a schedule.
+-   View run logs.
+-   Enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
+
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html) .
 
 The screens available on the dashboard and their description are as below:
 
- *Configurations:*
- :   Edit global configurations required for a specific SAP Job Scheduling service instance to work.
-
-    -   *Asynchronous Execution Timeout \(s\):* This value indicates how long \(in seconds\) the SAP Job Scheduling service awaits response for the asynchronous job from the action endpoint as well as from the CF task. If the application doesn't provide a response in the specified duration, or if the CF task isn't complete in the specified duration, the run status is set to COMPLETED/UNKNOWN. For CF tasks, the task is stopped when the timeout is reached.
-
-        You can enter any number that's below or is equal to 604800 seconds.
 
 
-  *Jobs/Tasks:*
- :   View the jobs/tasks for a specific service instance. You can create a job/task and deactivate or delete an existing job/task.
+### Configurations
 
-    -   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
+Edit global configurations required for a specific SAP Job Scheduling service instance to work.
 
-        Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
+-   *Asynchronous Execution Timeout \(s\):* This value indicates how long \(in seconds\) the SAP Job Scheduling service awaits response for the asynchronous job from the action endpoint as well as from the CF task. If the application doesn't provide a response in the specified duration, or if the CF task isn't complete in the specified duration, the run status is set to COMPLETED/UNKNOWN. For CF tasks, the task is stopped when the timeout is reached.
 
-        For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
-
-    -   *Events:* View the history for a job/task or a schedule.
+    You can enter any number that's below or is equal to 604800 seconds.
 
 
- > ### Tip:  
-> You've the following options to adjust the table columns to your preferences:
+
+
+### Jobs/Tasks
+
+View the jobs or tasks for a specific service instance. You can create a job or a task and deactivate or delete an existing job or a task.
+
+> ### Tip:  
+> When you create or edit a job or a task, you can enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
 > 
-> -   Sort Ascending/Descending
+> In the list of available jobs or tasks, it's shown if notifications are sent for a job or a task and for which notification type \(Error, Success\).
+> 
+> For more information, see [SAP Job Scheduling Service Job Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/4ed22378e529484ab851ffa6ba17e3a4.html "This event is triggered whenever a job execution is completed.") :arrow_upper_right: and [SAP Job Scheduling Service Task Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/227f4091062146f7a8da4a1879f308d3.html "This event is triggered whenever a task execution is completed") :arrow_upper_right:.
+
+Select a job or a task in the list to view its overview page and to edit it.
+
+-   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
+
+    Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
+
+    For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
+
+-   *Events:* View the history for a job/task or a schedule.
+
+
+> ### Tip:  
+> You have the following options to adjust the table columns to your preferences:
+> 
+> -   Sort ascending or descending
 > -   Resize column width
 > -   For the job name column only
 > 
@@ -139,4 +156,6 @@ Using Command Line Interface \(CLI\)
 
 
 [Schedule Types](../20---Concepts/schedule-types-9cf8c14.md#loio9cf8c14da0144c84aac628dc56b00ffd "SAP Job Scheduling service runs one-time and recurring jobs or Cloud Foundry tasks.")
+
+[SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

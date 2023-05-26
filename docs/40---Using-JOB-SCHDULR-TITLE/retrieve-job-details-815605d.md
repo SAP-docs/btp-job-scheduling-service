@@ -253,6 +253,10 @@ The call was successful and returns the details of the job \(and its schedules, 
   "httpMethod": "GET",
   "startTime": null,
   "endTime": null,
+  "ansConfig": {
+    "onError": true,
+    "onSuccess": false
+  },
   "signatureVersion": 0,
   "active": true,
   "_id": 3,
@@ -315,4 +319,6 @@ Passing invalid Job ID.
 [Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
 
 [Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+
+[SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

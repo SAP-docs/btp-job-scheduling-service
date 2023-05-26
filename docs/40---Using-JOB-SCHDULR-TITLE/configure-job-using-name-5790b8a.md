@@ -11,8 +11,6 @@ If you use this API to create a job, the parameters must conform to the same con
 > ### Note:  
 > If the job name already exists, the API will replace the job content with the new content retaining the same job ID and name.
 
-\[Additional information about the method, if needed.\]
-
 
 
 ## Routes
@@ -91,7 +89,7 @@ Name of the job to be updated.
 
  *Body*
 
-The parameters are the same as in Create Job API.
+The parameters are the same as in [Create Job](create-job-2c1ecb6.md) API.
 
 
 
@@ -106,6 +104,10 @@ The parameters are the same as in Create Job API.
   "action": "http://<application-url>/action",
   "active": true,
   "httpMethod": "PUT",
+  "ansConfig": {
+     "onError": false,
+     "onSuccess": false
+      },
   "schedules": [
     {
       "cron": "* * * * * */10 0",
@@ -215,4 +217,6 @@ The API was unable to process the request due to invalid data provided.
 [Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
 
 [Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+
+[SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

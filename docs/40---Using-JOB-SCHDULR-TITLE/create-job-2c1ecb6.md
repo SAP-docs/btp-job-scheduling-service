@@ -264,6 +264,39 @@ End time for the job. The scheduler respects the end time of both the schedule a
 <tr>
 <td valign="top">
 
+`ansConfig`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+object
+
+
+
+</td>
+<td valign="top">
+
+The `ansConfig` object has two boolean keys:
+
+-   `onSuccess`: On true, a success alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
+-   `onError`: On true, an error alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  `schedules` 
 
 
@@ -601,6 +634,10 @@ For recurring schedules, this denotes the exact time when the job schedule must 
   "action": "http://salesOrderApp.hana.ondemand.com:40023/salesOrders/validate",
   "active": true,
   "httpMethod": "PUT",
+  "ansConfig": {
+     "onError": false,
+     "onSuccess": false
+      },
   "schedules": [
     {
       "cron": "* * * * * */10 0",
@@ -698,4 +735,6 @@ The API was unable to process the request due to invalid data provided.
 [Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
 
 [Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+
+[SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

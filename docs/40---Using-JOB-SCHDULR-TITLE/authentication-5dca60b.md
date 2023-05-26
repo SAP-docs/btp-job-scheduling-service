@@ -55,7 +55,9 @@ All APIs are accessed through HTTPS.
 
 You can access the REST API for a `standard` instance by providing an OAuth token.
 
-In the `VCAP_SERVICES` of your application, you can find the following section:
+You can use app bindings and service keys to generate credentials for a service instance in Cloud Foundry.
+
+If you've bound the service instance to an application, you find the following section in the `VCAP_SERVICES` of your application:
 
 ```
 {
@@ -86,9 +88,26 @@ In the `VCAP_SERVICES` of your application, you can find the following section:
 ```
 
 > ### Note:  
-> If you're using binding with certificates, the binding looks different. The binding has fields that are named differently or that are missing, for example, `certificate` and `key` instead of `clientsecret`.
+> If you use binding with certificates, the binding looks different. The binding has fields that are named differently or that are missing, for example, `certificate` and `key` instead of `clientsecret`.
 
-Depending on which binding you choose, proceed as follows:
+Alternatively, you can create a service key using `cf create-service-key` *<jobscheduler-instance-name\>**<key-name\>* and view the credentials using `cf service-key` *<jobscheduler-instance-name\>* *<key-name\>*.
+
+Service keys also allow the same parameters as bindings, for example, if you're using binding with certificates:
+
+`cf create-service-key` *<jobscheduler-instance-name\>* *<key-name\>* -c parameters.json with parameters.json as:
+
+```
+{
+"credential-type": "x509",
+  "x509": {
+    "key-length": 2048,
+    "validity": 7,
+    "validity-type": "DAYS"
+  }
+}
+```
+
+Depending on the type of credentials you obtain, proceed as follows:
 
 1.  To fetch an OAuth token from xsuaa, use one of the following options:
 
@@ -153,4 +172,8 @@ Depending on which binding you choose, proceed as follows:
 [Rate Limits](rate-limits-a9cb164.md "When you use the SAP Job Scheduling service REST API, rate limits are used to limit the number of requests against the REST API. Requests can be throttled (delayed), and if there is a very high load also denied.")
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
+
+[Create a Service Instance Using CF CLI](../30---Getting-Started/create-a-service-instance-using-cf-cli-cb56f9e.md "To use the SAP Job Scheduling service with action endpoints in your application or with Cloud Foundry tasks, you create an instance of the SAP Job Scheduling service with the service plan standard using the Cloud Foundry Command Line Interface (CF CLI) and bind the service instance to your application.")
+
+[Create Service Keys Using the Cloud Foundry Command Line Interface](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7de6b314b62748b9b59df5fc09dbe8fb.html "Use the Cloud Foundry Command Line Interface to create a service key.") :arrow_upper_right:
 

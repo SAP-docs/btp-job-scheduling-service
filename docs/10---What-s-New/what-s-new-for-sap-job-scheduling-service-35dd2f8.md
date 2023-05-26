@@ -115,6 +115,174 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Send notifications using the SAP Alert Notification service for SAP BTP.
+
+
+
+</td>
+<td valign="top">
+
+Enable sending notifications using the SAP Alert Notification service for SAP BTP if a job or task is successful or fails.
+
+For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Create Job](../40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2023-05-18
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Create and configure service keys to allow access to the SAP Job Scheduling service.
+
+
+
+</td>
+<td valign="top">
+
+For the service plan `standard`, you can now create a service key to generate credentials for a service instance.
+
+For more information, see [Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2023-05-18
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Resize the table column width and use new menu options from the column header to view the full name of jobs or tasks, or only the start or the end of long names.
 
 
