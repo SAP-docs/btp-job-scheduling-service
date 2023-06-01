@@ -290,6 +290,11 @@ The `ansConfig` object has two boolean keys:
 -   `onSuccess`: On true, a success alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
 -   `onError`: On true, an error alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
 
+> ### Restriction:  
+> This feature is only available in the
+> 
+> Cloud Foundry environment.
+
 
 
 </td>
@@ -549,7 +554,7 @@ string/object
 </td>
 <td valign="top">
 
-For one-time schedules, this denotes the task execution time. You can use human-readable text to denote a specific time. Example: "3.30pm", "tomorrow at 2am". For information about human readable dates and the supported readable strings, see the section on [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78) .
+[Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78) .
 
 If an object is used, you must specify the date and time formats as strings. For information about the supported formats, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
 
@@ -581,7 +586,7 @@ string
 </td>
 <td valign="top">
 
-Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human readable dates. For information about the supported formats, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
+Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human readable dates. For information about the supported formats, see the section on For one-time schedules, this denotes the task execution time. You can use human-readable text to denote a specific time. Example: "3.30pm", "tomorrow at 2am". For information about human readable dates and the supported readable strings, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
 
 
 
@@ -626,7 +631,7 @@ For recurring schedules, this denotes the exact time when the job schedule must 
  *POST /scheduler/jobs* 
 
 ```
- 
+For one-time schedules, this denotes the task execution time. 
 
 {
   "name": "validateSalesOrder",

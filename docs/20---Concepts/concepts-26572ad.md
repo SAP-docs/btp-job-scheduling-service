@@ -6,25 +6,87 @@
 
 
 
- **Job**
- :   A collection of schedules with an action endpoint
 
-    A job is configured with a URL, which means that your job invokes this URL, for example, every night. A job can also be configured with a Cloud Foundry task.
+<dl>
+<dt><b>
 
- :   Synchronous requests are used if the service calls the action endpoint of the application and the application logic is executed in a short span of time. Jobs can be executed in an asynchronous \(or batch\) mode for job runs with a large span of time.
+**Job**
 
- :   A service plan within SAP Job Scheduling service considers the number of schedules within a job.
+</b></dt>
+<dd>
 
-  **Action Endpoint**
- :   An HTTP or REST endpoint which is exposed by the application that is bound to the SAP Job Scheduling service and invoked by the service to perform the defined action.
+A collection of schedules with an action endpoint
 
-  **Cloud Foundry Task**
- :   An app or script whose code is included as part of a deployed app, but runs independently in its own container and is designed to use minimal resources.
+A job is configured with a URL, which means that your job invokes this URL, for example, every night. A job can also be configured with a Cloud Foundry task.
 
-  **Schedule**
- :   A one-time or a recurring entity within a job without an action endpoint.
 
- :   ****
+
+</dd>
+<dd>
+
+Synchronous requests are used if the service calls the action endpoint of the application and the application logic is executed in a short span of time. Jobs can be executed in an asynchronous \(or batch\) mode for job runs with a large span of time.
+
+
+
+</dd>
+<dd>
+
+A service plan within SAP Job Scheduling service considers the number of schedules within a job.
+
+
+
+</dd>
+</dl>
+
+
+<dl>
+<dt><b>
+
+**Action Endpoint**
+
+</b></dt>
+<dd>
+
+An HTTP or REST endpoint which is exposed by the application that is bound to the SAP Job Scheduling service and invoked by the service to perform the defined action.
+
+
+
+</dd>
+</dl>
+
+
+<dl>
+<dt><b>
+
+**Cloud Foundry Task**
+
+</b></dt>
+<dd>
+
+An app or script whose code is included as part of a deployed app, but runs independently in its own container and is designed to use minimal resources.
+
+
+
+</dd>
+</dl>
+
+
+<dl>
+<dt><b>
+
+**Schedule**
+
+</b></dt>
+<dd>
+
+A one-time or a recurring entity within a job without an action endpoint.
+
+
+
+</dd>
+<dd>
+
+****
 
 
 <table>
@@ -94,10 +156,28 @@ A schedule passes through three lifecycle states for each run.
 </tr>
 </table>
 
-  **Multitenancy**
- :   You can use the service with multitenant applications developed in the context of a Platform-as-a-Service \(PAAS\) tenant or as a Software-as-a-Service \(SaaS\) tenant.
 
- **Related Information**  
+
+</dd>
+</dl>
+
+
+<dl>
+<dt><b>
+
+**Multitenancy**
+
+</b></dt>
+<dd>
+
+You can use the service with multitenant applications developed in the context of a Platform-as-a-Service \(PAAS\) tenant or as a Software-as-a-Service \(SaaS\) tenant.
+
+
+
+</dd>
+</dl>
+
+**Related Information**  
 
 
 [Asynchronous Mode](asynchronous-mode-d9fd81c.md "The SAP Job Scheduling service executes jobs that support action endpoints in a synchronous mode or in an asynchronous (or batch) mode.")

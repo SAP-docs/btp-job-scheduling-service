@@ -38,34 +38,112 @@ For more information, see also SAP Job Scheduling service on [SAP Discovery Cent
 
 ## Features
 
-  Use flexible schedule formats 
- :   Flexibly choose between cron and human-readable date formats for your schedules.
 
-   Get secure access 
- :   Run jobs on behalf of an application secured by an OAuth 2.0 protected communication used when the service calls the action endpoint, and when the application invokes the services' REST APIs.
+<dl>
+<dt><b>
 
-   Schedule synchronously or asynchronously 
- :   Define and manage jobs synchronously or asynchronously as well as run long-running CF tasks asynchronously.
+ Use flexible schedule formats 
 
-   Optimize your resources usage 
- :   Run Cloud Foundry tasks asynchronously and thereby optimize your resources usage.
+</b></dt>
+<dd>
 
-   App and scheduling logic seperated 
- :   USE REST APIs to perform CRUD operations on jobs and schedules and to retrieve run logs of executed schedules.
+Flexibly choose between cron and human-readable date formats for your schedules.
 
-   Dashboard for managing jobs and tasks 
- :   Use the web-based user interface to create, edit, or delete jobs and tasks for a service instance. Create, manage, and monitor schedules for your jobs and tasks. Check the logs to see if a schedule was executed successfully.
 
-   Supports Node-js client libraries 
- :   Convenient client library to execute CRUD operations, including create job, from your Node.js application.
 
- 
+</dd><dt><b>
+
+ Get secure access 
+
+</b></dt>
+<dd>
+
+Run jobs on behalf of an application secured by an OAuth 2.0 protected communication used when the service calls the action endpoint, and when the application invokes the services' REST APIs.
+
+
+
+</dd><dt><b>
+
+ Schedule synchronously or asynchronously 
+
+</b></dt>
+<dd>
+
+Define and manage jobs synchronously or asynchronously as well as run long-running CF tasks asynchronously.
+
+
+
+</dd><dt><b>
+
+ Optimize your resources usage 
+
+</b></dt>
+<dd>
+
+Run Cloud Foundry tasks asynchronously and thereby optimize your resources usage.
+
+
+
+</dd><dt><b>
+
+ App and scheduling logic seperated 
+
+</b></dt>
+<dd>
+
+USE REST APIs to perform CRUD operations on jobs and schedules and to retrieve run logs of executed schedules.
+
+
+
+</dd><dt><b>
+
+ Dashboard for managing jobs and tasks 
+
+</b></dt>
+<dd>
+
+Use the web-based user interface to create, edit, or delete jobs and tasks for a service instance. Create, manage, and monitor schedules for your jobs and tasks. Check the logs to see if a schedule was executed successfully.
+
+
+
+</dd><dt><b>
+
+ Supports Node-js client libraries 
+
+</b></dt>
+<dd>
+
+Convenient client library to execute CRUD operations, including create job, from your Node.js application.
+
+
+
+</dd><dt><b>
+
+ Benefit from multitenancy support 
+
+</b></dt>
+<dd>
+
+Use this service in tenant-aware \(multitenant\) applications. Run them on a shared compute unit that can be used by multiple consumers \(tenants\).
+
+
+
+</dd>
+</dl>
+
+
 
 <a name="loio22c2df4d22cb4a05af4c9502a67597ae__section_n3j_hhf_ynb"/>
 
 ## Environment
 
 This service runs in the Cloud Foundry environment.
+
+
+
+## Multitenancy Support
+
+This service supports multitenancy. It can be used in tenant-aware applications.
 
 
 
@@ -194,6 +272,40 @@ The SAP Job Scheduling service awaits response for the asynchronous job from the
 [Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)
 
 [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Sending notifications
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+Sending notifications using the SAP Alert Notification service for SAP BTP if a job or a task is successful or fails is only available in the
+
+Cloud Foundry environment.
+
+
+
+</td>
+<td valign="top">
+
+ [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+
+ [Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
 
 
 

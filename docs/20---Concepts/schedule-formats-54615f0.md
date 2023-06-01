@@ -434,45 +434,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        YYYY
+        
+                YYYY
 
 
         
         </td>
         <td valign="top">
-
-        2015
+        
+                2015
 
 
         
         </td>
         <td valign="top">
-
-        4-digit year
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        YY
-
-
-        
-        </td>
-        <td valign="top">
-
-        14
-
-
-        
-        </td>
-        <td valign="top">
-
-        2-digit year
+                4-digit year
 
 
         
@@ -480,45 +457,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        Q
+        
+                YY
 
 
         
         </td>
         <td valign="top">
-
-        1-4
+        
+                14
 
 
         
         </td>
         <td valign="top">
-
-        Quarter year. Sets month to first month of the quarter.
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        M MM
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-12
-
-
-        
-        </td>
-        <td valign="top">
-
-        Month number
+                2-digit year
 
 
         
@@ -526,45 +480,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        MMM MMMM
+        
+                Q
 
 
         
         </td>
         <td valign="top">
-
-        January-Dec
+        
+                1-4
 
 
         
         </td>
         <td valign="top">
-
-        Month name in locale
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        D DD
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-31
-
-
-        
-        </td>
-        <td valign="top">
-
-        Day of month
+                Quarter year. Sets month to first month of the quarter.
 
 
         
@@ -572,45 +503,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        Do
+        
+                M MM
 
 
         
         </td>
         <td valign="top">
-
-        1st - 31st
+        
+                1-12
 
 
         
         </td>
         <td valign="top">
-
-        Day of month with ordinal
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        DDD DDDD
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-365
-
-
-        
-        </td>
-        <td valign="top">
-
-        Day of year
+                Month number
 
 
         
@@ -618,45 +526,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        X
+        
+                MMM MMMM
 
 
         
         </td>
         <td valign="top">
-
-        1410715640.579
+        
+                January-Dec
 
 
         
         </td>
         <td valign="top">
-
-        UNIX timestamp
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        x
-
-
-        
-        </td>
-        <td valign="top">
-
-        1410715640579
-
-
-        
-        </td>
-        <td valign="top">
-
-        UNIX timestamp \(ms\)
+                Month name in locale
 
 
         
@@ -664,45 +549,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        gggg
+        
+                D DD
 
 
         
         </td>
         <td valign="top">
-
-        2015
+        
+                1-31
 
 
         
         </td>
         <td valign="top">
-
-        Locale 4-digit week year
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        gg
-
-
-        
-        </td>
-        <td valign="top">
-
-        15
-
-
-        
-        </td>
-        <td valign="top">
-
-        Locale 2-digit week year
+                Day of month
 
 
         
@@ -710,45 +572,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        w ww
+        
+                Do
 
 
         
         </td>
         <td valign="top">
-
-        1-53
+        
+                1st - 31st
 
 
         
         </td>
         <td valign="top">
-
-        Locale week of the year
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        e
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-7
-
-
-        
-        </td>
-        <td valign="top">
-
-        Locale day of the week
+                Day of month with ordinal
 
 
         
@@ -756,45 +595,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        GGGG
+        
+                DDD DDDD
 
 
         
         </td>
         <td valign="top">
-
-        2015
+        
+                1-365
 
 
         
         </td>
         <td valign="top">
-
-        ISO 4-digit week year
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        GG
-
-
-        
-        </td>
-        <td valign="top">
-
-        15
-
-
-        
-        </td>
-        <td valign="top">
-
-        ISO 2-digit week year
+                Day of year
 
 
         
@@ -802,45 +618,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        W WW
+        
+                X
 
 
         
         </td>
         <td valign="top">
-
-        1-53
+        
+                1410715640.579
 
 
         
         </td>
         <td valign="top">
-
-        ISO week of year
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        E
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-7
-
-
-        
-        </td>
-        <td valign="top">
-
-        ISO day of week
+                UNIX timestamp
 
 
         
@@ -848,45 +641,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        H HH
+        
+                x
 
 
         
         </td>
         <td valign="top">
-
-        0-23
+        
+                1410715640579
 
 
         
         </td>
         <td valign="top">
-
-        24-hour time
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        h hh
-
-
-        
-        </td>
-        <td valign="top">
-
-        1-12
-
-
-        
-        </td>
-        <td valign="top">
-
-        12-hour time used with "a A"
+                UNIX timestamp \(ms\)
 
 
         
@@ -894,45 +664,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        a A
+        
+                gggg
 
 
         
         </td>
         <td valign="top">
-
-        am pm
+        
+                2015
 
 
         
         </td>
         <td valign="top">
-
-        Before or after noon
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        m mm
-
-
-        
-        </td>
-        <td valign="top">
-
-        0-59
-
-
-        
-        </td>
-        <td valign="top">
-
-        Minutes
+                Locale 4-digit week year
 
 
         
@@ -940,45 +687,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        s ss
+        
+                gg
 
 
         
         </td>
         <td valign="top">
-
-        0-59
+        
+                15
 
 
         
         </td>
         <td valign="top">
-
-        Seconds
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        S
-
-
-        
-        </td>
-        <td valign="top">
-
-        0-9
-
-
-        
-        </td>
-        <td valign="top">
-
-        Tenths of a second
+                Locale 2-digit week year
 
 
         
@@ -986,45 +710,22 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        SS
+        
+                w ww
 
 
         
         </td>
         <td valign="top">
-
-        0-99
+        
+                1-53
 
 
         
         </td>
         <td valign="top">
-
-        Hundredths of a second
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-
-        SSS
-
-
-        
-        </td>
-        <td valign="top">
-
-        0-999
-
-
-        
-        </td>
-        <td valign="top">
-
-        Thousandths of a second
+                Locale week of the year
 
 
         
@@ -1032,22 +733,321 @@ You can provide date and time parameters such as startTime, endTime, or time for
         </tr>
         <tr>
         <td valign="top">
-
-        Z ZZ
+        
+                e
 
 
         
         </td>
         <td valign="top">
-
-        \+12:00
+        
+                1-7
 
 
         
         </td>
         <td valign="top">
+        
+                Locale day of the week
 
-        Offset from UTC as +-HH:mm, +-HHmm, or Z
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                GGGG
+
+
+        
+        </td>
+        <td valign="top">
+        
+                2015
+
+
+        
+        </td>
+        <td valign="top">
+        
+                ISO 4-digit week year
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                GG
+
+
+        
+        </td>
+        <td valign="top">
+        
+                15
+
+
+        
+        </td>
+        <td valign="top">
+        
+                ISO 2-digit week year
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                W WW
+
+
+        
+        </td>
+        <td valign="top">
+        
+                1-53
+
+
+        
+        </td>
+        <td valign="top">
+        
+                ISO week of year
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                E
+
+
+        
+        </td>
+        <td valign="top">
+        
+                1-7
+
+
+        
+        </td>
+        <td valign="top">
+        
+                ISO day of week
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                H HH
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-23
+
+
+        
+        </td>
+        <td valign="top">
+        
+                24-hour time
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                h hh
+
+
+        
+        </td>
+        <td valign="top">
+        
+                1-12
+
+
+        
+        </td>
+        <td valign="top">
+        
+                12-hour time used with "a A"
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                a A
+
+
+        
+        </td>
+        <td valign="top">
+        
+                am pm
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Before or after noon
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                m mm
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-59
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Minutes
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                s ss
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-59
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Seconds
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                S
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-9
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Tenths of a second
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                SS
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-99
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Hundredths of a second
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                SSS
+
+
+        
+        </td>
+        <td valign="top">
+        
+                0-999
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Thousandths of a second
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                Z ZZ
+
+
+        
+        </td>
+        <td valign="top">
+        
+                \+12:00
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Offset from UTC as +-HH:mm, +-HHmm, or Z
 
 
         

@@ -29,6 +29,11 @@ The service dashboard lists the available jobs or tasks. Choose a job or a task 
 -   View run logs.
 -   Enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
 
+    > ### Restriction:  
+    > This feature is only available in the
+    > 
+    > Cloud Foundry environment.
+
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html) .
 
