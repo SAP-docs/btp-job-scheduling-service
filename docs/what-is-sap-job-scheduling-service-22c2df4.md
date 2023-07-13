@@ -294,9 +294,7 @@ Sending notifications
 </td>
 <td valign="top">
 
-Sending notifications using the SAP Alert Notification service for SAP BTP if a job or a task is successful or fails is only available in the
-
-Cloud Foundry environment.
+Sending notifications using the SAP Alert Notification service for SAP BTP if a job or a task is successful or fails is only available in the Cloud Foundry environment.
 
 
 

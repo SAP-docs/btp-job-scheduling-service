@@ -291,9 +291,7 @@ The `ansConfig` object has two boolean keys:
 -   `onError`: On true, an error alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
 
 > ### Restriction:  
-> This feature is only available in the
-> 
-> Cloud Foundry environment.
+> This feature is only available in the Cloud Foundry environment.
 
 
 

@@ -167,6 +167,91 @@ GET /scheduler/jobs?page_size=10&offset=1&tenantId=8a324eec-94f1-43ae-b24a-0430a
 
 
 
+<a name="loiob4d3719173f641b583c97ff0e8f0a7fa__section_bmg_zkn_1yb"/>
+
+## Filtering Job Lists
+
+Querying jobs can make use of the “filter” query option.
+
+The "filter" query option currently can make use of the following settings:
+
+-   possible properties: name, subDomain, tenantId
+
+-   boolean operators: and, or
+
+-   function “contains”
+
+
+
+
+### Examples
+
+-   Using query option “contains”:
+
+    ```
+    GET /scheduler/jobs?filter=contains(name, 'my_job')
+    ```
+
+    ```
+    GET /scheduler/jobs?filter=contains(subDomain, 'my_subdomain')
+    ```
+
+    ```
+    GET /scheduler/jobs?filter=contains(tenantId, 'e2c896e9')
+    ```
+
+-   Using query option “eq”:
+
+    ```
+    GET /scheduler/jobs?filter=name eq 'my_job'
+    ```
+
+    ```
+    GET /scheduler/jobs?filter=subDomain eq 'my_subdomain'
+    ```
+
+    ```
+    GET /scheduler/jobs?filter=tenantId eq 'e2c896e9-243b-4047-bf90-d4483f537786'
+    ```
+
+-   Using combinations:
+
+    ```
+    GET scheduler/jobs?filter=contains(name, 'my_test') and subDomain eq 'my_domain' and tenantId eq 'e2c896e9-243b-4047-bf90-d4483f537786'
+    ```
+
+    ```
+    GET scheduler/jobs?filter=name eq 'my_test' and subDomain eq 'my_domain' or tenantId eq 'e2c896e9-243b-4047-bf90-d4483f537786
+    ```
+
+
+> ### Note:  
+> -   Defining specific orders of processing the filter's boolean terms via brackets is currently not supported.
+> 
+>     For the order of boolean term processing, the processing logic follows the Postgres Database SQL processing logic:
+> 
+>     `and`-operator takes precedence over `or`-operator.
+> 
+> -   If you search for single quotes as part of a search string, you need to duplicate any single quote in a search string \(likewise given in the OData V 4.0x specification\).
+> 
+>     **Example:**
+> 
+>     ```
+>     filter=contains(name, ’my_job(’’part one’’)’)
+>     ```
+> 
+>     This search is looking up for this pattern in the name property’s value:
+> 
+>     ```
+>     my_job(’part one’)
+>     ```
+> 
+> -   Beside the filter option, there is \(implemented in previous versions of the REST API\) the query option `tenantId` existing.
+> 
+>     If this option is specified in addition to the filter option, the filter option has precedence over that single query option.
+
+
+
 <a name="loiob4d3719173f641b583c97ff0e8f0a7fa__section_ctj_qt5_ljb"/>
 
 ## Responses

@@ -115,6 +115,90 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Filter the list of available jobs.
+
+
+
+</td>
+<td valign="top">
+
+You can now benefit from an improved user experience for the list of available jobs. Filter the entries by job name, subdomain or by tenant ID. This way you can locate specific jobs more easily.
+
+For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Retrieve Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-jobs-b4d3719.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2023-07-13
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Send notifications using the SAP Alert Notification service for SAP BTP.
 
 

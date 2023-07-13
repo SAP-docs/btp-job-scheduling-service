@@ -21,7 +21,11 @@ You've the `SpaceDeveloper` role. It allows you to access the dashboard, and to 
 
 ## Context
 
-The service dashboard lists the available jobs or tasks. Choose a job or a task to create a schedule or to view existing schedules. You can use the dashboard to perform the following tasks:
+The service dashboard lists the available jobs or tasks.
+
+Choose a job or a task to create a schedule or to view existing schedules.
+
+You can use the dashboard to perform the following tasks:
 
 -   Create a schedule.
 -   Update a job \(or a task\) or a schedule.
@@ -30,9 +34,7 @@ The service dashboard lists the available jobs or tasks. Choose a job or a task 
 -   Enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
 
     > ### Restriction:  
-    > This feature is only available in the
-    > 
-    > Cloud Foundry environment.
+    > This feature is only available in the Cloud Foundry environment.
 
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html) .
@@ -56,6 +58,13 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
 View the jobs or tasks for a specific service instance. You can create a job or a task and deactivate or delete an existing job or a task.
 
+You can filter the entries in the list of available jobs by job name, subdomain, or tenant ID.
+
+> ### Note:  
+> The properties that are set are combined with an "and"-logic and the content is searched as a substring match \(not a pattern search\).
+> 
+> For more information, see [Retrieve Jobs](retrieve-jobs-b4d3719.md).
+
 > ### Tip:  
 > When you create or edit a job or a task, you can enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
 > 
@@ -63,7 +72,7 @@ View the jobs or tasks for a specific service instance. You can create a job or 
 > 
 > For more information, see [SAP Job Scheduling Service Job Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/4ed22378e529484ab851ffa6ba17e3a4.html "This event is triggered whenever a job execution is completed.") :arrow_upper_right: and [SAP Job Scheduling Service Task Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/227f4091062146f7a8da4a1879f308d3.html "This event is triggered whenever a task execution is completed") :arrow_upper_right:.
 
-Select a job or a task in the list to view its overview page and to edit it.
+Choose a job or a task in the list to view its overview page and to edit it.
 
 -   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
 
