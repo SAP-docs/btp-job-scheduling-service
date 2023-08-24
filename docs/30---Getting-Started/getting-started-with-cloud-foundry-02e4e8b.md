@@ -1,8 +1,8 @@
 <!-- loio02e4e8bbcd7c4d5ea154f5d9aa2f46ac -->
 
-# Getting Started
+# Getting Started with Cloud Foundry
 
-Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a service instance and bind it to your application.
+Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a Cloud Foundry service instance and bind it to your application.
 
 In the Cloud Foundry environment, you enable services by creating a service instance using either the SAP BTP cockpit or the Cloud Foundry command line interface \(CLI\), and binding that instance to your application. A service instance is a single instantiation of a service running on SAP BTP. For more information, see [About Services](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d1d0fc8e78474494a59caad02259ec7e.html).
 
@@ -66,5 +66,5 @@ If you're using an existing app, proceed as follows:
 
 [Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Cloud/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
 
-[Initial Setup](../initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service using the standard procedures for the Cloud Foundry environment.")
+[Initial Setup](../initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps.")
 

@@ -396,7 +396,7 @@ Success
 </td>
 <td valign="top">
 
- Cloud Foundry task successfully completed.
+Cloud Foundry task successfully completed.
 
 
 

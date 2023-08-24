@@ -12,7 +12,7 @@ Create and grant a scope to SAP Job Scheduling service.
 
 You've created an xsuaa service instance and bound it to the application.
 
-For more information, see [Getting Started](../30---Getting-Started/getting-started-02e4e8b.md).
+For more information, see [Getting Started with Cloud Foundry](../30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md).
 
 
 

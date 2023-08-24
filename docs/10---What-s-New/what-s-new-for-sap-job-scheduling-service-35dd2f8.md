@@ -109,6 +109,91 @@ Job Scheduling Service
 <td valign="top">
 
 -   Cloud Foundry
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Kyma runtime for cross-consumption
+
+
+
+</td>
+<td valign="top">
+
+The SAP Job Scheduling service is available for the Kyma runtime for cross-consumption capabilities on public cloud infrastructure providers only.
+
+For more information, see [Create a Service Instance in SAP BTP Cockpit](../create-a-service-instance-in-sap-btp-cockpit-224a49a.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2023-08-24
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
 
 
 

@@ -14,13 +14,13 @@ You can also use this API to create a job by providing a job name along with the
 
 ## Routes
 
- *PUT /scheduler/jobs/ \{jobId\}* 
+*PUT /scheduler/jobs/ \{jobId\}* 
 
 
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -86,7 +86,7 @@ ID of the job to be updated
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -185,7 +185,7 @@ Sets the job action url.
 <tr>
 <td valign="top">
 
- `httpMethod` 
+`httpMethod` 
 
 
 
@@ -208,7 +208,7 @@ HTTP method of the job action endpoint URL. Allowed values are “GET”, “POS
 <tr>
 <td valign="top">
 
- `startTime` 
+`startTime` 
 
 
 
@@ -231,7 +231,7 @@ Start time for the job. The scheduler respects the start time of both the schedu
 <tr>
 <td valign="top">
 
- `endTime` 
+`endTime` 
 
 
 

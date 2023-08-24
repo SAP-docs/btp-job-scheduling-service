@@ -18,7 +18,7 @@ All related information such as job schedule configurations and logs are deleted
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -142,7 +142,7 @@ The API call was successful and the job schedule was deleted.
 }
 ```
 
- 
+
 
 **Related Information**  
 

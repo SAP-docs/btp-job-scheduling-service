@@ -18,7 +18,7 @@ It retrieves the schedule logs if the `displayLogs` parameter is true.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -55,7 +55,7 @@ Description
 <tr>
 <td valign="top">
 
- `jobId` 
+`jobId` 
 
 
 
@@ -85,7 +85,7 @@ ID of the job to which scheduleId belongs
 <tr>
 <td valign="top">
 
- `scheduleId` 
+`scheduleId` 
 
 
 
@@ -114,7 +114,7 @@ ID of the schedule whose details are to be retrieved
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -248,7 +248,7 @@ The call was successful and returns the details of the schedule \(and its logs, 
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

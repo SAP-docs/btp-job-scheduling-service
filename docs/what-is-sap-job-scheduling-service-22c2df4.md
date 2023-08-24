@@ -42,7 +42,7 @@ For more information, see also SAP Job Scheduling service on [SAP Discovery Cent
 <dl>
 <dt><b>
 
- Use flexible schedule formats 
+Use flexible schedule formats 
 
 </b></dt>
 <dd>
@@ -53,7 +53,7 @@ Flexibly choose between cron and human-readable date formats for your schedules.
 
 </dd><dt><b>
 
- Get secure access 
+Get secure access 
 
 </b></dt>
 <dd>
@@ -64,7 +64,7 @@ Run jobs on behalf of an application secured by an OAuth 2.0 protected communica
 
 </dd><dt><b>
 
- Schedule synchronously or asynchronously 
+Schedule synchronously or asynchronously 
 
 </b></dt>
 <dd>
@@ -75,7 +75,7 @@ Define and manage jobs synchronously or asynchronously as well as run long-runni
 
 </dd><dt><b>
 
- Optimize your resources usage 
+Optimize your resources usage 
 
 </b></dt>
 <dd>
@@ -86,7 +86,7 @@ Run Cloud Foundry tasks asynchronously and thereby optimize your resources usage
 
 </dd><dt><b>
 
- App and scheduling logic seperated 
+App and scheduling logic seperated 
 
 </b></dt>
 <dd>
@@ -97,7 +97,7 @@ USE REST APIs to perform CRUD operations on jobs and schedules and to retrieve r
 
 </dd><dt><b>
 
- Dashboard for managing jobs and tasks 
+Dashboard for managing jobs and tasks 
 
 </b></dt>
 <dd>
@@ -108,7 +108,7 @@ Use the web-based user interface to create, edit, or delete jobs and tasks for a
 
 </dd><dt><b>
 
- Supports Node-js client libraries 
+Supports Node-js client libraries 
 
 </b></dt>
 <dd>
@@ -119,7 +119,7 @@ Convenient client library to execute CRUD operations, including create job, from
 
 </dd><dt><b>
 
- Benefit from multitenancy support 
+Benefit from multitenancy support 
 
 </b></dt>
 <dd>
@@ -137,7 +137,15 @@ Use this service in tenant-aware \(multitenant\) applications. Run them on a sha
 
 ## Environment
 
-This service runs in the Cloud Foundry environment.
+The service can be consumed in the following runtimes:
+
+-   Cloud Foundry runtime
+
+-   Kyma runtime
+
+    > ### Restriction:  
+    > The Job Scheduling service is available for the SAP BTP, Kyma runtime for cross-consumption capabilities on public cloud infrastructure providers only.
+
 
 
 
@@ -301,9 +309,9 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 </td>
 <td valign="top">
 
- [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+[Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
 
- [Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
+[Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
 
 
 
@@ -314,9 +322,11 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 **Related Information**  
 
 
-[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service using the standard procedures for the Cloud Foundry environment.")
+[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps.")
 
-[Getting Started](30---Getting-Started/getting-started-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a service instance and bind it to your application.")
+[Getting Started with Cloud Foundry](30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a Cloud Foundry service instance and bind it to your application.")
+
+[Getting Started with Kyma](getting-started-with-kyma-8d30095.md "Create a service instance in Kyma.")
 
 [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
 

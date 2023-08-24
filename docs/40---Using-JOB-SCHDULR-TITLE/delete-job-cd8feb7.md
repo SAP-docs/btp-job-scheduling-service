@@ -18,7 +18,7 @@ It also terminates processing of all schedules \(active and inactive\) of the jo
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -118,7 +118,7 @@ The job was deleted successfully.
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

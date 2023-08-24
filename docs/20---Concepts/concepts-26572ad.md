@@ -2,7 +2,7 @@
 
 # Concepts
 
- SAP Job Scheduling service offers you flexible scheduling capabilities for action endpoints in your application or long-running processes using Cloud Foundry tasks.
+SAP Job Scheduling service offers you flexible scheduling capabilities for action endpoints in your application or long-running processes using Cloud Foundry tasks.
 
 
 

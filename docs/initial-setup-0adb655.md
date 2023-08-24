@@ -2,7 +2,7 @@
 
 # Initial Setup
 
-You can get started with the SAP Job Scheduling service using the standard procedures for the Cloud Foundry environment.
+You can get started with the SAP Job Scheduling service by following the steps.
 
 
 
@@ -18,13 +18,27 @@ You can get started with the SAP Job Scheduling service using the standard proce
 
 -   You've purchased quota for the SAP Job Scheduling service and for the SAP Authorization and Trust Management service.
 
--   You’ve created a space within a subaccount in which the SAP BTP, Cloud Foundry environment is enabled.
+-   Cloud Foundry: You’ve created a space within a subaccount in which the SAP BTP, Cloud Foundry environment is enabled.
 
     For more information, see [Managing Orgs and Spaces Using the Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c4c25cc63ac845779f76202360f98694.html) and [Account Administration in the Cloud Foundry Command Line Interface](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/927377f33f9b42be9f1b610ef5c33355.html).
 
--   Within that space, your user is assigned to the *Space Developer* role for the subaccount. You need this role to execute the configuration steps and to start the dashboard.
+-   Kyma: You have enabled the Kyma environment and created a Kyma cluster.
+
+-   Cloud Foundry: Within that space, your user is assigned to the `Space Developer` role for the subaccount. You need this role to execute the configuration steps.
 
     For more information, see [Managing Authorization in Global Accounts and Subaccounts \[Feature Set B\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0039cf082d3d43eba9200fe15647922a.html) and [Assign Role Collections](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/9e1bf57130ef466e8017eab298b40e5e.html).
+
+-   To start the dashboard, you need the following roles:
+
+    -   Cloud Foundry: `Space Developer`
+
+    -   Kyma: One of the following roles:
+
+        -   `SAP_Job_Scheduling_Service_Admin`
+
+        -   `SAP_Job_Scheduling_Service_Viewer`
+
+
 
 -   You've deployed an application on SAP BTP.
 
@@ -54,9 +68,14 @@ For more information, see [Managing Entitlements and Quotas Using the Cockpit](h
 
 ## Setting Up Roles and Authorization
 
-To create and bind service instances to applications, you must be assigned the **Space Manager** or the **Space Developer** role in the space.
+-   To create and bind Cloud Foundry service instances to applications, you must be assigned the **Space Manager** or the **Space Developer** role in the space.
 
-For more information, see [About Roles in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/09076385086b4da3bd1808d5ef572862.html "Roles determine which features users can view and access, and which actions they can initiate.") :arrow_upper_right:.
+    For more information, see [About Roles in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/09076385086b4da3bd1808d5ef572862.html "Roles determine which features users can view and access, and which actions they can initiate.") :arrow_upper_right:.
+
+-   Kyma: To access the service dashboard, you must be assigned the `SAP_Job_Scheduling_Service_Admin` or the `SAP_Job_Scheduling_Service_Viewer` role.
+
+    For more information, see [Roles and Role Collections](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Cloud/en-US/14a877c6e2f14832999df500ffa6e05e.html "Usually a role collection consists of one or multiple roles. You can use the SAP BTP cockpit to add or remove roles.") :arrow_upper_right:.
+
 
 
 
@@ -64,12 +83,21 @@ For more information, see [About Roles in the Cloud Foundry Environment](https:/
 
 ## Getting Started
 
-Once you've completed the initial setup, see [Getting Started](30---Getting-Started/getting-started-02e4e8b.md) and our [tutorial](https://blogs.sap.com/2019/11/25/using-job-scheduler-in-sap-cloud-platform-0-intro-and-prep/) for beginners.
+Once you've completed the initial setup, see:
+
+-   Cloud Foundry: [Getting Started with Cloud Foundry](30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md) and our [tutorial](https://blogs.sap.com/2019/11/25/using-job-scheduler-in-sap-cloud-platform-0-intro-and-prep/) for beginners
+
+-   Kyma: [Getting Started with Kyma](getting-started-with-kyma-8d30095.md)
+
+
+.
 
 **Related Information**  
 
 
-[Getting Started](30---Getting-Started/getting-started-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a service instance and bind it to your application.")
+[Getting Started with Cloud Foundry](30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a Cloud Foundry service instance and bind it to your application.")
+
+[Getting Started with Kyma](getting-started-with-kyma-8d30095.md "Create a service instance in Kyma.")
 
 [Using SAP Job Scheduling Service](40---Using-JOB-SCHDULR-TITLE/using-sap-job-scheduling-service-9d48597.md "Define and manage one-time and recurring jobs using flexible schedules.")
 

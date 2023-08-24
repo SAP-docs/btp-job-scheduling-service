@@ -64,7 +64,7 @@ Description
 <tr>
 <td valign="top">
 
- `page_size` 
+`page_size` 
 
 
 
@@ -78,7 +78,7 @@ No
 </td>
 <td valign="top">
 
- `number` 
+`number` 
 
 
 
@@ -96,7 +96,7 @@ If you haven't set `page_size` and only `offset` is specified, the `page_size` p
 <tr>
 <td valign="top">
 
- `offset` 
+`offset` 
 
 
 
@@ -110,7 +110,7 @@ No
 </td>
 <td valign="top">
 
- `number` 
+`number` 
 
 
 
@@ -128,7 +128,7 @@ The default offset is an indicator to fetch results without skipping any records
 <tr>
 <td valign="top">
 
- `tenantId` 
+`tenantId` 
 
 
 
@@ -142,7 +142,7 @@ No
 </td>
 <td valign="top">
 
- `string` 
+`string` 
 
 
 

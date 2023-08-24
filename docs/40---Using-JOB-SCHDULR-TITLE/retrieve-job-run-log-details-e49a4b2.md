@@ -14,7 +14,7 @@ This API retrieves the details for a specified job run log.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -181,7 +181,7 @@ The call was successful and returns details of the job run log.
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

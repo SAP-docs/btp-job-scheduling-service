@@ -21,7 +21,7 @@ An application must call this API after completion of the asynchronous execution
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -147,7 +147,7 @@ ID of the run whose logs are to be retrieved
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -276,7 +276,7 @@ The log for the job run is successfully updated.
 }
 ```
 
- 
+
 
 **Related Information**  
 

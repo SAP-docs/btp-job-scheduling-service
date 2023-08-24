@@ -18,7 +18,7 @@ This API supports pagination, if required parameters are set.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -55,7 +55,7 @@ Description
 <tr>
 <td valign="top">
 
- `jobId` 
+`jobId` 
 
 
 
@@ -85,7 +85,7 @@ ID of the job to which scheduleId belongs
 <tr>
 <td valign="top">
 
- `scheduleId` 
+`scheduleId` 
 
 
 
@@ -114,7 +114,7 @@ ID of the schedule whose run-logs has to be retrieved
 </tr>
 </table>
 
- *Query* 
+*Query* 
 
 
 <table>
@@ -279,7 +279,7 @@ The call was successful and returns the collection of job run logs.
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

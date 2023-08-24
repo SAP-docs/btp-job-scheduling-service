@@ -43,7 +43,7 @@ Sample Code to Access the API
 <tr>
 <td valign="top">
 
- [Create Job](create-job-2c1ecb6.md) 
+[Create Job](create-job-2c1ecb6.md) 
 
 
 
@@ -101,7 +101,7 @@ var req = {
 <tr>
 <td valign="top">
 
- [Delete Job](delete-job-cd8feb7.md) 
+[Delete Job](delete-job-cd8feb7.md) 
 
 
 
@@ -167,7 +167,7 @@ var req = {
 <tr>
 <td valign="top">
 
- [Create Job Schedule](create-job-schedule-66ab3c1.md) 
+[Create Job Schedule](create-job-schedule-66ab3c1.md) 
 
 
 
@@ -226,7 +226,7 @@ Update Job Schedule
 <tr>
 <td valign="top">
 
- [Delete Job Schedule](delete-job-schedule-3066b6d.md) 
+[Delete Job Schedule](delete-job-schedule-3066b6d.md) 
 
 
 
@@ -391,7 +391,7 @@ Get Run Logs of Schedule
 <tr>
 <td valign="top">
 
- [Delete All Job Schedules](delete-all-job-schedules-0aab1ab.md) 
+[Delete All Job Schedules](delete-all-job-schedules-0aab1ab.md) 
 
 
 

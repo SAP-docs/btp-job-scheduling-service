@@ -30,7 +30,7 @@ If you encounter an issue with this service, we recommend that you do the follow
 
     See [Getting Support](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5dd739823b824b539eee47b7860a00be.html).
 
-    Please use the following component for your incident: **BC-XS-SRV-JBS** 
+    Please use the following component for your incident:**BC-CP-CF-JBS** 
 
 
 **Related Information**  

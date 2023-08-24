@@ -14,7 +14,7 @@ This API creates a job by accepting one or more job schedules to be created.
 
 ### Request Parameters
 
- *BODY* 
+*BODY* 
 
 
 <table>
@@ -84,7 +84,7 @@ Name of the job. Name must not contain special characters or only numbers.
 <tr>
 <td valign="top">
 
- `description` 
+`description` 
 
 
 
@@ -114,7 +114,7 @@ Provides more details about a job.
 <tr>
 <td valign="top">
 
- `action` 
+`action` 
 
 
 
@@ -144,7 +144,7 @@ The fully qualified URL endpoint to be called when the job runs.
 <tr>
 <td valign="top">
 
- `active` 
+`active` 
 
 
 
@@ -174,7 +174,7 @@ Activation status of the job \(default value is false\).
 <tr>
 <td valign="top">
 
- `httpMethod` 
+`httpMethod` 
 
 
 
@@ -204,7 +204,7 @@ The HTTP method to be used to call the job action endpoint URL. Allowed values a
 <tr>
 <td valign="top">
 
- `startTime` 
+`startTime` 
 
 
 
@@ -234,7 +234,7 @@ Start time for the job. The scheduler respects the start time of both the schedu
 <tr>
 <td valign="top">
 
- `endTime` 
+`endTime` 
 
 
 
@@ -300,7 +300,7 @@ The `ansConfig` object has two boolean keys:
 <tr>
 <td valign="top">
 
- `schedules` 
+`schedules` 
 
 
 
@@ -339,7 +339,7 @@ The schedules array can be used to create job schedules. Each job schedule is co
 <tr>
 <td valign="top">
 
- `data` 
+`data` 
 
 
 
@@ -369,7 +369,7 @@ Data value is passed to the job action endpoint when invoked by Job Scheduler. F
 <tr>
 <td valign="top">
 
- `description` 
+`description` 
 
 
 
@@ -399,7 +399,7 @@ Provides more details about a schedule.
 <tr>
 <td valign="top">
 
- `active` 
+`active` 
 
 
 
@@ -459,7 +459,7 @@ Start time for the job schedule. For information about the supported formats, se
 <tr>
 <td valign="top">
 
- `endTime` 
+`endTime` 
 
 
 
@@ -501,7 +501,7 @@ End time for the job schedule. For information about the supported formats, see 
 <tr>
 <td valign="top">
 
- `cron` 
+`cron` 
 
 
 
@@ -531,7 +531,7 @@ Crontab pattern for triggering the schedule. For more information, see the secti
 <tr>
 <td valign="top">
 
- `time` 
+`time` 
 
 
 
@@ -563,7 +563,7 @@ If an object is used, you must specify the date and time formats as strings. For
 <tr>
 <td valign="top">
 
- `repeatInterval` 
+`repeatInterval` 
 
 
 
@@ -593,7 +593,7 @@ Used to run schedules repeatedly at some interval. Human-readable texts must com
 <tr>
 <td valign="top">
 
- `repeatAt` 
+`repeatAt` 
 
 
 
@@ -626,7 +626,7 @@ For recurring schedules, this denotes the exact time when the job schedule must 
 
 ### Example
 
- *POST /scheduler/jobs* 
+*POST /scheduler/jobs* 
 
 ```
 For one-time schedules, this denotes the task execution time. 
@@ -704,7 +704,7 @@ The call was successful and the Job has been created. The API responds with a **
 
 The API was unable to process the request due to invalid data provided.
 
- 
+
 
 **Related Information**  
 

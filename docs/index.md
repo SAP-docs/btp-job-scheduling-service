@@ -14,9 +14,11 @@
     -   [Schedule Lifecycle](20---Concepts/schedule-lifecycle-e1805f2.md)
     -   [Multitenancy in SAP Job Scheduling Service](20---Concepts/multitenancy-in-sap-job-scheduling-service-464b613.md)
 -   [Initial Setup](initial-setup-0adb655.md)
--   [Getting Started](30---Getting-Started/getting-started-02e4e8b.md)
+-   [Getting Started with Cloud Foundry](30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md)
     -   [Create a Service Instance in SAP BTP Cockpit](30---Getting-Started/create-a-service-instance-in-sap-btp-cockpit-e267ab6.md)
     -   [Create a Service Instance Using CF CLI](30---Getting-Started/create-a-service-instance-using-cf-cli-cb56f9e.md)
+-   [Getting Started with Kyma](getting-started-with-kyma-8d30095.md)
+    -   [Create a Service Instance in SAP BTP Cockpit](create-a-service-instance-in-sap-btp-cockpit-224a49a.md)
 -   [Using SAP Job Scheduling Service](40---Using-JOB-SCHDULR-TITLE/using-sap-job-scheduling-service-9d48597.md)
     -   [SAP Job Scheduling Service REST APIs](40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md)
         -   [Rate Limits](40---Using-JOB-SCHDULR-TITLE/rate-limits-a9cb164.md)
@@ -49,5 +51,4 @@
 -   [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md)
 -   [Monitoring and Troubleshooting](monitoring-and-troubleshooting-bd573bd.md)
     -   [Frequently Asked Questions](frequently-asked-questions-d72c276.md)
--   [Filter Job List](filter-job-list-77b1da2.md)
 

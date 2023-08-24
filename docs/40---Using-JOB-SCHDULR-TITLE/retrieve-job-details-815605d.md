@@ -26,7 +26,7 @@ You can also use `jobId` or `name` as query parametes to fetch the job details.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -92,7 +92,7 @@ ID of the job to be retrieved
 </tr>
 </table>
 
- *Query* 
+*Query* 
 
 
 <table>
@@ -285,7 +285,7 @@ The call was successful and returns the details of the job \(and its schedules, 
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

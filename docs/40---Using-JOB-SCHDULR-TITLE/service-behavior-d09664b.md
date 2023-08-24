@@ -16,6 +16,8 @@ The new behavior is intended to stablize the service upon restart if too many mi
 
 
 
+## Example
+
 Schedule \(ID:1\) should be executed every 5 minutes at 11:55, 12:00, 12:05, 12:10, 12:15.
 
 Schedule \(ID:2\) should be executed every 24 hours at 12:10.
@@ -29,6 +31,8 @@ Schedule \(ID:1\): The SAP Job Scheduling service skipps executions at 11:55, 12
 Schedule \(ID:2\): The SAP Job Scheduling service executes the last missed one planed at 12:10 at 12:13. Next execution will be run as expected at 12:10 on the next day.
 
 
+
+## Example
 
 Schedule \(ID:1\) should be executed every 5 minutes at 11:55, 12:00, 12:05, 12:10, 12:15.
 
@@ -229,7 +233,7 @@ The SAP Job Scheduling service will automatically remove run logs 15 days after 
 
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the details for a specified job schedule.")
 
- <a name="loio3aaa1cf65a30407da04d0755d5f92ab6"/>
+<a name="loio3aaa1cf65a30407da04d0755d5f92ab6"/>
 
 <!-- loio3aaa1cf65a30407da04d0755d5f92ab6 -->
 

@@ -12,7 +12,9 @@ The SAP Job Scheduling service dashboard enables you to manage jobs and tasks fo
 
 ## Prerequisites
 
-You've the `SpaceDeveloper` role. It allows you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
+You have the `SpaceDeveloper` role for Cloud Foundry or the `SAP_Job_Scheduling_Service_Admin` and `SAP_Job_Scheduling_Service_Viewer` roles for Kyma.
+
+These roles allow you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
 
 > ### Note:  
 > With only one of the BTP roles `SpaceAuditor` or `SpaceManager`, you set read-only access to the SAP Job Scheduling service dashboard for a user. All change operations in the dashboard aren’t visible.

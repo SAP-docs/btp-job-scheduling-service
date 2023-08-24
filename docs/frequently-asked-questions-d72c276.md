@@ -14,7 +14,7 @@ For more information, see [Guided Answers](https://ga.support.sap.com/dtp/viewer
 
 **What is the component to raise a ticket for issues related to the SAP Job Scheduling service?**
 
-The support component for the SAP Job Scheduling service is **BC-XS-SRV-JBS**.
+The support component for the SAP Job Scheduling service is **BC-CP-CF-JBS**.
 
 **What are the prerequisites to use the SAP Job Scheduling service?**
 

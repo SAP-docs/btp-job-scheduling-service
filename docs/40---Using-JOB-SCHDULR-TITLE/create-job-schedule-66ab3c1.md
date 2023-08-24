@@ -18,7 +18,7 @@ The job configuration settings \(Action URL, HTTP Method, User, Password, and Jo
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -55,7 +55,7 @@ Description
 <tr>
 <td valign="top">
 
- `jobId` 
+`jobId` 
 
 
 
@@ -84,7 +84,7 @@ ID of the job for which schedules are to be created.
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -151,7 +151,7 @@ Data value is passed to the job action endpoint when invoked by Job Scheduler. F
 <tr>
 <td valign="top">
 
- `description` 
+`description` 
 
 
 
@@ -181,7 +181,7 @@ Provides more details about a schedule.
 <tr>
 <td valign="top">
 
- `active` 
+`active` 
 
 
 
@@ -211,7 +211,7 @@ Activation status of the job schedule. The allowed values are true or false.
 <tr>
 <td valign="top">
 
- `startTime` 
+`startTime` 
 
 
 
@@ -241,7 +241,7 @@ Start time for the job schedule. For information about the supported formats, se
 <tr>
 <td valign="top">
 
- `endTime` 
+`endTime` 
 
 
 
@@ -282,7 +282,7 @@ For information about the supported formats, see [Date and Time Format](../20---
 <tr>
 <td valign="top">
 
- `cron` 
+`cron` 
 
 
 
@@ -312,7 +312,7 @@ Crontab pattern for triggering the schedule. For more information, see the secti
 <tr>
 <td valign="top">
 
- `time` 
+`time` 
 
 
 
@@ -344,7 +344,7 @@ If an object is used, you must specify the date and time formats as strings. For
 <tr>
 <td valign="top">
 
- `repeatInterval` 
+`repeatInterval` 
 
 
 
@@ -374,7 +374,7 @@ Used to run schedules repeatedly at some interval. Human-readable texts must com
 <tr>
 <td valign="top">
 
- `repeatAt` 
+`repeatAt` 
 
 
 
@@ -453,7 +453,7 @@ The API responds with a Location header representing the relative resource URI f
 }
 ```
 
- 
+
 
 **Related Information**  
 

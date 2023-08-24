@@ -21,7 +21,7 @@ If you use this API to create a job, the parameters must conform to the same con
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -87,7 +87,7 @@ Name of the job to be updated.
 </tr>
 </table>
 
- *Body*
+*Body*
 
 The parameters are the same as in [Create Job](create-job-2c1ecb6.md) API.
 
@@ -95,7 +95,7 @@ The parameters are the same as in [Create Job](create-job-2c1ecb6.md) API.
 
 ### Example
 
- *PUT /scheduler/jobs/newSalesOrderJob* 
+*PUT /scheduler/jobs/newSalesOrderJob* 
 
 ```
 {
@@ -183,7 +183,7 @@ If you use the API to create job, this response code appears indicating that a n
 
 The API was unable to process the request due to invalid data provided.
 
- 
+
 
 **Related Information**  
 

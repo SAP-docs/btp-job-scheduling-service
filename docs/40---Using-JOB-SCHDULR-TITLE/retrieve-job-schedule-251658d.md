@@ -18,7 +18,7 @@ The API supports pagination, if required parameters are set. If these parameters
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -84,7 +84,7 @@ ID of the job whose schedules has to be retrieved
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -233,7 +233,7 @@ The API call was successful and the schedules were retrieved.
 
 Passing invalid Job ID.
 
- 
+
 
 **Related Information**  
 

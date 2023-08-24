@@ -14,7 +14,7 @@ This API deletes all the schedules of the specified job.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -51,7 +51,7 @@ Description
 <tr>
 <td valign="top">
 
- `jobId` 
+`jobId` 
 
 
 
@@ -108,7 +108,7 @@ The API call was successful and the schedules were deleted.
 }
 ```
 
- 
+
 
 **Related Information**  
 

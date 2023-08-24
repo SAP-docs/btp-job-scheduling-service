@@ -14,7 +14,7 @@ This API activates or deactivates all the existing schedules for a job.
 
 ### Request Parameters
 
- *Path* 
+*Path* 
 
 
 <table>
@@ -51,7 +51,7 @@ Description
 <tr>
 <td valign="top">
 
- `jobId` 
+`jobId` 
 
 
 
@@ -80,7 +80,7 @@ ID of the job whose schedules are to be activated/deactivated
 </tr>
 </table>
 
- *Body* 
+*Body* 
 
 
 <table>
@@ -182,7 +182,7 @@ The API call was successful and the activation status of all the schedules were 
 }
 ```
 
- 
+
 
 **Related Information**  
 
