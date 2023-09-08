@@ -39,7 +39,7 @@ You can use the dashboard to perform the following tasks:
     > This feature is only available in the Cloud Foundry environment.
 
 
-The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html) .
+The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html).
 
 The screens available on the dashboard and their description are as below:
 
@@ -72,7 +72,7 @@ You can filter the entries in the list of available jobs by job name, subdomain,
 > 
 > In the list of available jobs or tasks, it's shown if notifications are sent for a job or a task and for which notification type \(Error, Success\).
 > 
-> For more information, see [SAP Job Scheduling Service Job Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/4ed22378e529484ab851ffa6ba17e3a4.html "This event is triggered whenever a job execution is completed.") :arrow_upper_right: and [SAP Job Scheduling Service Task Execution](https://help.sap.com/viewer/5967a369d4b74f7a9c2b91f5df8e6ab6/Cloud/en-US/227f4091062146f7a8da4a1879f308d3.html "This event is triggered whenever a task execution is completed") :arrow_upper_right:.
+> For more information, see [SAP Job Scheduling Service Job Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-job-execution?version=Cloud) and [SAP Job Scheduling Service Task Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-task-execution?version=Cloud).
 
 Choose a job or a task in the list to view its overview page and to edit it.
 
