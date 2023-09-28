@@ -23,11 +23,7 @@ These roles allow you to access the dashboard, and to create, update or delete j
 
 ## Context
 
-The service dashboard lists the available jobs or tasks.
-
-Choose a job or a task to create a schedule or to view existing schedules.
-
-You can use the dashboard to perform the following tasks:
+The service dashboard lists the available jobs or tasks. On this page, you have the following options:
 
 -   Create a schedule.
 -   Update a job \(or a task\) or a schedule.
@@ -38,6 +34,7 @@ You can use the dashboard to perform the following tasks:
     > ### Restriction:  
     > This feature is only available in the Cloud Foundry environment.
 
+-   To create a schedule or to view existing schedules, choose a job or a task in the list.
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users. The IdP provider can be used to access the service dashboard. For more information, see [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html).
 
@@ -58,14 +55,33 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
 ### Jobs/Tasks
 
-View the jobs or tasks for a specific service instance. You can create a job or a task and deactivate or delete an existing job or a task.
+-   Create a job or a task.
 
-You can filter the entries in the list of available jobs by job name, subdomain, or tenant ID.
+    > ### Note:  
+    > Relevant for your **production scenario**: To encrypt data during the communication between the SAP Job Scheduling service and the application, make sure that you use HTTPS in the URL for the action endpoint to be called when the job runs.
 
-> ### Note:  
-> The properties that are set are combined with an "and"-logic and the content is searched as a substring match \(not a pattern search\).
-> 
-> For more information, see [Retrieve Jobs](retrieve-jobs-b4d3719.md).
+-   View the jobs or tasks for a specific service instance.
+
+-   Filter the entries in the list of available jobs by job name, subdomain, or tenant ID.
+
+    > ### Note:  
+    > The properties that are set are combined with an "and"-logic and the content is searched as a substring match \(not a pattern search\).
+    > 
+    > For more information, see [Retrieve Jobs](retrieve-jobs-b4d3719.md).
+
+-   Deactivate or delete an existing job or a task.
+
+-   Choose a job or a task in the list to view its overview page and to edit it. You have the following options:
+
+    -   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
+
+        Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
+
+        For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
+
+    -   *Events:* View the history for a job/task or a schedule.
+
+
 
 > ### Tip:  
 > When you create or edit a job or a task, you can enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
@@ -73,17 +89,6 @@ You can filter the entries in the list of available jobs by job name, subdomain,
 > In the list of available jobs or tasks, it's shown if notifications are sent for a job or a task and for which notification type \(Error, Success\).
 > 
 > For more information, see [SAP Job Scheduling Service Job Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-job-execution?version=Cloud) and [SAP Job Scheduling Service Task Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-task-execution?version=Cloud).
-
-Choose a job or a task in the list to view its overview page and to edit it.
-
--   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
-
-    Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
-
-    For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
-
--   *Events:* View the history for a job/task or a schedule.
-
 
 > ### Tip:  
 > You have the following options to adjust the table columns to your preferences:

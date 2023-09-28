@@ -125,7 +125,7 @@ Kyma runtime for cross-consumption
 
 The SAP Job Scheduling service is available for the Kyma runtime for cross-consumption capabilities on public cloud infrastructure providers only.
 
-For more information, see [Create a Service Instance in SAP BTP Cockpit](../create-a-service-instance-in-sap-btp-cockpit-224a49a.md).
+For more information, see [Create a Service Instance in the Kyma Dashboard](../create-a-service-instance-in-the-kyma-dashboard-224a49a.md).
 
 
 

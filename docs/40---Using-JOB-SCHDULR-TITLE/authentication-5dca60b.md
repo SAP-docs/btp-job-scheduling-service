@@ -153,7 +153,7 @@ Depending on the type of credentials you obtain, proceed as follows:
         > ```
 
 
-    For more information, see [Create a Service Instance Using CF CLI](../30---Getting-Started/create-a-service-instance-using-cf-cli-cb56f9e.md).
+    For more information, see [Create a Service Instance Using CF CLI](../create-a-service-instance-using-cf-cli-cb56f9e.md).
 
 2.  Use the `access_token` in your request to the SAP Job Scheduling service REST API:
 
@@ -173,7 +173,7 @@ Depending on the type of credentials you obtain, proceed as follows:
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 
-[Create a Service Instance Using CF CLI](../30---Getting-Started/create-a-service-instance-using-cf-cli-cb56f9e.md "To use the SAP Job Scheduling service with action endpoints in your application or with Cloud Foundry tasks, you create an instance of the SAP Job Scheduling service with the service plan standard using the Cloud Foundry Command Line Interface (CF CLI) and bind the service instance to your application.")
+[Create a Service Instance Using CF CLI](../create-a-service-instance-using-cf-cli-cb56f9e.md "To use the SAP Job Scheduling service with action endpoints in your application or with Cloud Foundry tasks, you create an instance of the SAP Job Scheduling service with the service plan standard using the Cloud Foundry Command Line Interface (CF CLI) and bind the service instance to your application.")
 
 [Create Service Keys Using the Cloud Foundry Command Line Interface](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7de6b314b62748b9b59df5fc09dbe8fb.html "Use the Cloud Foundry Command Line Interface to create a service key.") :arrow_upper_right:
 

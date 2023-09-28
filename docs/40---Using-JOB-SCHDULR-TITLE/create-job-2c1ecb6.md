@@ -137,6 +137,9 @@ string
 
 The fully qualified URL endpoint to be called when the job runs.
 
+> ### Note:  
+> Relevant for your **production scenario**: To encrypt data during the communication between the SAP Job Scheduling service and the application, make sure that you use HTTPS in the URL for the action endpoint to be called when the job runs.
+
 
 
 </td>

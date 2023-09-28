@@ -1,7 +1,5 @@
 <!-- loio22c2df4d22cb4a05af4c9502a67597ae -->
 
-<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
-
 # What Is SAP Job Scheduling Service?
 
 Define and manage one-time and recurring jobs or Cloud Foundry tasks.
@@ -17,9 +15,9 @@ For more information, see also SAP Job Scheduling service on [SAP Discovery Cent
 > ### Tip:  
 > The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
 > 
-> -   :pencil2:: Contribute to a documentation page. This option opens a pull request on GitHub.
+> -   *Feedback* \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
 > 
-> -   <span class="SAP-icons"></span> Feedback: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> -   *Feedback* \> *Edit document*: Contribute to a documentation page. This option opens a pull request on GitHub.
 > 
 > 
 > You need a GitHub account to use these options.
@@ -324,9 +322,9 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 
 [Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps.")
 
-[Getting Started with Cloud Foundry](30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a Cloud Foundry service instance and bind it to your application.")
+[Getting Started](getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
-[Getting Started with Kyma](getting-started-with-kyma-8d30095.md "Create a service instance in Kyma.")
+ <?sap-ot O2O class="- topic/link " href="8d30095891db417f9b9351570b1679b2.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loio4b3e16d4e4d14242bdc2ab48d2aec6be_en-US/src/content/localization/en-us/22c2df4d22cb4a05af4c9502a67597ae.xml" ?> 
 
 [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
 

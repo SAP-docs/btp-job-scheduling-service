@@ -12,7 +12,7 @@ Create and grant a scope to SAP Job Scheduling service.
 
 You've created an xsuaa service instance and bound it to the application.
 
-For more information, see [Getting Started with Cloud Foundry](../30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md).
+For more information, see [Getting Started](../getting-started-02e4e8b.md).
 
 
 
@@ -50,5 +50,5 @@ For the service plan *standard*, SAP Job Scheduling service uses User Account an
 **Related Information**  
 
 
-[Update a Service Instance](https://help.sap.com/viewer/ae8e8427ecdf407790d96dad93b5f723/Cloud/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
+[Update a Service Instance](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7f926eb79a7746fd996363118cd2c2aa.html "You can update a service instance from the xsuaa service using the service broker.") :arrow_upper_right:
 

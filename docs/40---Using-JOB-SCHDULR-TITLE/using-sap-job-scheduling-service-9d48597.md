@@ -13,5 +13,5 @@ Define and manage one-time and recurring jobs using flexible schedules.
 
 [Manage Jobs with Service Dashboard](manage-jobs-with-service-dashboard-132fd06.md "The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.")
 
-[Getting Started with Cloud Foundry](../30---Getting-Started/getting-started-with-cloud-foundry-02e4e8b.md "Once you've completed the initial setup for SAP Job Scheduling service, to use the service you create a Cloud Foundry service instance and bind it to your application.")
+[Getting Started](../getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
