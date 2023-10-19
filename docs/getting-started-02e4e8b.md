@@ -9,7 +9,7 @@ For more information about SAP Job Scheduling service, see our [tutorial](https:
 **Related Information**  
 
 
-[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps.")
+[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps below.")
 
 [Using SAP Job Scheduling Service](40---Using-JOB-SCHDULR-TITLE/using-sap-job-scheduling-service-9d48597.md "Define and manage one-time and recurring jobs using flexible schedules.")
 

@@ -17,7 +17,7 @@ For more information, see also SAP Job Scheduling service on [SAP Discovery Cent
 > 
 > -   *Feedback* \> *Create issue*: Provide feedback about a documentation page. This option opens an issue on GitHub.
 > 
-> -   *Feedback* \> *Edit document*: Contribute to a documentation page. This option opens a pull request on GitHub.
+> -   *Feedback* \> *Edit page*: Contribute to a documentation page. This option opens a pull request on GitHub.
 > 
 > 
 > You need a GitHub account to use these options.
@@ -320,7 +320,7 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 **Related Information**  
 
 
-[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps.")
+[Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps below.")
 
 [Getting Started](getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
