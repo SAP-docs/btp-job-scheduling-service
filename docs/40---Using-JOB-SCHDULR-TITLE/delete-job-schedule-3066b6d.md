@@ -27,28 +27,20 @@ All related information such as job schedule configurations and logs are deleted
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job
-
-
 
 </td>
 </tr>
@@ -87,28 +71,20 @@ ID of the job
 
 scheduleId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job schedule to be deleted
-
-
 
 </td>
 </tr>

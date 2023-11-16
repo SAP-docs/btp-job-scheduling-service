@@ -95,14 +95,10 @@ A one-time or a recurring entity within a job without an action endpoint.
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -111,14 +107,10 @@ Description
 
 Schedule types
 
-
-
 </td>
 <td valign="top">
 
 Runs one-time and recurring jobs or Cloud Foundry tasks.
-
-
 
 </td>
 </tr>
@@ -127,14 +119,10 @@ Runs one-time and recurring jobs or Cloud Foundry tasks.
 
 Schedule formats
 
-
-
 </td>
 <td valign="top">
 
 Supports several flexible schedule formats.
-
-
 
 </td>
 </tr>
@@ -143,14 +131,10 @@ Supports several flexible schedule formats.
 
 Schedule lifecycle
 
-
-
 </td>
 <td valign="top">
 
 A schedule passes through three lifecycle states for each run.
-
-
 
 </td>
 </tr>

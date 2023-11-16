@@ -61,14 +61,10 @@ These are schedules that run only once. The behaviors of this schedule are descr
 
 Behavior
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -77,14 +73,10 @@ Description
 
 Schedule deactivated after a successful run or after an error
 
-
-
 </td>
 <td valign="top">
 
 After a schedule run, whether the run was successful or had an error, the schedule action logs consider the event as DEACTIVATION\_ON\_COMPLETION. The corresponding job remains active.
-
-
 
 </td>
 </tr>
@@ -93,14 +85,10 @@ After a schedule run, whether the run was successful or had an error, the schedu
 
 Schedule executed on configured time
 
-
-
 </td>
 <td valign="top">
 
 One-time schedules override the *startTime* configured at the job or schedule level.
-
-
 
 </td>
 </tr>
@@ -109,14 +97,10 @@ One-time schedules override the *startTime* configured at the job or schedule le
 
 Schedule executed immediately
 
-
-
 </td>
 <td valign="top">
 
 If time is configured in the past and the *endTime* configured for the job or the schedule level is in the future, the schedule is executed immediately.
-
-
 
 </td>
 </tr>
@@ -125,14 +109,10 @@ If time is configured in the past and the *endTime* configured for the job or th
 
 Schedule isn't executed
 
-
-
 </td>
 <td valign="top">
 
 If time is configured in the past, and *endTime* configured at the job or the schedule level is also in the past, the schedule won't be executed.
-
-
 
 </td>
 </tr>
@@ -161,14 +141,10 @@ The objective of all cloud-based services is to provide availability all the tim
 
 Schedules
 
-
-
 </th>
 <th valign="top">
 
 Behavior
-
-
 
 </th>
 </tr>
@@ -176,8 +152,6 @@ Behavior
 <td valign="top">
 
 One-time
-
-
 
 </td>
 <td valign="top">
@@ -193,8 +167,6 @@ One-time
 <td valign="top">
 
 Recurring
-
-
 
 </td>
 <td valign="top">

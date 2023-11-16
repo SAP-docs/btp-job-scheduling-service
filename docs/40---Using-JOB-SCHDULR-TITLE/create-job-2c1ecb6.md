@@ -23,28 +23,20 @@ This API creates a job by accepting one or more job schedules to be created.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,21 +45,15 @@ Description
 
 `name`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -86,28 +72,20 @@ Name of the job. Name must not contain special characters or only numbers.
 
 `description` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Provides more details about a job.
-
-
 
 </td>
 </tr>
@@ -116,21 +94,15 @@ Provides more details about a job.
 
 `action` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -149,28 +121,20 @@ The fully qualified URL endpoint to be called when the job runs.
 
 `active` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Activation status of the job \(default value is false\).
-
-
 
 </td>
 </tr>
@@ -179,28 +143,20 @@ Activation status of the job \(default value is false\).
 
 `httpMethod` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The HTTP method to be used to call the job action endpoint URL. Allowed values are “GET”, “POST” , “PUT”, and “DELETE”.
-
-
 
 </td>
 </tr>
@@ -209,28 +165,20 @@ The HTTP method to be used to call the job action endpoint URL. Allowed values a
 
 `startTime` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string/object/null
 
-
-
 </td>
 <td valign="top">
 
 Start time for the job. The scheduler respects the start time of both the schedule and the job. For more information about the supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -239,28 +187,20 @@ Start time for the job. The scheduler respects the start time of both the schedu
 
 `endTime` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string/object/null
 
-
-
 </td>
 <td valign="top">
 
 End time for the job. The scheduler respects the end time of both the schedule and the job. For more information about the supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -269,21 +209,15 @@ End time for the job. The scheduler respects the end time of both the schedule a
 
 `ansConfig`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 object
-
-
 
 </td>
 <td valign="top">
@@ -305,28 +239,20 @@ The `ansConfig` object has two boolean keys:
 
 `schedules` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 array
 
-
-
 </td>
 <td valign="top">
 
 Contains one or more job schedules to be created.
-
-
 
 </td>
 </tr>
@@ -335,8 +261,6 @@ Contains one or more job schedules to be created.
 
 The schedules array can be used to create job schedules. Each job schedule is composed of the following parameters:
 
-
-
 </td>
 </tr>
 <tr>
@@ -344,28 +268,20 @@ The schedules array can be used to create job schedules. Each job schedule is co
 
 `data` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
 Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings.
-
-
 
 </td>
 </tr>
@@ -374,28 +290,20 @@ Data value is passed to the job action endpoint when invoked by Job Scheduler. F
 
 `description` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Provides more details about a schedule.
-
-
 
 </td>
 </tr>
@@ -404,28 +312,20 @@ Provides more details about a schedule.
 
 `active` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Activation status of the job schedule. The allowed values are true or false.
-
-
 
 </td>
 </tr>
@@ -434,28 +334,20 @@ Activation status of the job schedule. The allowed values are true or false.
 
 `startTime`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string/object
 
-
-
 </td>
 <td valign="top">
 
 Start time for the job schedule. For information about the supported formats, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -464,28 +356,20 @@ Start time for the job schedule. For information about the supported formats, se
 
 `endTime` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string/object
 
-
-
 </td>
 <td valign="top">
 
 End time for the job schedule. For information about the supported formats, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -506,28 +390,20 @@ End time for the job schedule. For information about the supported formats, see 
 
 `cron` 
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Crontab pattern for triggering the schedule. For more information, see the section on [Cron Format](../20---Concepts/schedule-formats-54615f0.md#loio37af46344c4d46a9b8695d2c9775c34f).
-
-
 
 </td>
 </tr>
@@ -536,21 +412,15 @@ Crontab pattern for triggering the schedule. For more information, see the secti
 
 `time` 
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 string/object
-
-
 
 </td>
 <td valign="top">
@@ -559,8 +429,6 @@ string/object
 
 If an object is used, you must specify the date and time formats as strings. For information about the supported formats, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
 
-
-
 </td>
 </tr>
 <tr>
@@ -568,28 +436,20 @@ If an object is used, you must specify the date and time formats as strings. For
 
 `repeatInterval` 
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human readable dates. For information about the supported formats, see the section on For one-time schedules, this denotes the task execution time. You can use human-readable text to denote a specific time. Example: "3.30pm", "tomorrow at 2am". For information about human readable dates and the supported readable strings, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -598,28 +458,20 @@ Used to run schedules repeatedly at some interval. Human-readable texts must com
 
 `repeatAt` 
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 For recurring schedules, this denotes the exact time when the job schedule must run. The human readable strings must comply with the rules outlined in the section Human Readable Dates. For information about human readable dates and the supported readable strings, see the section on [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>

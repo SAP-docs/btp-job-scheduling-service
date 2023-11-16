@@ -27,28 +27,20 @@ All job configuration settings \(Action URL, HTTP Method, User, Password, and Jo
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ Description
 
 `jobId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to which scheduleId belongs
-
-
 
 </td>
 </tr>
@@ -87,28 +71,20 @@ ID of the job to which scheduleId belongs
 
 `scheduleId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the schedule that has to be updated
-
-
 
 </td>
 </tr>
@@ -126,21 +102,15 @@ ID of the schedule that has to be updated
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -149,21 +119,15 @@ Description
 
 `data`
 
-
-
 </td>
 <td valign="top">
 
 object
 
-
-
 </td>
 <td valign="top">
 
 Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings
-
-
 
 </td>
 </tr>
@@ -172,21 +136,15 @@ Data value is passed to the job action endpoint when invoked by Job Scheduler. F
 
 `description` 
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Provides more details about a schedule.
-
-
 
 </td>
 </tr>
@@ -195,21 +153,15 @@ Provides more details about a schedule.
 
 `active` 
 
-
-
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Activation status of the job schedule.The allowed values are true or false.
-
-
 
 </td>
 </tr>
@@ -218,21 +170,15 @@ Activation status of the job schedule.The allowed values are true or false.
 
 `startTime` 
 
-
-
 </td>
 <td valign="top">
 
 string/object
 
-
-
 </td>
 <td valign="top">
 
 Start time for the job schedule. For information about the supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -241,14 +187,10 @@ Start time for the job schedule. For information about the supported formats, se
 
 `endTime` 
 
-
-
 </td>
 <td valign="top">
 
 string/object
-
-
 
 </td>
 <td valign="top">
@@ -256,8 +198,6 @@ string/object
 End time for the job schedule.
 
 For information about the supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -278,21 +218,15 @@ For information about the supported formats, see [Date and Time Format](../20---
 
 `cron` 
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Crontab pattern for triggering the schedule. For more information, see [Cron Format](../20---Concepts/schedule-formats-54615f0.md#loio37af46344c4d46a9b8695d2c9775c34f).
-
-
 
 </td>
 </tr>
@@ -301,14 +235,10 @@ Crontab pattern for triggering the schedule. For more information, see [Cron For
 
 `time` 
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -317,8 +247,6 @@ For one-time schedules, this denotes the task execution time. You can use human-
 
 You may also use date string in the ISO-8601 or IETF-compliant RFC 2822 format.
 
-
-
 </td>
 </tr>
 <tr>
@@ -326,21 +254,15 @@ You may also use date string in the ISO-8601 or IETF-compliant RFC 2822 format.
 
 `repeatInterval` 
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human readable dates. For information about the supported formats, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
-
-
 
 </td>
 </tr>
@@ -349,21 +271,15 @@ Used to run schedules repeatedly at some interval. Human-readable texts must com
 
 `repeatAt` 
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 For recurring schedules, this denotes the exact time when the job schedule must run. The human readable strings must comply with the rules outlined in the section Human Readable Dates. For information about human readable dates and the supported readable strings, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
-
-
 
 </td>
 </tr>

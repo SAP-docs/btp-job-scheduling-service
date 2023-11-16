@@ -23,28 +23,20 @@ This API deletes all the schedules of the specified job.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 DataType
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,28 +45,20 @@ Description
 
 `jobId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of job whose schedules are to be deleted
-
-
 
 </td>
 </tr>

@@ -23,28 +23,20 @@ This API retrieves the details for a specified job run log.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,28 +45,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to which scheduleId belongs
-
-
 
 </td>
 </tr>
@@ -83,28 +67,20 @@ ID of the job to which scheduleId belongs
 
 scheduleId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the schedule to which runId belongs
-
-
 
 </td>
 </tr>
@@ -113,28 +89,20 @@ ID of the schedule to which runId belongs
 
 runId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the run whose logs are to be retrived
-
-
 
 </td>
 </tr>

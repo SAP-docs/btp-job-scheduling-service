@@ -17,7 +17,18 @@ You have the `SpaceDeveloper` role for Cloud Foundry or the `SAP_Job_Scheduling_
 These roles allow you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
 
 > ### Note:  
-> With only one of the BTP roles `SpaceAuditor` or `SpaceManager`, you set read-only access to the SAP Job Scheduling service dashboard for a user. All change operations in the dashboard aren’t visible.
+> With only one of the following BTP roles, you set read-only access to the SAP Job Scheduling service dashboard for a user:
+> 
+> -   `SpaceAuditor`
+> 
+> -   `SpaceManager`
+> 
+> -   `OrgManager`
+> 
+> -   `SpaceSupporter`
+> 
+> 
+> All change operations in the dashboard aren’t visible.
 
 
 
@@ -116,14 +127,10 @@ Use one of the options to access the service dashboard:
 
 Access the Dashboard
 
-
-
 </th>
 <th valign="top">
 
 Actions
-
-
 
 </th>
 </tr>
@@ -131,8 +138,6 @@ Actions
 <td valign="top">
 
 Using SAP BTP cockpit
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +161,6 @@ Using SAP BTP cockpit
 <td valign="top">
 
 Using Command Line Interface \(CLI\)
-
-
 
 </td>
 <td valign="top">

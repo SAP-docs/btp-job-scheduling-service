@@ -15,56 +15,40 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Capability
-
-
 
 </th>
 <th valign="top">
 
 Environment
 
-
-
 </th>
 <th valign="top">
 
 Title
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Action
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -73,14 +57,10 @@ Available as of
 
 Job Scheduling Service
 
-
-
 </td>
 <td valign="top">
 
 Extension Suite - Development Efficiency
-
-
 
 </td>
 <td valign="top">
@@ -94,16 +74,12 @@ Extension Suite - Development Efficiency
 
 REST API - Rate Limits
 
-
-
 </td>
 <td valign="top">
 
 When you use the REST API, rate limits are now in place. Requests may be denied. After less than one minute, you can execute the request again. A retry header is provided.
 
 In the upcoming releases, the rate limits will be enforced.
-
-
 
 </td>
 <td valign="top">
@@ -115,14 +91,10 @@ In the upcoming releases, the rate limits will be enforced.
 
 Announcement
 
-
-
 </td>
 <td valign="top">
 
 2021-12-16
-
-
 
 </td>
 </tr>
@@ -131,14 +103,10 @@ Announcement
 
 Job Scheduling Service
 
-
-
 </td>
 <td valign="top">
 
 Extension Suite - Development Efficiency
-
-
 
 </td>
 <td valign="top">
@@ -152,16 +120,12 @@ Extension Suite - Development Efficiency
 
 Behavior for missed runs during an outage
 
-
-
 </td>
 <td valign="top">
 
 If the schedule executions are delayed by more than 20 minutes, the SAP Job Scheduling service skips all missed executions except the last one which is then executed immediately.
 
 For more information, see [Skipped Schedule Executions](https://help.sap.com/viewer/07b57c2f4b944bcd8470d024723a1631/Cloud/en-US/d09664b7ae9d453e8b8a3a6e09449916.html).
-
-
 
 </td>
 <td valign="top">
@@ -173,14 +137,10 @@ For more information, see [Skipped Schedule Executions](https://help.sap.com/vie
 
 Changed
 
-
-
 </td>
 <td valign="top">
 
 2021-12-16
-
-
 
 </td>
 </tr>
@@ -189,28 +149,20 @@ Changed
 
 Job Scheduling Service
 
-
-
 </td>
 <td valign="top">
 
 Extension Suite - Development Efficiency
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry 
 
-
-
 </td>
 <td valign="top">
 
 Support for custom identity providers with platform users
-
-
 
 </td>
 <td valign="top">
@@ -218,8 +170,6 @@ Support for custom identity providers with platform users
 The SAP Job Scheduling service supports the use of custom identity providers with platform users.
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html).
-
-
 
 </td>
 <td valign="top">
@@ -231,14 +181,10 @@ For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-05-20
-
-
 
 </td>
 </tr>
@@ -247,28 +193,20 @@ New
 
 Job Scheduling Service
 
-
-
 </td>
 <td valign="top">
 
 Extension Suite - Development Efficiency
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry 
 
-
-
 </td>
 <td valign="top">
 
 CF tasks are stopped according to default asynchronous execution timeout
-
-
 
 </td>
 <td valign="top">
@@ -279,8 +217,6 @@ You can change this setting for the selected service instance on the *Configurat
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -291,14 +227,10 @@ For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2021-02-25
-
-
 
 </td>
 </tr>
@@ -307,28 +239,20 @@ New
 
 Job Scheduling Service
 
-
-
 </td>
 <td valign="top">
 
 Extension Suite - Development Efficiency
-
-
 
 </td>
 <td valign="top">
 
 Cloud Foundry 
 
-
-
 </td>
 <td valign="top">
 
 Binding level secrets
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +263,6 @@ You can use this to rotate clientsecrets by unbinding and then binding the SAP J
 
 For more information, see *Binding Level Secrets* in [SAP Job Scheduling Service REST APIs](../40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md).
 
-
-
 </td>
 <td valign="top">
 
@@ -351,14 +273,10 @@ For more information, see *Binding Level Secrets* in [SAP Job Scheduling Service
 
 New
 
-
-
 </td>
 <td valign="top">
 
 2020-12-17
-
-
 
 </td>
 </tr>

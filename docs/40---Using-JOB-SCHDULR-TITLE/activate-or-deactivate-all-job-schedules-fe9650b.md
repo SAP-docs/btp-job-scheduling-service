@@ -23,28 +23,20 @@ This API activates or deactivates all the existing schedules for a job.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -53,28 +45,20 @@ Description
 
 `jobId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job whose schedules are to be activated/deactivated
-
-
 
 </td>
 </tr>
@@ -89,28 +73,20 @@ ID of the job whose schedules are to be activated/deactivated
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -119,21 +95,15 @@ Description
 
 `activationStatus`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 boolean
-
-
 
 </td>
 <td valign="top">

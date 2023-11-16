@@ -23,14 +23,10 @@ The format is like the standard Linux cron but provides more functional flexibil
 
 Cron field \(Left to right\)
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 Year
 
-
-
 </td>
 <td valign="top">
 
 4-digit representation for year. Example: 2015
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ Year
 
 Month
 
-
-
 </td>
 <td valign="top">
 
 Numeric representation for a month. Permitted values are 1 to 12.
-
-
 
 </td>
 </tr>
@@ -71,14 +59,10 @@ Numeric representation for a month. Permitted values are 1 to 12.
 
 Day
 
-
-
 </td>
 <td valign="top">
 
 Numeric representation for day of the month with values permitted from -31 to 31. Negative values are calculated from the end of the month.
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ Numeric representation for day of the month with values permitted from -31 to 31
 
 DayOfWeek
 
-
-
 </td>
 <td valign="top">
 
 3-letter representation for day of the week. Example: mon, tue, and so on.
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ DayOfWeek
 
 Hour
 
-
-
 </td>
 <td valign="top">
 
 Numeric representation for an hour. Permitted values are 0 to 23.
-
-
 
 </td>
 </tr>
@@ -119,14 +95,10 @@ Numeric representation for an hour. Permitted values are 0 to 23.
 
 Minute
 
-
-
 </td>
 <td valign="top">
 
 Numeric representation for a minute. Permitted values are 0 to 59.
-
-
 
 </td>
 </tr>
@@ -135,14 +107,10 @@ Numeric representation for a minute. Permitted values are 0 to 59.
 
 Second
 
-
-
 </td>
 <td valign="top">
 
 Numeric representation for a second. Permitted values are 0 to 59.
-
-
 
 </td>
 </tr>
@@ -157,21 +125,15 @@ The table below displays the syntax allowed to define cron expressions:
 
 Expression
 
-
-
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -180,21 +142,15 @@ Value
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 anywhere
 
-
-
 </td>
 <td valign="top">
 
 any value
-
-
 
 </td>
 </tr>
@@ -203,21 +159,15 @@ any value
 
 \*/a
 
-
-
 </td>
 <td valign="top">
 
 anywhere
 
-
-
 </td>
 <td valign="top">
 
 any a-th value
-
-
 
 </td>
 </tr>
@@ -226,21 +176,15 @@ any a-th value
 
 a:b
 
-
-
 </td>
 <td valign="top">
 
 anywhere
 
-
-
 </td>
 <td valign="top">
 
 Values in the range a to b.
-
-
 
 </td>
 </tr>
@@ -249,21 +193,15 @@ Values in the range a to b.
 
 a:b/c
 
-
-
 </td>
 <td valign="top">
 
 anywhere
 
-
-
 </td>
 <td valign="top">
 
 Every c-th value between a and b.
-
-
 
 </td>
 </tr>
@@ -272,21 +210,15 @@ Every c-th value between a and b.
 
 a.y
 
-
-
 </td>
 <td valign="top">
 
 Day of the week
 
-
-
 </td>
 <td valign="top">
 
 On the a-th occurrence of the weekday y \(a = -5 to 5\)
-
-
 
 </td>
 </tr>
@@ -295,21 +227,15 @@ On the a-th occurrence of the weekday y \(a = -5 to 5\)
 
 a,b,c
 
-
-
 </td>
 <td valign="top">
 
 anywhere
 
-
-
 </td>
 <td valign="top">
 
 a or b or c
-
-
 
 </td>
 </tr>
@@ -325,14 +251,10 @@ a or b or c
 > 
 > Expression
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -341,14 +263,10 @@ a or b or c
 > 
 > 2015 \* \* fri 12 0 0
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Run the schedule every Friday in 2015 at 12:00.
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -357,14 +275,10 @@ a or b or c
 > 
 > \* \* 3:-2 \* 12:14 0 0
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Run every hour between 12:00 and 14:00 every day between the third and second-to-last day of the month.
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -373,14 +287,10 @@ a or b or c
 > 
 > \* \* \* -1.sun 9 0 0
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Run the schedule on the last Sunday of every month at 09:00.
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -413,22 +323,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <th valign="top">
 
         Input Token
-
-
         
         </th>
         <th valign="top">
 
         Example
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -436,22 +340,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         YYYY
-
-
         
         </td>
         <td valign="top">
         
         2015
-
-
         
         </td>
         <td valign="top">
         
         4-digit year
-
-
         
         </td>
         </tr>
@@ -459,22 +357,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         YY
-
-
         
         </td>
         <td valign="top">
         
         14
-
-
         
         </td>
         <td valign="top">
         
         2-digit year
-
-
         
         </td>
         </tr>
@@ -482,22 +374,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         Q
-
-
         
         </td>
         <td valign="top">
         
         1-4
-
-
         
         </td>
         <td valign="top">
         
         Quarter year. Sets month to first month of the quarter.
-
-
         
         </td>
         </tr>
@@ -505,22 +391,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         M MM
-
-
         
         </td>
         <td valign="top">
         
         1-12
-
-
         
         </td>
         <td valign="top">
         
         Month number
-
-
         
         </td>
         </tr>
@@ -528,22 +408,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         MMM MMMM
-
-
         
         </td>
         <td valign="top">
         
         January-Dec
-
-
         
         </td>
         <td valign="top">
         
         Month name in locale
-
-
         
         </td>
         </tr>
@@ -551,22 +425,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         D DD
-
-
         
         </td>
         <td valign="top">
         
         1-31
-
-
         
         </td>
         <td valign="top">
         
         Day of month
-
-
         
         </td>
         </tr>
@@ -574,22 +442,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         Do
-
-
         
         </td>
         <td valign="top">
         
         1st - 31st
-
-
         
         </td>
         <td valign="top">
         
         Day of month with ordinal
-
-
         
         </td>
         </tr>
@@ -597,22 +459,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         DDD DDDD
-
-
         
         </td>
         <td valign="top">
         
         1-365
-
-
         
         </td>
         <td valign="top">
         
         Day of year
-
-
         
         </td>
         </tr>
@@ -620,22 +476,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         X
-
-
         
         </td>
         <td valign="top">
         
         1410715640.579
-
-
         
         </td>
         <td valign="top">
         
         UNIX timestamp
-
-
         
         </td>
         </tr>
@@ -643,22 +493,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         x
-
-
         
         </td>
         <td valign="top">
         
         1410715640579
-
-
         
         </td>
         <td valign="top">
         
         UNIX timestamp \(ms\)
-
-
         
         </td>
         </tr>
@@ -666,22 +510,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         gggg
-
-
         
         </td>
         <td valign="top">
         
         2015
-
-
         
         </td>
         <td valign="top">
         
         Locale 4-digit week year
-
-
         
         </td>
         </tr>
@@ -689,22 +527,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         gg
-
-
         
         </td>
         <td valign="top">
         
         15
-
-
         
         </td>
         <td valign="top">
         
         Locale 2-digit week year
-
-
         
         </td>
         </tr>
@@ -712,22 +544,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         w ww
-
-
         
         </td>
         <td valign="top">
         
         1-53
-
-
         
         </td>
         <td valign="top">
         
         Locale week of the year
-
-
         
         </td>
         </tr>
@@ -735,22 +561,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         e
-
-
         
         </td>
         <td valign="top">
         
         1-7
-
-
         
         </td>
         <td valign="top">
         
         Locale day of the week
-
-
         
         </td>
         </tr>
@@ -758,22 +578,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         GGGG
-
-
         
         </td>
         <td valign="top">
         
         2015
-
-
         
         </td>
         <td valign="top">
         
         ISO 4-digit week year
-
-
         
         </td>
         </tr>
@@ -781,22 +595,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         GG
-
-
         
         </td>
         <td valign="top">
         
         15
-
-
         
         </td>
         <td valign="top">
         
         ISO 2-digit week year
-
-
         
         </td>
         </tr>
@@ -804,22 +612,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         W WW
-
-
         
         </td>
         <td valign="top">
         
         1-53
-
-
         
         </td>
         <td valign="top">
         
         ISO week of year
-
-
         
         </td>
         </tr>
@@ -827,22 +629,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         E
-
-
         
         </td>
         <td valign="top">
         
         1-7
-
-
         
         </td>
         <td valign="top">
         
         ISO day of week
-
-
         
         </td>
         </tr>
@@ -850,22 +646,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         H HH
-
-
         
         </td>
         <td valign="top">
         
         0-23
-
-
         
         </td>
         <td valign="top">
         
         24-hour time
-
-
         
         </td>
         </tr>
@@ -873,22 +663,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         h hh
-
-
         
         </td>
         <td valign="top">
         
         1-12
-
-
         
         </td>
         <td valign="top">
         
         12-hour time used with "a A"
-
-
         
         </td>
         </tr>
@@ -896,22 +680,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         a A
-
-
         
         </td>
         <td valign="top">
         
         am pm
-
-
         
         </td>
         <td valign="top">
         
         Before or after noon
-
-
         
         </td>
         </tr>
@@ -919,22 +697,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         m mm
-
-
         
         </td>
         <td valign="top">
         
         0-59
-
-
         
         </td>
         <td valign="top">
         
         Minutes
-
-
         
         </td>
         </tr>
@@ -942,22 +714,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         s ss
-
-
         
         </td>
         <td valign="top">
         
         0-59
-
-
         
         </td>
         <td valign="top">
         
         Seconds
-
-
         
         </td>
         </tr>
@@ -965,22 +731,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         S
-
-
         
         </td>
         <td valign="top">
         
         0-9
-
-
         
         </td>
         <td valign="top">
         
         Tenths of a second
-
-
         
         </td>
         </tr>
@@ -988,22 +748,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         SS
-
-
         
         </td>
         <td valign="top">
         
         0-99
-
-
         
         </td>
         <td valign="top">
         
         Hundredths of a second
-
-
         
         </td>
         </tr>
@@ -1011,22 +765,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         SSS
-
-
         
         </td>
         <td valign="top">
         
         0-999
-
-
         
         </td>
         <td valign="top">
         
         Thousandths of a second
-
-
         
         </td>
         </tr>
@@ -1034,22 +782,16 @@ You can provide date and time parameters such as startTime, endTime, or time for
         <td valign="top">
         
         Z ZZ
-
-
         
         </td>
         <td valign="top">
         
         \+12:00
-
-
         
         </td>
         <td valign="top">
         
         Offset from UTC as +-HH:mm, +-HHmm, or Z
-
-
         
         </td>
         </tr>
@@ -1063,14 +805,10 @@ You can provide date and time parameters such as startTime, endTime, or time for
         > 
         > Format
         > 
-        > 
-        > 
         > </th>
         > <th valign="top">
         > 
         > Description
-        > 
-        > 
         > 
         > </th>
         > </tr>
@@ -1079,14 +817,10 @@ You can provide date and time parameters such as startTime, endTime, or time for
         > 
         > "startTime": \{"date": "2015-10-20 04:30 +0000", "format": "YYYY-MM-DD HH:mm Z”\}
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > 4.30 UTC on 20th Oct 2015
-        > 
-        > 
         > 
         > </td>
         > </tr>
@@ -1095,14 +829,10 @@ You can provide date and time parameters such as startTime, endTime, or time for
         > 
         > "endTime": \{"date": "2015-W06-5"\}
         > 
-        > 
-        > 
         > </td>
         > <td valign="top">
         > 
         > Friday, February 06, 2015
-        > 
-        > 
         > 
         > </td>
         > </tr>

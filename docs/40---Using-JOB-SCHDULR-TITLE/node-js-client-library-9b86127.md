@@ -29,14 +29,10 @@ The following table shows all SAP Job Scheduling service APIs together with a No
 
 API
 
-
-
 </th>
 <th valign="top">
 
 Sample Code to Access the API
-
-
 
 </th>
 </tr>
@@ -44,8 +40,6 @@ Sample Code to Access the API
 <td valign="top">
 
 [Create Job](create-job-2c1ecb6.md) 
-
-
 
 </td>
 <td valign="top">
@@ -70,8 +64,6 @@ var scJob = { job: myJob };
 <td valign="top">
 
 Update Job
-
-
 
 </td>
 <td valign="top">
@@ -103,8 +95,6 @@ var req = {
 
 [Delete Job](delete-job-cd8feb7.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -129,8 +119,6 @@ var req = {
 <td valign="top">
 
 Get Job Details
-
-
 
 </td>
 <td valign="top">
@@ -169,8 +157,6 @@ var req = {
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -197,8 +183,6 @@ var req = {
 <td valign="top">
 
 Update Job Schedule
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +212,6 @@ Update Job Schedule
 
 [Delete Job Schedule](delete-job-schedule-3066b6d.md) 
 
-
-
 </td>
 <td valign="top">
 
@@ -255,8 +237,6 @@ Update Job Schedule
 
 Get all Jobs
 
-
-
 </td>
 <td valign="top">
 
@@ -280,8 +260,6 @@ Get all Jobs
 <td valign="top">
 
 Get Job Schedule Details
-
-
 
 </td>
 <td valign="top">
@@ -310,8 +288,6 @@ var req = {
 
 Get Schedules of Job
 
-
-
 </td>
 <td valign="top">
 
@@ -335,8 +311,6 @@ Get Schedules of Job
 <td valign="top">
 
 Update Run Log of Schedule
-
-
 
 </td>
 <td valign="top">
@@ -366,8 +340,6 @@ Update Run Log of Schedule
 
 Get Run Logs of Schedule
 
-
-
 </td>
 <td valign="top">
 
@@ -392,8 +364,6 @@ Get Run Logs of Schedule
 <td valign="top">
 
 [Delete All Job Schedules](delete-all-job-schedules-0aab1ab.md) 
-
-
 
 </td>
 <td valign="top">
@@ -420,8 +390,6 @@ Get Run Logs of Schedule
 
 Bulk Activation of Schedules of Job
 
-
-
 </td>
 <td valign="top">
 
@@ -446,8 +414,6 @@ var req = {
 <td valign="top">
 
 Bulk Deactivation of Schedules of Job
-
-
 
 </td>
 <td valign="top">
@@ -474,8 +440,6 @@ Bulk Deactivation of Schedules of Job
 
 Get Action Logs of Job
 
-
-
 </td>
 <td valign="top">
 
@@ -500,8 +464,6 @@ Get Action Logs of Job
 <td valign="top">
 
 Get Action Logs of Schedule
-
-
 
 </td>
 <td valign="top">
@@ -528,8 +490,6 @@ Get Action Logs of Schedule
 <td valign="top">
 
 Get Active and Inactive Job Count
-
-
 
 </td>
 <td valign="top">

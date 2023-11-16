@@ -17,84 +17,60 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Environment
-
-
 
 </th>
 <th valign="top">
 
 Title
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Lifecycle
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Line of Business
-
-
 
 </th>
 <th valign="top">
 
 Modular Business Process
 
-
-
 </th>
 <th valign="top">
 
 Product
-
-
 
 </th>
 <th valign="top">
 
 Latest Revision
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -102,8 +78,6 @@ Available as of
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -118,8 +92,6 @@ Job Scheduling Service
 
 Kyma runtime for cross-consumption
 
-
-
 </td>
 <td valign="top">
 
@@ -127,14 +99,10 @@ The SAP Job Scheduling service is available for the Kyma runtime for cross-consu
 
 For more information, see [Create a Service Instance in the Kyma Dashboard](../create-a-service-instance-in-the-kyma-dashboard-224a49a.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -146,28 +114,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -179,16 +139,12 @@ Not applicable
 
 2023-08-24
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -202,8 +158,6 @@ Job Scheduling Service
 
 Filter the list of available jobs.
 
-
-
 </td>
 <td valign="top">
 
@@ -211,14 +165,10 @@ You can now benefit from an improved user experience for the list of available j
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Retrieve Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-jobs-b4d3719.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -230,28 +180,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -263,16 +205,12 @@ Not applicable
 
 2023-07-13
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -286,8 +224,6 @@ Job Scheduling Service
 
 Send notifications using the SAP Alert Notification service for SAP BTP.
 
-
-
 </td>
 <td valign="top">
 
@@ -295,14 +231,10 @@ Enable sending notifications using the SAP Alert Notification service for SAP BT
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Create Job](../40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -314,28 +246,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -347,16 +271,12 @@ Not applicable
 
 2023-05-18
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -370,8 +290,6 @@ Job Scheduling Service
 
 Create and configure service keys to allow access to the SAP Job Scheduling service.
 
-
-
 </td>
 <td valign="top">
 
@@ -379,14 +297,10 @@ For the service plan `standard`, you can now create a service key to generate cr
 
 For more information, see [Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -398,28 +312,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -431,16 +337,12 @@ Not applicable
 
 2023-05-18
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -454,8 +356,6 @@ Job Scheduling Service
 
 Resize the table column width and use new menu options from the column header to view the full name of jobs or tasks, or only the start or the end of long names.
 
-
-
 </td>
 <td valign="top">
 
@@ -463,14 +363,10 @@ You can now adjust the width of any column in the job list table as needed. It's
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -482,28 +378,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -514,8 +402,6 @@ Not applicable
 <td valign="top">
 
 2023-02-09
-
-
 
 </td>
 </tr>

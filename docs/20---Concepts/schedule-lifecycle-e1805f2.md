@@ -13,14 +13,10 @@ The lifecycle states are described in the following table:
 
 State
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Description
 
 Scheduled
 
-
-
 </td>
 <td valign="top">
 
 The schedule has been queued for a future run.
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ The schedule has been queued for a future run.
 
 Running
 
-
-
 </td>
 <td valign="top">
 
 The schedule is currently being executed.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ The schedule is currently being executed.
 
 Completed
 
-
-
 </td>
 <td valign="top">
 
 The schedule run has been completed.
-
-
 
 </td>
 </tr>
@@ -85,21 +69,15 @@ Each combination is described in the following table:
 
 State
 
-
-
 </th>
 <th valign="top">
 
 Transitional State
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -108,21 +86,15 @@ Description
 
 Scheduled
 
-
-
 </td>
 <td valign="top">
 
 Scheduled
 
-
-
 </td>
 <td valign="top">
 
 The schedule has been queued for a future run.
-
-
 
 </td>
 </tr>
@@ -131,21 +103,15 @@ The schedule has been queued for a future run.
 
 Running
 
-
-
 </td>
 <td valign="top">
 
 Triggered
 
-
-
 </td>
 <td valign="top">
 
 The scheduler has triggered a request to the job action endpoint.
-
-
 
 </td>
 </tr>
@@ -159,14 +125,10 @@ The scheduler has triggered a request to the job action endpoint.
 
 ACK\_RECVD
 
-
-
 </td>
 <td valign="top">
 
 The application sends an “202-Accepted” message thus acknowledging the request sent by the scheduler.
-
-
 
 </td>
 </tr>
@@ -175,14 +137,10 @@ The application sends an “202-Accepted” message thus acknowledging the reque
 
 ACK\_NOT\_RECVD
 
-
-
 </td>
 <td valign="top">
 
 Even after a certain time, the application hasn't sent an “202-Accepted” message acknowledging the request sent by the scheduler.
-
-
 
 </td>
 </tr>
@@ -191,21 +149,15 @@ Even after a certain time, the application hasn't sent an “202-Accepted” mes
 
 Completed
 
-
-
 </td>
 <td valign="top">
 
 Request\_Error
 
-
-
 </td>
 <td valign="top">
 
 Error encountered while invoking the job action endpoint.
-
-
 
 </td>
 </tr>
@@ -219,14 +171,10 @@ Error encountered while invoking the job action endpoint.
 
 Success
 
-
-
 </td>
 <td valign="top">
 
 The application has successfully executed the job and has replied with a status code \(ranges from 200 to 399 except 202-ACCEPTED\) to the scheduler.
-
-
 
 </td>
 </tr>
@@ -235,14 +183,10 @@ The application has successfully executed the job and has replied with a status 
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 The application has encountered some error during the execution and has sent one of the server error codes as outlined in the HTTP protocol specification.
-
-
 
 </td>
 </tr>
@@ -251,14 +195,10 @@ The application has encountered some error during the execution and has sent one
 
 Unknown
 
-
-
 </td>
 <td valign="top">
 
 The application hasn't invoked the Job Run Log Update API to update the scheduler about the status of the job execution. The status will be set as UNKNOWN, after a configurable time interval.
-
-
 
 </td>
 </tr>
@@ -273,21 +213,15 @@ The following table helps you understand the status of actions corresponding to 
 
 State
 
-
-
 </th>
 <th valign="top">
 
 Transitional State
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -296,21 +230,15 @@ Description
 
 Scheduled
 
-
-
 </td>
 <td valign="top">
 
 Scheduled
 
-
-
 </td>
 <td valign="top">
 
 The schedule has been queued for a future run.
-
-
 
 </td>
 </tr>
@@ -319,21 +247,15 @@ The schedule has been queued for a future run.
 
 Running
 
-
-
 </td>
 <td valign="top">
 
 Triggered
 
-
-
 </td>
 <td valign="top">
 
 The scheduler has triggered a request to the cloud controller for creating Cloud Foundry tasks.
-
-
 
 </td>
 </tr>
@@ -347,14 +269,10 @@ The scheduler has triggered a request to the cloud controller for creating Cloud
 
 ACK\_RECVD
 
-
-
 </td>
 <td valign="top">
 
 The cloud controller successfully creates a task.
-
-
 
 </td>
 </tr>
@@ -363,21 +281,15 @@ The cloud controller successfully creates a task.
 
 Completed
 
-
-
 </td>
 <td valign="top">
 
 Request\_Error
 
-
-
 </td>
 <td valign="top">
 
 Error encountered while creating a Cloud Foundry task.
-
-
 
 </td>
 </tr>
@@ -391,14 +303,10 @@ Error encountered while creating a Cloud Foundry task.
 
 Success
 
-
-
 </td>
 <td valign="top">
 
 Cloud Foundry task successfully completed.
-
-
 
 </td>
 </tr>
@@ -407,14 +315,10 @@ Cloud Foundry task successfully completed.
 
 Failed
 
-
-
 </td>
 <td valign="top">
 
 Task didn't complete successfully resulting in a non-zero exit code.
-
-
 
 </td>
 </tr>
@@ -423,14 +327,10 @@ Task didn't complete successfully resulting in a non-zero exit code.
 
 Unknown
 
-
-
 </td>
 <td valign="top">
 
 Task wasn't available for SAP Job Scheduling service to fetch the status.
-
-
 
 </td>
 </tr>

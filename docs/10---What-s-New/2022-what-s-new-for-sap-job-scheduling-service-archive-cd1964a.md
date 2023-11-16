@@ -15,84 +15,60 @@
 
 Technical Component
 
-
-
 </th>
 <th valign="top">
 
 Environment
-
-
 
 </th>
 <th valign="top">
 
 Title
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Lifecycle
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Line of Business
-
-
 
 </th>
 <th valign="top">
 
 Modular Business Process
 
-
-
 </th>
 <th valign="top">
 
 Product
-
-
 
 </th>
 <th valign="top">
 
 Latest Revision
 
-
-
 </th>
 <th valign="top">
 
 Available as of
-
-
 
 </th>
 </tr>
@@ -100,8 +76,6 @@ Available as of
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -115,8 +89,6 @@ Job Scheduling Service
 
 Asynchronous requests timeout
 
-
-
 </td>
 <td valign="top">
 
@@ -124,49 +96,35 @@ The value of the Asynchronous Execution Timeout configuration parameter is now l
 
 For more information, see [Manage Jobs with Service Dashboard](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/132fd06caa75451caab9aad00fd0bc1b.html?version=Cloud).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
 
 General Availability
 
-
-
 </td>
 <td valign="top">
 
 Changed
-
-
 
 </td>
 <td valign="top">
 
 Technology
 
-
-
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -178,16 +136,12 @@ Not applicable
 
 2022-09-23
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -201,8 +155,6 @@ Job Scheduling Service
 
 REST API - Rate Limits
 
-
-
 </td>
 <td valign="top">
 
@@ -212,14 +164,10 @@ Requests can be throttled \(delayed\) and if there is a very high load also deni
 
 For more information, see [Rate Limits](https://help.sap.com/viewer/07b57c2f4b944bcd8470d024723a1631/Cloud/en-US/a9cb164c26f64b7980ca1bc4377dd87f.html).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -231,28 +179,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -264,16 +204,12 @@ Not applicable
 
 2022-02-24
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -287,8 +223,6 @@ Job Scheduling Service
 
 Automatic schedule deactivation
 
-
-
 </td>
 <td valign="top">
 
@@ -296,14 +230,10 @@ In some cases, the SAP Job Scheduling service makes schedules inactive automatic
 
 For more information, see [Frequently Asked Questions](https://help.sap.com/viewer/07b57c2f4b944bcd8470d024723a1631/Cloud/en-US/d72c276ec60c4bbe89c0b9328a926500.html).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -315,28 +245,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -348,16 +270,12 @@ Not applicable
 
 2022-02-10
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Job Scheduling Service
-
-
 
 </td>
 <td valign="top">
@@ -371,8 +289,6 @@ Job Scheduling Service
 
 Binding with certificates
 
-
-
 </td>
 <td valign="top">
 
@@ -382,14 +298,10 @@ This is the SAP-recommended way.
 
 For more information, see [Create a Service Instance Using CF CLI](https://help.sap.com/viewer/07b57c2f4b944bcd8470d024723a1631/Cloud/en-US/cb56f9efa8814a3f8276076614e8373a.html).
 
-
-
 </td>
 <td valign="top">
 
 Info only
-
-
 
 </td>
 <td valign="top">
@@ -401,28 +313,20 @@ Info only
 
 New
 
-
-
 </td>
 <td valign="top">
 
 Technology
-
-
 
 </td>
 <td valign="top">
 
 Not applicable
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -433,8 +337,6 @@ Not applicable
 <td valign="top">
 
 2022-01-27
-
-
 
 </td>
 </tr>

@@ -29,28 +29,20 @@ You can also use this API to create a job by providing a job name along with the
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -59,28 +51,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to be updated
-
-
 
 </td>
 </tr>
@@ -95,21 +79,15 @@ ID of the job to be updated
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -118,21 +96,15 @@ Description
 
 `description`
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Sets the description of the job.
-
-
 
 </td>
 </tr>
@@ -141,21 +113,15 @@ Sets the description of the job.
 
 `active`
 
-
-
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Determines if a job must be activated or deactivated.
-
-
 
 </td>
 </tr>
@@ -164,14 +130,10 @@ Determines if a job must be activated or deactivated.
 
 `action`
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -190,21 +152,15 @@ Sets the job action url.
 
 `httpMethod` 
 
-
-
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 HTTP method of the job action endpoint URL. Allowed values are “GET”, “POST”, “PUT”, and “DELETE”.
-
-
 
 </td>
 </tr>
@@ -213,21 +169,15 @@ HTTP method of the job action endpoint URL. Allowed values are “GET”, “POS
 
 `startTime` 
 
-
-
 </td>
 <td valign="top">
 
 string/object/null
 
-
-
 </td>
 <td valign="top">
 
 Start time for the job. The scheduler respects the start time of both the schedule and the job. For more information about supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -236,21 +186,15 @@ Start time for the job. The scheduler respects the start time of both the schedu
 
 `endTime` 
 
-
-
 </td>
 <td valign="top">
 
 string/object/null
 
-
-
 </td>
 <td valign="top">
 
 End time for the job. The scheduler respects the end time of both the schedule and the job. For more information about supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
-
-
 
 </td>
 </tr>
@@ -259,14 +203,10 @@ End time for the job. The scheduler respects the end time of both the schedule a
 
 `ansConfig`
 
-
-
 </td>
 <td valign="top">
 
 object
-
-
 
 </td>
 <td valign="top">

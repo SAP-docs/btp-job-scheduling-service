@@ -35,28 +35,20 @@ You can also use `jobId` or `name` as query parametes to fetch the job details.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -65,28 +57,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 number
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to be retrieved
-
-
 
 </td>
 </tr>
@@ -101,28 +85,20 @@ ID of the job to be retrieved
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -131,28 +107,20 @@ Description
 
 `displaySchedules`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Controls if the API should return all the schedule details of the job. Allowed value is true or false.
-
-
 
 </td>
 </tr>
@@ -161,28 +129,20 @@ Controls if the API should return all the schedule details of the job. Allowed v
 
 `jobId`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 number
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to be retrieved.
-
-
 
 </td>
 </tr>
@@ -191,28 +151,20 @@ ID of the job to be retrieved.
 
 `name`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Name of the job to be retrieved.
-
-
 
 </td>
 </tr>

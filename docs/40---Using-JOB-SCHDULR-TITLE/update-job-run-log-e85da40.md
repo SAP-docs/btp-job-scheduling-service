@@ -30,28 +30,20 @@ An application must call this API after completion of the asynchronous execution
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,28 +52,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to which the scheduleId belongs
-
-
 
 </td>
 </tr>
@@ -90,28 +74,20 @@ ID of the job to which the scheduleId belongs
 
 scheduleId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the schedule to which runId belongs
-
-
 
 </td>
 </tr>
@@ -120,28 +96,20 @@ ID of the schedule to which runId belongs
 
 runId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the run whose logs are to be retrieved
-
-
 
 </td>
 </tr>
@@ -156,28 +124,20 @@ ID of the run whose logs are to be retrieved
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -186,28 +146,20 @@ Description
 
 `success`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Indicates the status of the job run. Allowed values are true or false.
-
-
 
 </td>
 </tr>
@@ -216,28 +168,20 @@ Indicates the status of the job run. Allowed values are true or false.
 
 `message`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Information that accompanies the job run status.
-
-
 
 </td>
 </tr>

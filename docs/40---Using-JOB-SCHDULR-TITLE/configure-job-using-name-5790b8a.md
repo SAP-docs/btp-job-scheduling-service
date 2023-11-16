@@ -30,28 +30,20 @@ If you use this API to create a job, the parameters must conform to the same con
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -60,28 +52,20 @@ Description
 
 `name`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Name of the job to be updated.
-
-
 
 </td>
 </tr>

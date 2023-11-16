@@ -166,28 +166,20 @@ These are the general technical ranges of this service:
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Quantity
-
-
 
 </th>
 <th valign="top">
 
 Details
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
-
-
 
 </th>
 </tr>
@@ -196,28 +188,20 @@ Additional Information
 
 Minimal schedule interval
 
-
-
 </td>
 <td valign="top">
 
 5 minutes
-
-
 
 </td>
 <td valign="top">
 
 You cannot create intervals between schedules of less than 5 minutes, for example, the interval for repeating the job execution cannot be 2 minutes.
 
-
-
 </td>
 <td valign="top">
 
 [Schedule Types](20---Concepts/schedule-types-9cf8c14.md#loio9cf8c14da0144c84aac628dc56b00ffd)
-
-
 
 </td>
 </tr>
@@ -226,28 +210,20 @@ You cannot create intervals between schedules of less than 5 minutes, for exampl
 
 Synchronous requests timeout
 
-
-
 </td>
 <td valign="top">
 
 15 seconds
-
-
 
 </td>
 <td valign="top">
 
 The SAP Job Scheduling service awaits response for the synchronous job from the action endpoint for the specified duration. If the application doesn't provide a response in the specified duration, there is a timeout and the application should use asynchronous requests.
 
-
-
 </td>
 <td valign="top">
 
 [Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)
-
-
 
 </td>
 </tr>
@@ -256,21 +232,15 @@ The SAP Job Scheduling service awaits response for the synchronous job from the 
 
 Asynchronous requests timeout
 
-
-
 </td>
 <td valign="top">
 
 30 minutes
 
-
-
 </td>
 <td valign="top">
 
 The SAP Job Scheduling service awaits response for the asynchronous job from the action endpoint for the specified duration. If the application doesn't provide a response in the specified duration, there is a timeout. You can change this setting in the configuration.
-
-
 
 </td>
 <td valign="top">
@@ -279,8 +249,6 @@ The SAP Job Scheduling service awaits response for the asynchronous job from the
 
 [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
 
-
-
 </td>
 </tr>
 <tr>
@@ -288,21 +256,15 @@ The SAP Job Scheduling service awaits response for the asynchronous job from the
 
 Sending notifications
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Sending notifications using the SAP Alert Notification service for SAP BTP if a job or a task is successful or fails is only available in the Cloud Foundry environment.
-
-
 
 </td>
 <td valign="top">
@@ -310,8 +272,6 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
 
 [Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
-
-
 
 </td>
 </tr>

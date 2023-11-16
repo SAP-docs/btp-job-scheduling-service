@@ -27,28 +27,20 @@ The API supports pagination, if required parameters are set. If these parameters
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job whose schedules has to be retrieved
-
-
 
 </td>
 </tr>
@@ -93,28 +77,20 @@ ID of the job whose schedules has to be retrieved
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -123,28 +99,20 @@ Description
 
 `page_size`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 number
 
-
-
 </td>
 <td valign="top">
 
 Number of job schedules that the API retrieves. The default number is 10. If `page_size` is not set, and only `offset` is specified, the `page_size` parameter will take a default value of 10 records.
-
-
 
 </td>
 </tr>
@@ -153,28 +121,20 @@ Number of job schedules that the API retrieves. The default number is 10. If `pa
 
 `offset`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 number
 
-
-
 </td>
 <td valign="top">
 
 Number of job schedule records to skip. The default number is 1. The default `offset` is an indicator to fetch results without skipping any records.
-
-
 
 </td>
 </tr>

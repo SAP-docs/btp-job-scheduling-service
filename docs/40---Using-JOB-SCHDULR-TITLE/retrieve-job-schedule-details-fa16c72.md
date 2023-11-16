@@ -27,28 +27,20 @@ It retrieves the schedule logs if the `displayLogs` parameter is true.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ Description
 
 `jobId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to which scheduleId belongs
-
-
 
 </td>
 </tr>
@@ -87,28 +71,20 @@ ID of the job to which scheduleId belongs
 
 `scheduleId` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 ID of the schedule whose details are to be retrieved
-
-
 
 </td>
 </tr>
@@ -123,28 +99,20 @@ ID of the schedule whose details are to be retrieved
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -153,28 +121,20 @@ Description
 
 `displayLogs`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 boolean
 
-
-
 </td>
 <td valign="top">
 
 Controls whether the API should return all the generated logs for the schedule. Allowed value is true or false.
-
-
 
 </td>
 </tr>

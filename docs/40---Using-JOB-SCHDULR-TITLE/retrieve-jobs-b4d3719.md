@@ -36,28 +36,20 @@ GET /scheduler/jobs
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -66,21 +58,15 @@ Description
 
 `page_size` 
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 `number` 
-
-
 
 </td>
 <td valign="top">
@@ -89,8 +75,6 @@ Number of job schedules the API retrieves. The default number is `10`.
 
 If you haven't set `page_size` and only `offset` is specified, the `page_size` parameter takes the default value of `10` records.
 
-
-
 </td>
 </tr>
 <tr>
@@ -98,21 +82,15 @@ If you haven't set `page_size` and only `offset` is specified, the `page_size` p
 
 `offset` 
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 `number` 
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +99,6 @@ Number of job schedule records to skip. The default number is `1`.
 
 The default offset is an indicator to fetch results without skipping any records.
 
-
-
 </td>
 </tr>
 <tr>
@@ -130,28 +106,20 @@ The default offset is an indicator to fetch results without skipping any records
 
 `tenantId` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 `string` 
 
-
-
 </td>
 <td valign="top">
 
 Tenant ID upon which the job lists are filtered. This parameter applies only if the API is invoked using an access token obtained on behalf of a PaaS tenant from XSUAA.
-
-
 
 </td>
 </tr>

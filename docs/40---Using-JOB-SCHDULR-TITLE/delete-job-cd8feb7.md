@@ -27,28 +27,20 @@ It also terminates processing of all schedules \(active and inactive\) of the jo
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ Description
 
 jobId
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 ID of the job to be deleted
-
-
 
 </td>
 </tr>
