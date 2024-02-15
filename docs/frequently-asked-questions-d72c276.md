@@ -20,7 +20,7 @@ The support component for the SAP Job Scheduling service is **BC-CP-CF-JBS**.
 
 -   You need access to the SAP Job Scheduling service. Check the Cloud Foundry marketplace to see if the service is available.
 
--   For jobs with action endpoints, check if you have access and if you can create a service instance of the User Access and Authorization service \(xsuaa\). This service is available in the service marketplace.
+-   For jobs with action endpoints, check if you have access and if you can create a service instance of the User Access and Authorization service \(\). This service is available in the service marketplace.
 
 
 **What is the service level agreement \(SLA\) of a scheduled job?**
@@ -32,7 +32,7 @@ A scheduled job has a service level agreement of about 20 minutes from the sched
 Currently, the number of units selected on SAP Store indicates the number of SAP Job Scheduling service instances that can be created.
 
 > ### Example:  
-> If you opt for a value of 5, it indicates that you can create 5 instances of the SAP Job Scheduling service. For each instance, you can create 10,000 job executions.
+> If you choose a value of 5, you can create 5 instances of the SAP Job Scheduling service.
 
 
 
@@ -152,7 +152,7 @@ Multitenancy in SAP Job Scheduling service enables multitenant applications in S
 
 The SAP Job Scheduling service instance receives the credentials required to register and manage jobs when the instance of the service is bound to a multitenant application.
 
-To register a job on behalf of a tenant \(subaccount\), fetch an access token from the User Access and Authorization \(xsuaa\) service as follows:
+To register a job on behalf of a tenant \(subaccount\), fetch an access token from the User Access and Authorization \(XSUAA\) service as follows:
 
 -   Fetch clientid, clientsecret, and URL from the UAA section of the SAP Job Scheduling service instance bound with your application
 -   Use Post /oauth/token
@@ -168,9 +168,9 @@ Such jobs will provide the tenant details of the multitenant application in the 
 
 **How can I register a Job on behalf of a tenant, which has subscribed to my multitenant application?**
 
-A SAP Job Scheduling service instance bound to your multitenant application receives the credentials required to register and manage jobs. To register jobs on behalf of the tenant \(subaccount\) subscribed to your multitenant application, fetch an access token from the xsuaa service using the steps below:
+A SAP Job Scheduling service instance bound to your multitenant application receives the credentials required to register and manage jobs. To register jobs on behalf of the tenant \(subaccount\) subscribed to your multitenant application, fetch an access token from the XSUAA service using the steps below:
 
-Use the libraries provided by the xsuaa service.
+Use the libraries provided by the XSUAA service.
 
 Exchange the access token received from your logged user for a SAP Job Scheduling service token using the method **requestToken** and type as USER\_TOKEN.
 
@@ -180,9 +180,9 @@ The jobs thus created will provide the SaaS tenant \(subaccount\) details in the
 
 **How can I register a Job on behalf of a Tenant when a user is not logged on to my multitenant application?**
 
-If you want to create/delete/update/fetch a job on behalf of a SaaS tenant who has not logged on to your multitenant application, you can use client credentials flow with SaaS user subdomain. The xsuaa API to request a token with client credentials flow is mentioned at the following link: [https://docs.cloudfoundry.org/api/uaa/version/4.23.0/index.html\#client-credentials-grant](https://docs.cloudfoundry.org/api/uaa/version/4.23.0/index.html#client-credentials-grant)
+If you want to create/delete/update/fetch a job on behalf of a SaaS tenant who has not logged on to your multitenant application, you can use client credentials flow with SaaS user subdomain. The XSUAA API to request a token with client credentials flow is mentioned at the following link: [https://docs.cloudfoundry.org/api/uaa/version/4.23.0/index.html\#client-credentials-grant](https://docs.cloudfoundry.org/api/uaa/version/4.23.0/index.html#client-credentials-grant)
 
-Note that you must use **jwt** as **token\_format** \(instead of **opaque**\). You will receive a URL concatenated by **oauth/token** as described in the topic available at the link mentioned above. Further, remember that you need to replace the URL subdomain with the corresponding SaaS subdomain for which the token is requested. Using the access token that you receive, call the SAP Job Scheduling service REST API to Create Job. The access token has to be used in the header as **Authorization: Bearer**. Such created jobs will provide the SaaS tenant \(or subaccount\) details in the access token while calling the job action that you configured.
+Note that you must use **jwt** as **token\_format** \(instead of **opaque**\). You receive a URL concatenated by **oauth/token** as described in the topic available at the link mentioned above. Further, remember that you need to replace the URL subdomain with the corresponding SaaS subdomain for which the token is requested. Using the access token that you receive, call the SAP Job Scheduling service REST API to Create Job. The access token has to be used in the header as **Authorization: Bearer**. Such created jobs will provide the SaaS tenant \(or subaccount\) details in the access token while calling the job action that you configured.
 
 **How can I fetch all Jobs or a specific Job \(using id or name\) registered in my SAP Job Scheduling service instance?**
 
@@ -202,7 +202,7 @@ This will retrieve all jobs registered on behalf of the tenant with tenant ID de
 
 **Where do I find the tenant information when SAP Job Scheduling service invokes the action endpoint of the multitenant application?**
 
-The tenant information is provided in the access token sent by the SAP Job Scheduling service in the request headers while invoking the action endpoint. You may use the convenient client libraries provided by xsuaa to parse the information out of the access token. You will receive information like tenant id, subdomain, grant type and so on.
+The tenant information is provided in the access token sent by the SAP Job Scheduling service in the request headers while invoking the action endpoint. You may use the convenient client libraries provided by XSUAA to parse the information out of the access token. You will receive information like tenant id, subdomain, grant type and so on.
 
 **Which jobs does the Service Dashboard show when I launch it for a service instance from SAP BTP cockpit?**
 
