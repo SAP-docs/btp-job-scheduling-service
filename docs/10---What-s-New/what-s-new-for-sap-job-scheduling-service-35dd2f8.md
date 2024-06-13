@@ -359,7 +359,7 @@ Resize the table column width and use new menu options from the column header to
 </td>
 <td valign="top">
 
-You can now adjust the width of any column in the job list table as needed. It's now much easier to differentiate jobs with long names in the *Name* column using the :arrow_left:, :arrow_right: and the <span class="SAP-icons"></span> View Full Name menu options.
+You can now adjust the width of any column in the job list table as needed. It's now much easier to differentiate jobs with long names in the *Name* column using the :arrow_left:, :arrow_right: and the <span class="SAP-icons-V5"></span> View Full Name menu options.
 
 For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md).
 

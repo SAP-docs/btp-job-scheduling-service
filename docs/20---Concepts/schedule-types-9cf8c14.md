@@ -8,7 +8,7 @@ SAP Job Scheduling service runs one-time and recurring jobs or Cloud Foundry tas
 
 <a name="loio9cf8c14da0144c84aac628dc56b00ffd__section_wr3_p3p_d4b"/>
 
-## **One-time Schedules**
+## **One-Time Schedules**
 
 Schedules that run only once. You can create one-time schedules using any one of the following options:
 
@@ -37,9 +37,12 @@ Schedules that run periodically at specified times, dates, or intervals. You can
 
 -   **repeatInterval:** Denotes the interval between schedules in a human-readable text format \(for example, 5 minutes\).
 
-    If there is a delay, for example, because the load is very large and the run takes longer, the next run starts at a later point of time. The defined interval stays the same.
+    If a job runs longer than expected, the next job starts on time as scheduled despite the delay.
 
-    For more information, see [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78)
+    > ### Note:  
+    > For example, let's assume that you have a recurring schedule with a `repeatInterval` of 5 minutes and the first job starts at 6:00 p.m., the second job starts at 6:05 p.m., and so on. If the first job is delayed and ends at 6:07 p.m., the second job is still going to start at 6:05 p.m. as planned.
+
+    For more information, see [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
 
     > ### Example:  
     > -   "10 hours"

@@ -110,7 +110,7 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 > 
 >     -   :arrow_left:
 >     -   :arrow_right:
->     -   <span class="SAP-icons"></span> View Full Name
+>     -   <span class="SAP-icons-V5"></span> View Full Name
 > 
 >     Some jobs have long names that aren't displayed fully by default. You can choose to view the first or last part only, depending on what’s most relevant to you, or to display the full name, without changing the column width.
 

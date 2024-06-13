@@ -284,7 +284,7 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 
 [Getting Started](getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
- <?sap-ot O2O class="- topic/link " href="8d30095891db417f9b9351570b1679b2.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loio4b3e16d4e4d14242bdc2ab48d2aec6be_en-US/src/content/localization/en-us/22c2df4d22cb4a05af4c9502a67597ae.xml" output-class="" current-file="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+ <?sap-ot O2O class="- topic/link " href="8d30095891db417f9b9351570b1679b2.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loio4b3e16d4e4d14242bdc2ab48d2aec6be_en-US/src/content/localization/en-us/22c2df4d22cb4a05af4c9502a67597ae.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
 

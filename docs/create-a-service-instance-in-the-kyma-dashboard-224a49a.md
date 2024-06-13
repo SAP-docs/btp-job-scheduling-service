@@ -53,5 +53,5 @@ Your service now has a service binding. To use it, it must be mounted within you
 **Related Information**  
 
 
-[Development in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/606ec610ee4746c09d5d2bef5a85a124.html "Learn more about developing applications in the Kyma environment.") :arrow_upper_right:
+[Development in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/606ec610ee4746c09d5d2bef5a85a124.html "Learn more about developing applications in SAP BTP, Kyma runtime.") :arrow_upper_right:
 
