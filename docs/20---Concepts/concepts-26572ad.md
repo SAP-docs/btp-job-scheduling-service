@@ -161,6 +161,16 @@ You can use the service with multitenant applications developed in the context o
 </dd>
 </dl>
 
+**Security**
+
+</b></dt>
+<dd>
+
+The service has to be bound to the calling application in the same Cloud Foundry Space. Otherwise or when calling public APIs, an invalid authorization header (JWT token) will be sent which can lead to technical problems (e.g. for CAP applications).
+
+</dd>
+</dl>
+
 **Related Information**  
 
 
