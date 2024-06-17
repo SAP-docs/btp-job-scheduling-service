@@ -166,7 +166,9 @@ You can use the service with multitenant applications developed in the context o
 </b></dt>
 <dd>
 
-The service has to be bound to the calling application in the same Cloud Foundry Space. Otherwise or when calling public APIs, an invalid authorization header (JWT token) will be sent which can lead to technical problems (e.g. for CAP applications).
+You have to bind the Job Scheduling service instance to the application in the same Cloud Foundry space. When the service calls an endpoint, the request always contains the Authorization header (JWT token). To validate this token, make sure that your application is bound to the Job Scheduling service instance.
+
+For more information, see [Binding Service Instances to Applications](https://help.sap.com/docs/btp/sap-business-technology-platform/binding-service-instances-to-applications?version=Cloud).
 
 </dd>
 </dl>
