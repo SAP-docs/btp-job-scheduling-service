@@ -198,7 +198,9 @@ Unknown
 </td>
 <td valign="top">
 
-The application hasn't invoked the Job Run Log Update API to update the scheduler about the status of the job execution. The status will be set as UNKNOWN, after a configurable time interval.
+The application hasn't invoked the Update Job Run Log API to update the scheduler about the status of the job execution. The status will be set as UNKNOWN, after a configurable time interval.
+
+For more information about this API, see [Update Job Run Log](../40---Using-JOB-SCHDULR-TITLE/update-job-run-log-e85da40.md).
 
 </td>
 </tr>

@@ -52,3 +52,5 @@ Asynchronous requests are used for job runs with a large span of time.
 
 [About Cloud Foundry Tasks](https://docs.cloudfoundry.org/devguide/using-tasks.html)
 
+[SAP Job Scheduling Service REST APIs](../40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md "Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and job schedules.")
+

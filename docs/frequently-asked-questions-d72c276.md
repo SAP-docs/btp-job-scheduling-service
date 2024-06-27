@@ -210,7 +210,7 @@ The service dashboard shows the jobs created in your service instance along with
 
 **Can I create tenant-specific jobs from Service Dashboard?**
 
-No. Creating a job from service dashboard will always create a job specific to the PaaS tenant. If you are trying to create a job specific for a SaaS tenant who has subscribed to your multitenant application, you need to exchange the Jason Web Token with XSUAA and fetch a token specific for SAP Job Scheduling service \(using client\_id and client\_secret provided to your application by SAP Job Scheduling service instance binding\).
+No. Creating a job from service dashboard will always create a job specific to the PaaS tenant. If you are trying to create a job specific for a SaaS tenant who has subscribed to your multitenant application, you need to exchange the JSON Web Token \(JWT\) with XSUAA and fetch a token specific for SAP Job Scheduling service \(using client\_id and client\_secret provided to your application by SAP Job Scheduling service instance binding\).
 
 **Software as a Service Tenant**
 
