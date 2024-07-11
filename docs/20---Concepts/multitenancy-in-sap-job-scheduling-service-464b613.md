@@ -53,3 +53,8 @@ The SAP Job Scheduling service provides an administration dashboard that you can
 -   Credentials bound to the PaaS tenant are bound to theSAP Job Scheduling service instance. This means that the multitenancy provider application is allowed to ceate/read/edit/delete all jobs and schedules for the bound SAP Job Scheduling service instance without any restrictions of SaaS tenants.
 
 
+**Related Information**  
+
+
+[SAP Job Scheduling Service REST APIs](../40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md "Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and job schedules.")
+
