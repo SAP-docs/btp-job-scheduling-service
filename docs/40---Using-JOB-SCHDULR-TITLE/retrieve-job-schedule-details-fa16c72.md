@@ -6,7 +6,7 @@ This API retrieves the saved configuration settings of a specified job schedule.
 
 
 
-It retrieves the schedule logs if the `displayLogs` parameter is true.
+It also retrieves the schedule logs if the `displayLogs` parameter is true.
 
 
 
@@ -57,7 +57,7 @@ Yes
 </td>
 <td valign="top">
 
-Integer
+integer
 
 </td>
 <td valign="top">
@@ -124,7 +124,7 @@ Description
 </td>
 <td valign="top">
 
-Yes
+No
 
 </td>
 <td valign="top">
@@ -134,7 +134,9 @@ boolean
 </td>
 <td valign="top">
 
-Controls whether the API should return all the generated logs for the schedule. Allowed value is true or false.
+Controls whether the API should return the logs for the schedule. No more than 200 logs can be returned per request.
+
+Allowed value is true or false.
 
 </td>
 </tr>
@@ -156,7 +158,7 @@ GET /scheduler/jobs/3/schedules/cb5c9def-e2a0-4294-8a51-61e4db373f99?displayLogs
 
 ### Status Code: 200
 
-The call was successful and returns the details of the schedule \(and its logs, based on the request parameter\).
+The call was successful and returns the details of the schedule \(and its logs, based on the `displayLogs=true` request parameter\).
 
 
 
@@ -223,9 +225,9 @@ Passing invalid Job ID.
 
 [Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
-[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job, optionally with its schedules.")
+[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
-[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the details for a specified job schedule.")
+[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
 
@@ -239,7 +241,7 @@ Passing invalid Job ID.
 
 [Delete All Job Schedules](delete-all-job-schedules-0aab1ab.md "This API deletes all the schedules of the specified job.")
 
-[Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
+[Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
 
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+[Retrieve Jobs](retrieve-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 

@@ -66,14 +66,14 @@ You can use SAP BTP cockpit or the command line interface to access the dashboar
 If your account is missing the authorization for a service, you can grant or revoke the access rights on the login route of the corresponding landscape:
 
 ```
-https://login.<landscape.url.com>/profile
+https://uaa.<landscape.url.com>/profile
 ```
 
 For eu10, for example, the login route looks as follows:
 
 > ### Sample Code:  
 > ```
-> https://login.cf.eu10.sap.hana.ondemand.com/profile
+> https://uaa.cf.eu10.hana.ondemand.com/profile
 > ```
 
 For more information, see [Regions](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html).
@@ -219,6 +219,18 @@ No. Creating a job from service dashboard will always create a job specific to t
 You can fetch all jobs registered for a SaaS tenant using the libraries provided by XSUAA service, exchange the access token received from the logged user for the SAP Job Scheduling service token using the method requestToken and type as USER\_TOKEN.
 
 Refer the API Client library documentation for more specific details on how to obtain an access token using user\_token grant type. Using the access token received, invoke the SAP Job Scheduling service REST API to fetch all jobs. The access token has to be used in header as authorization: bearer.
+
+
+
+<a name="loiod72c276ec60c4bbe89c0b9328a926500__section_ddv_3rr_zbc"/>
+
+## REST API
+
+**Can I create a CF task using the REST API?**
+
+You cannot create CF tasks using the REST API because they are bound to a specific application. Only developers with the Space Developer role are authorized to create such tasks.
+
+If you have the Space Developer role, you can create a task in the Job Scheduling service dashboard. When you access the dashboard, go to *Tasks* and choose *Create Task*.
 
 **Related Information**  
 

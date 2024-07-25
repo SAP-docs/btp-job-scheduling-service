@@ -203,7 +203,7 @@ The SAP Job Scheduling service will automatically remove run logs 15 days after 
 **Related Information**  
 
 
-[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the details for a specified job schedule.")
+[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 <a name="loio3aaa1cf65a30407da04d0755d5f92ab6"/>
 

@@ -37,7 +37,7 @@
             -   [Activate or Deactivate All Job Schedules](40---Using-JOB-SCHDULR-TITLE/activate-or-deactivate-all-job-schedules-fe9650b.md)
             -   [Delete All Job Schedules](40---Using-JOB-SCHDULR-TITLE/delete-all-job-schedules-0aab1ab.md)
             -   [Retrieve Job Schedule Details](40---Using-JOB-SCHDULR-TITLE/retrieve-job-schedule-details-fa16c72.md)
-            -   [Retrieve Job Schedule](40---Using-JOB-SCHDULR-TITLE/retrieve-job-schedule-251658d.md)
+            -   [Retrieve Job Schedules](40---Using-JOB-SCHDULR-TITLE/retrieve-job-schedules-251658d.md)
             -   [Retrieve Jobs](40---Using-JOB-SCHDULR-TITLE/retrieve-jobs-b4d3719.md)
     -   [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
     -   [Node.js Client Library](40---Using-JOB-SCHDULR-TITLE/node-js-client-library-9b86127.md)

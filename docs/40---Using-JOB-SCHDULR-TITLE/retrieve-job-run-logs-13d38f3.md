@@ -2,11 +2,7 @@
 
 # Retrieve Job Run Logs
 
-This API retrieves the details for a specified job schedule.
-
-
-
-This API supports pagination, if required parameters are set.
+This API retrieves the run logs for a specified job schedule.
 
 
 
@@ -84,7 +80,7 @@ string
 </td>
 <td valign="top">
 
-ID of the schedule whose run-logs has to be retrieved
+ID of the schedule whose run logs have to be retrieved
 
 </td>
 </tr>
@@ -119,7 +115,7 @@ Description
 <tr>
 <td valign="top">
 
-`page_size`
+`page_size` 
 
 </td>
 <td valign="top">
@@ -134,14 +130,21 @@ integer
 </td>
 <td valign="top">
 
-Number of job run logs that the API retrieves. The default number is 10. If `page_size` is not set, and only `offset` is specified, the`page_size` parameter will take a default value of 10 records.
+Number of job run logs that the API retrieves.
+
+-   If `page_size` is not set, and only `offset` is specified, the `page_size` parameter will take the value of 10 run logs.
+
+-   If both the `page_size` and `offset` parameters are not set, the retrieved run logs are no more than 200.
+
+
+
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-offset
+`offset` 
 
 </td>
 <td valign="top">
@@ -156,7 +159,7 @@ integer
 </td>
 <td valign="top">
 
-Number of job run log records to skip. The default number is 1. The default `offset` is an indicator to fetch results without skipping any records.
+Number of job run logs to skip. The default number is 1. The default `offset` is an indicator to fetch results without skipping any run logs.
 
 </td>
 </tr>
@@ -167,7 +170,7 @@ Number of job run log records to skip. The default number is 1. The default `off
 ### Example
 
 ```
-GET /scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=5&offset=1
+GET /scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=3&offset=1
 
 ```
 
@@ -246,7 +249,7 @@ Passing invalid Job ID.
 
 [Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
-[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job, optionally with its schedules.")
+[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
 
@@ -262,9 +265,9 @@ Passing invalid Job ID.
 
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
-[Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
+[Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
 
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "Retrieve all jobs in a service instance.")
+[Retrieve Jobs](retrieve-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 
 [Action on Job Run Logs](service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916__section_RunLogs)
 

@@ -2,10 +2,7 @@
 
 # Retrieve Jobs
 
-Retrieve all jobs in a service instance.
-
-> ### Note:  
-> This API supports pagination if you’ve set the required parameters. If you haven’t set the required parameters, all jobs are fetched.
+This API retrieves all jobs in a service instance.
 
 
 
@@ -71,9 +68,9 @@ No
 </td>
 <td valign="top">
 
-Number of job schedules the API retrieves. The default number is `10`.
+Number of jobs the API retrieves.
 
-If you haven't set `page_size` and only `offset` is specified, the `page_size` parameter takes the default value of `10` records.
+If you haven't set `page_size` and only `offset` is specified, the `page_size` parameter takes the value of 10 jobs.
 
 </td>
 </tr>
@@ -95,9 +92,9 @@ No
 </td>
 <td valign="top">
 
-Number of job schedule records to skip. The default number is `1`.
+Number of jobs to skip. The default number is `1`.
 
-The default offset is an indicator to fetch results without skipping any records.
+The default offset is an indicator to fetch results without skipping any jobs.
 
 </td>
 </tr>
@@ -228,7 +225,7 @@ The "filter" query option currently can make use of the following settings:
 
 ### Status Code: 200
 
-The API call was successful and the schedules were retrieved.
+The API call was successful and the jobs were retrieved.
 
 Example:
 
@@ -282,9 +279,9 @@ The API was unable to process the request due to invalid data provided.
 
 [Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
-[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job, optionally with its schedules.")
+[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
-[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the details for a specified job schedule.")
+[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
 
@@ -300,7 +297,7 @@ The API was unable to process the request due to invalid data provided.
 
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
-[Retrieve Job Schedule](retrieve-job-schedule-251658d.md "This API retrieves schedule details for a specified job.")
+[Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
 
 [SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

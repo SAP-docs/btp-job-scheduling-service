@@ -36,3 +36,5 @@ The POST request body size is limited by 100 KB. If this limit is exceeded, the 
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 
+[Java Client Library for XS Advanced \(java-js-client\)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4505d0bdaf4948449b7f7379d24d0f0d/6511bc054b0e48369a625a8019fefd53.html?version=2.0.07#loio6511bc054b0e48369a625a8019fefd53__section_ctf_5w4_dz)
+
