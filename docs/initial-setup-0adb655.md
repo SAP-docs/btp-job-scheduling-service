@@ -30,7 +30,7 @@ You can get started with the SAP Job Scheduling service by following the steps b
 
 -   **Cloud Foundry**: Within that space, your user is assigned to the `Space Developer` role for the subaccount. You need this role to execute the configuration steps.
 
-    For more information, see [Managing Authorization in Global Accounts and Subaccounts \[Feature Set B\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0039cf082d3d43eba9200fe15647922a.html) and [Assign Role Collections](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/9e1bf57130ef466e8017eab298b40e5e.html).
+    For more information, see [Managing Authorization in Global Accounts and Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0039cf082d3d43eba9200fe15647922a.html) and [Assign Role Collections](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/9e1bf57130ef466e8017eab298b40e5e.html).
 
 -   You have the necessary roles to start the service dashboard:
 
