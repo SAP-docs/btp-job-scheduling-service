@@ -20,7 +20,7 @@ The support component for the SAP Job Scheduling service is **BC-CP-CF-JBS**.
 
 -   You need access to the SAP Job Scheduling service. Check the Cloud Foundry marketplace to see if the service is available.
 
--   For jobs with action endpoints, check if you have access and if you can create a service instance of the User Access and Authorization service \(\). This service is available in the service marketplace.
+-   For jobs with action endpoints, check if you have access and if you can create a service instance of the User Access and Authorization service \(xsuaa\). This service is available in the service marketplace.
 
 
 **What is the service level agreement \(SLA\) of a scheduled job?**
