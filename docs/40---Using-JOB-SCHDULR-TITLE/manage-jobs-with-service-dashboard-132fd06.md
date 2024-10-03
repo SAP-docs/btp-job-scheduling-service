@@ -86,6 +86,15 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
     -   *Schedules:* Create and configure schedules for a job/task. To access schedules, choose a job/task listed on the dashboard. For more information, see Schedule Types in the related information section.
 
+        > ### Tip:  
+        > Some tasks require more or less memory than the default 1GB. When you choose *Create Schedule* in the Job Scheduling service dashboard, you can adjust the memory in the *Options \(JSON\)* text field. For example, if you want to change the memory limit to 2GB, add the following:
+        > 
+        > ```
+        > {"memory_in_mb": 2048}
+        > ```
+        > 
+        > To get the full list of optional parameters you can specify when creating a Cloud Foundry task, see [https://v3-apidocs.cloudfoundry.org/version/3.176.0/index.html\#create-a-task](https://v3-apidocs.cloudfoundry.org/version/3.176.0/index.html#create-a-task).
+
         Choose a schedule to view its history and logs. To display the run logs of a schedule, choose *Run Logs*. You can download the run logs.
 
         For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).

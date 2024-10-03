@@ -126,6 +126,15 @@ If time is configured in the past, and *endTime* configured at the job or the sc
 
 If the creation of a task fails, check if the memory quota available for the space is sufficient.
 
+> ### Tip:  
+> Some tasks require more or less memory than the default 1GB. When you choose *Create Schedule* in the Job Scheduling service dashboard, you can adjust the memory in the *Options \(JSON\)* text field. For example, if you want to change the memory limit to 256MB, add the following:
+> 
+> ```
+> {"memory_in_mb": 256}
+> ```
+
+To get the full list of optional parameters you can specify when creating a Cloud Foundry task, see [https://v3-apidocs.cloudfoundry.org/version/3.176.0/index.html\#create-a-task](https://v3-apidocs.cloudfoundry.org/version/3.176.0/index.html#create-a-task).
+
 
 
 <a name="loiod09664b7ae9d453e8b8a3a6e09449916__section_sms_fw1_mbb"/>

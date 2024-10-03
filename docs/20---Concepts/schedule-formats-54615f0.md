@@ -261,6 +261,18 @@ a or b or c
 > <tr>
 > <td valign="top">
 > 
+> \* \* \* 10:12 \*/30 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Run the schedule every day between 10:00 and 12:00, every 30 minutes. The schedule is executed at 10:00, 10:30, 11:00, 11:30, 12:00, 12:30, and the next day it starts again at 10:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
 > 2015 \* \* fri 12 0 0
 > 
 > </td>
