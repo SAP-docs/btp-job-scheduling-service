@@ -341,5 +341,5 @@ Task wasn't available for SAP Job Scheduling service to fetch the status.
 **Related Information**  
 
 
-[Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md "The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.")
+[Manage Jobs, Tasks, and Schedules with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md "The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.")
 

@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Manage Jobs with Service Dashboard
+# Manage Jobs, Tasks, and Schedules with Service Dashboard
 
 The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.
 
@@ -37,8 +37,8 @@ These roles allow you to access the dashboard, and to create, update or delete j
 The service dashboard lists the available jobs or tasks. On this page, you have the following options:
 
 -   Create a schedule.
--   Update a job \(or a task\) or a schedule.
--   View the history for a job \(or a task\) or a schedule.
+-   Update a job, task, or a schedule.
+-   View the history for a job, task, or a schedule.
 -   View run logs.
 -   Enable sending notifications using the SAP Alert Notification service if a job or a task is successful or fails.
 
@@ -99,7 +99,9 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
         For more information, see [Action on Job Run Logs](https://help.sap.com/docs/JOB_SCHEDULER/07b57c2f4b944bcd8470d024723a1631/d09664b7ae9d453e8b8a3a6e09449916.html?version=Cloud#action-on-job-run-logs).
 
-    -   *Events:* View the history for a job/task or a schedule.
+        If you no longer need a schedule, you can either deactivate or delete it.
+
+    -   *Events:* View the history for a job,task, or a schedule.
 
 
 

@@ -2,6 +2,7 @@
 
 -   [What Is SAP Job Scheduling Service?](what-is-sap-job-scheduling-service-22c2df4.md#loio22c2df4d22cb4a05af4c9502a67597ae)
 -   [What's New for SAP Job Scheduling Service](10---What-s-New/what-s-new-for-sap-job-scheduling-service-35dd2f8.md)
+    -   [2023 What's New for SAP Job Scheduling Service \(Archive\)](10---What-s-New/2023-what-s-new-for-sap-job-scheduling-service-archive-8ff6481.md)
     -   [2022 What's New for SAP Job Scheduling Service \(Archive\)](10---What-s-New/2022-what-s-new-for-sap-job-scheduling-service-archive-cd1964a.md)
     -   [2021 What's New for SAP Job Scheduling Service \(Archive\)](10---What-s-New/2021-what-s-new-for-sap-job-scheduling-service-archive-78f6a4b.md)
 -   [Concepts](20---Concepts/concepts-26572ad.md)
@@ -39,7 +40,7 @@
             -   [Retrieve Job Schedule Details](40---Using-JOB-SCHDULR-TITLE/retrieve-job-schedule-details-fa16c72.md)
             -   [Retrieve Job Schedules](40---Using-JOB-SCHDULR-TITLE/retrieve-job-schedules-251658d.md)
             -   [Retrieve Jobs](40---Using-JOB-SCHDULR-TITLE/retrieve-jobs-b4d3719.md)
-    -   [Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+    -   [Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
     -   [Node.js Client Library](40---Using-JOB-SCHDULR-TITLE/node-js-client-library-9b86127.md)
     -   [Service Behavior](40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916)
         -   [Deactivated Schedules](40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loio3aaa1cf65a30407da04d0755d5f92ab6)
@@ -49,5 +50,6 @@
     -   [Credential Rotation](50---Security/credential-rotation-ed3bf28.md)
 -   [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md)
 -   [Monitoring and Troubleshooting](monitoring-and-troubleshooting-bd573bd.md)
+    -   [Troubleshooting Scenarios](troubleshooting-scenarios-b05dc8c.md)
     -   [Frequently Asked Questions](frequently-asked-questions-d72c276.md)
 

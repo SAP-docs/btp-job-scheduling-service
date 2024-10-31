@@ -36,5 +36,7 @@ If you encounter an issue with this service, we recommend that you do the follow
 **Related Information**  
 
 
+[Troubleshooting Scenarios](troubleshooting-scenarios-b05dc8c.md "Find solutions to the most common issues related to SAP Job Scheduling service.")
+
 [Frequently Asked Questions](frequently-asked-questions-d72c276.md "Find troubleshooting information in this section. We strongly recommend you use our Guided Answers for step-by-step solutions to some issues that may occur in your work with the SAP Job Scheduling service.")
 

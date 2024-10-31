@@ -169,7 +169,7 @@ Support for custom identity providers with platform users
 
 The SAP Job Scheduling service supports the use of custom identity providers with platform users.
 
-For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md) and [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html).
+For more information, see [Manage Jobs, Tasks, and Schedules with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md) and [Supported Tools and Services When Using Custom Identity Providers for Platform Users\[Feature Set A\]](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/94ef5154e384408796c035a82b043f82.html).
 
 </td>
 <td valign="top">
@@ -215,7 +215,7 @@ By default, jobs executed in an asynchronous mode are stopped if the application
 
 You can change this setting for the selected service instance on the *Configurations* page in the service dashboard.
 
-For more information, see [Manage Jobs with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md).
+For more information, see [Manage Jobs, Tasks, and Schedules with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md).
 
 </td>
 <td valign="top">

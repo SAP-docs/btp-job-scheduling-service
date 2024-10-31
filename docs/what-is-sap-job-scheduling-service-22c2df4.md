@@ -247,7 +247,7 @@ The SAP Job Scheduling service awaits response for the asynchronous job from the
 
 [Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)
 
-[Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+[Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
 
 </td>
 </tr>
@@ -269,7 +269,7 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 </td>
 <td valign="top">
 
-[Manage Jobs with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-with-service-dashboard-132fd06.md)
+[Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
 
 [Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
 

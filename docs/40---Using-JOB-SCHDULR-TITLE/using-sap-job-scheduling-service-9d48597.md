@@ -11,7 +11,7 @@ Define and manage one-time and recurring jobs using flexible schedules.
 
 [SAP Job Scheduling Service REST APIs](sap-job-scheduling-service-rest-apis-c513d2d.md "Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and job schedules.")
 
-[Manage Jobs with Service Dashboard](manage-jobs-with-service-dashboard-132fd06.md "The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.")
+[Manage Jobs, Tasks, and Schedules with Service Dashboard](manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md "The SAP Job Scheduling service dashboard enables you to manage jobs and tasks for a service instance.")
 
 [Getting Started](../getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
