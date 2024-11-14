@@ -72,5 +72,69 @@ Available as of
 
 </th>
 </tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Updated Procedure for Creating a Service Instance
+
+</td>
+<td valign="top">
+
+You no longer need to specify the `enable-xsuaa-support: true` property when creating a service instance using the SAP BTP cockpit or the CF CLI. It is now set by default.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-11-14
+
+</td>
+<td valign="top">
+
+2024-11-14
+
+</td>
+</tr>
 </table>
 

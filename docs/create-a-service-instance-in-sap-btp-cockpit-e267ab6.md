@@ -26,17 +26,11 @@ You've logged on to the SAP BTP cockpit. For more information, see [Navigate to 
 
 4.  Choose a name for your service instance, then choose *Next*.
 
-5.  To enable User Account and Authentication \(xsuaa\), in *Configure instance parameters* specify the `enable-xsuaa-support` parameter as true.
-
-    You can specify a JSON file to upload containing the parameter or enter details in JSON format as follows :
-
-    `{"enable-xsuaa-support":true}`.
-
-6.  Choose *Next* and verify the instance details. Then choose *Create*.
+5.  Choose *Next* and verify the instance details. Then choose *Create*.
 
     You've created a service instance in your Cloud Foundry Space that's now available in the service instances section.
 
-7.  Choose a deployed application that you want to bind to the new instance of SAP Job Scheduling service.
+6.  Choose a deployed application that you want to bind to the new instance of SAP Job Scheduling service.
 
     For more information, see [Binding Service Instances to Cloud Foundry Applications](https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/0e6850de6e7146c3a17b86736e80ee2e.html?q=Binding%20service%20instances%20to%20cloud%20foundry%20applications).
 

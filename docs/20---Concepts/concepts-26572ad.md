@@ -190,7 +190,7 @@ For more information, see [Binding Service Instances to Applications](https://he
 
 [Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle states for each run.")
 
-[Multitenancy in SAP Job Scheduling Service](multitenancy-in-sap-job-scheduling-service-464b613.md "The SAP Job Scheduling service allows invocation of job actions in the context of Platform-as-a-Service (PAAS) or Software-as-a-Service (SaaS) tenants.")
+[Multitenancy in SAP Job Scheduling Service](multitenancy-in-sap-job-scheduling-service-464b613.md "The SAP Job Scheduling service allows invocation of job actions in the context of Platform-as-a-Service (PaaS) or Software-as-a-Service (SaaS) tenants.")
 
 [About Cloud Foundry Tasks](https://docs.cloudfoundry.org/devguide/using-tasks.html)
 

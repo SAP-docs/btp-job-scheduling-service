@@ -32,10 +32,7 @@ We recommend that you use the service plan `standard` with certificates to bind 
 
 2.  Check the Service Marketplace to verify that the SAP Job Scheduling service service is listed: `cf marketplace`
 
-3.  Create an instance of the service: `cf create-service jobscheduler` `standard` *<instance name\>* `-c '{"enable-xsuaa-support": true}'` .
-
-    > ### Note:  
-    > Enable xsuaa by specifying the `enable-xsuaa-support` parameter as true.
+3.  Create an instance of the service: `cf create-service jobscheduler` `standard` *<instance name\>*.
 
 4.  Bind the service instance to the application using the command: `cf bind-service` *<application name\>* *<instance name\>*
 

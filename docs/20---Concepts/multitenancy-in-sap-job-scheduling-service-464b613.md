@@ -2,7 +2,7 @@
 
 # Multitenancy in SAP Job Scheduling Service
 
-The SAP Job Scheduling service allows invocation of job actions in the context of Platform-as-a-Service \(PAAS\) or Software-as-a-Service \(SaaS\) tenants.
+The SAP Job Scheduling service allows invocation of job actions in the context of Platform-as-a-Service \(PaaS\) or Software-as-a-Service \(SaaS\) tenants.
 
 This means that a deployed multitenant application can create/view/edit/delete jobs in the context of tenants, which have subscribed to it. To support a multitenancy scenario, a multitenancy provider application must be deployed and bound to instances of both the SAP SaaS Provisioning service and the SAP Job Scheduling service and define the SAP Job Scheduling service as a dependency.
 
@@ -50,7 +50,7 @@ The SAP Job Scheduling service provides an administration dashboard that you can
 
 -   Credentials bound to a SaaS tenant could be used to access SaaS tenant bound data only.
 
--   Credentials bound to the PaaS tenant are bound to theSAP Job Scheduling service instance. This means that the multitenancy provider application is allowed to ceate/read/edit/delete all jobs and schedules for the bound SAP Job Scheduling service instance without any restrictions of SaaS tenants.
+-   Credentials bound to the PaaS tenant are bound to the SAP Job Scheduling service instance. This means that the multitenancy provider application is allowed to create/read/edit/delete all jobs and schedules for the bound SAP Job Scheduling service instance without any restrictions of SaaS tenants.
 
 
 **Related Information**  

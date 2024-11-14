@@ -12,9 +12,6 @@ The SAP Job Scheduling service provides options to secure job actions with actio
 
 The SAP Authorization and Trust Management service is used to secure action endpoints in your application based on OAuth 2.0 authentication.
 
-> ### Note:  
-> When you create or update a SAP Job Scheduling service instance, set the `enable-xsuaa-support` parameter as `true`.
-
 
 
 ### OAuth 2.0 Authentication

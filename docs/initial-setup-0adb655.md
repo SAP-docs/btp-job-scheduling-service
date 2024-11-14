@@ -89,7 +89,7 @@ The following section provides an overview of the main steps you must follow:
 
     -   **Cloud Foundry**: [Binding Service Instances to Applications](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e98280a71f17413088f8a10838a1e4cc.html)
 
-    -   **Kyma**: [Using SAP BTP Services in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ea4dd81e49254dd482d32e3c20f4477a.html#loioea4dd81e49254dd482d32e3c20f4477a "With the Kyma environment, you can connect SAP BTP services to your cluster and manage them using SAP BTP Service Operator.") :arrow_upper_right:
+    -   **Kyma**: [Using SAP BTP Services in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ea4dd81e49254dd482d32e3c20f4477a.html "With the Kyma environment you can connect SAP BTP services to your cluster and manage them using the SAP BTP Operator module.") :arrow_upper_right:
 
 
 4.  Bind the SAP Job Scheduling service instance to your deployed application.
