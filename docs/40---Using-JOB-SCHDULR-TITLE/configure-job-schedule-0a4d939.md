@@ -127,7 +127,16 @@ object
 </td>
 <td valign="top">
 
-Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings
+Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings.
+
+For Cloud Foundry \(CF\) tasks, you can configure all parameters listed at [https://v3-apidocs.cloudfoundry.org/version/3.182.0/\#tasks](https://v3-apidocs.cloudfoundry.org/version/3.182.0/#tasks). For example:
+
+```
+{"memory_in_mb": 2048,
+ "disk_in_mb": 256}
+```
+
+
 
 </td>
 </tr>
@@ -347,13 +356,15 @@ The API call was successful and returns the updated schedule information.
 
 [Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
 
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
-
 [Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
+
+[Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
+
+[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
 
@@ -366,6 +377,4 @@ The API call was successful and returns the updated schedule information.
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
 [Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
-
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 

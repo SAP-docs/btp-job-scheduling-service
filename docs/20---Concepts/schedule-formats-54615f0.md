@@ -888,12 +888,20 @@ These dates and ranges are applicable for the parameters time, repeatAt, and rep
 
     > ### Example:  
     > -   "10 hours from now"
+    > 
     > -   "20 minutes from now"
+    > 
     > -   "in 2 hours"
+    > 
     > -   "tomorrow at 4pm"
+    > 
     > -   "next week monday at 5am"
+    > 
     > -   "9pm tonight"
+    > 
     > -   "3.30pm"
+    > 
+    > -   "now"
 
 -   RepeatAt
 
@@ -904,8 +912,11 @@ These dates and ranges are applicable for the parameters time, repeatAt, and rep
 
     > ### Example:  
     > -   "4.40pm"
+    > 
     > -   "18.40"
+    > 
     > -   "6.20am"
+    > 
     > -   "17.20:30"
     > 
     >     > ### Caution:  
@@ -925,7 +936,9 @@ These dates and ranges are applicable for the parameters time, repeatAt, and rep
 
     > ### Example:  
     > -   "10 hours"
+    > 
     > -   "2 days"
+    > 
     > -   "5 minutes"
 
 

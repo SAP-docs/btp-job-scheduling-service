@@ -78,7 +78,7 @@ Edit global configurations required for a specific SAP Job Scheduling service in
     > ### Note:  
     > The properties that are set are combined with an "and"-logic and the content is searched as a substring match \(not a pattern search\).
     > 
-    > For more information, see [Retrieve Jobs](retrieve-jobs-b4d3719.md).
+    > For more information, see [Retrieve All Jobs](retrieve-all-jobs-b4d3719.md).
 
 -   Deactivate or delete an existing job or a task.
 

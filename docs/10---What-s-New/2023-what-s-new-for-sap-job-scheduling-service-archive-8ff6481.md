@@ -163,7 +163,7 @@ Filter the list of available jobs.
 
 You can now benefit from an improved user experience for the list of available jobs. Filter the entries by job name, subdomain or by tenant ID. This way you can locate specific jobs more easily.
 
-For more information, see [Manage Jobs, Tasks, and Schedules with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md) and [Retrieve Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-jobs-b4d3719.md).
+For more information, see [Manage Jobs, Tasks, and Schedules with Service Dashboard](../40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md) and [Retrieve All Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-all-jobs-b4d3719.md).
 
 </td>
 <td valign="top">

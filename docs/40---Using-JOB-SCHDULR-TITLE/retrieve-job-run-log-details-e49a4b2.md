@@ -162,11 +162,13 @@ Passing invalid Job ID.
 
 [Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
 
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
-
 [Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
+[Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
+
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
+
+[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
 
@@ -181,6 +183,4 @@ Passing invalid Job ID.
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
 [Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
-
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 

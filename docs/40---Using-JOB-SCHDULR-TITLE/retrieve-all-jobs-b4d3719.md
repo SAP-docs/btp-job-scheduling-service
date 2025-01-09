@@ -1,6 +1,6 @@
 <!-- loiob4d3719173f641b583c97ff0e8f0a7fa -->
 
-# Retrieve Jobs
+# Retrieve All Jobs
 
 This API retrieves all jobs in a service instance.
 
@@ -49,6 +49,112 @@ Data Type
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+`displaySchedules` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+`boolean` 
+
+</td>
+<td valign="top">
+
+Controls whether the API should return the schedules for the job.
+
+Allowed values:
+
+-   true
+
+-   false
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`name` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+`string` 
+
+</td>
+<td valign="top">
+
+Name of the job to be retrieved
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jobId` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+`number` 
+
+</td>
+<td valign="top">
+
+ID of the job to be retrieved
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`jobType` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+`string` 
+
+</td>
+<td valign="top">
+
+Type of the job to be retrieved.
+
+Allowed values:
+
+-   HTTP\_ENDPOINT
+
+-   CF\_TASK
+
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -116,7 +222,9 @@ No
 </td>
 <td valign="top">
 
-Tenant ID upon which the job lists are filtered. This parameter applies only if the API is invoked using an access token obtained on behalf of a PaaS tenant from XSUAA.
+Tenant ID upon which the job lists are filtered.
+
+This parameter applies only if the API is invoked using an access token obtained on behalf of a PaaS tenant from XSUAA.
 
 </td>
 </tr>
@@ -277,13 +385,13 @@ The API was unable to process the request due to invalid data provided.
 
 [Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
 
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
-
 [Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
+
+[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
 

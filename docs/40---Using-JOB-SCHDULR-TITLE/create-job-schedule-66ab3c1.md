@@ -253,7 +253,7 @@ string
 </td>
 <td valign="top">
 
-For one-time schedules, this denotes the task execution time. You can use human-readable text to denote a specific time. Example: "3.30pm", "tomorrow at 2am". For information about human readable dates and the supported readable strings, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
+For one-time schedules, this denotes the task execution time. You can use human-readable text to denote a specific time. Example: "3.30pm", "tomorrow at 2am", "now". For information about human-readable dates and the supported readable strings, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
 
 If an object is used, you must specify the date and time formats as strings. For information about the supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
 
@@ -277,7 +277,7 @@ string
 </td>
 <td valign="top">
 
-Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human readable dates. For information about the supported formats, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
+Used to run schedules repeatedly at some interval. Human-readable texts must comply with the rules outlined for human-readable dates. For information about the supported formats, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
 
 </td>
 </tr>
@@ -299,7 +299,7 @@ string
 </td>
 <td valign="top">
 
-For recurring schedules, this denotes the exact time when the job schedule must run. The human readable strings must comply with the rules outlined in the section Human Readable Dates. For information about human readable dates and the supported readable strings, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
+For recurring schedules, this denotes the exact time when the job schedule must run. The human-readable strings must comply with the rules outlined in the section Human-Readable Dates. For information about human-readable dates and the supported readable strings, see [Human-Readable Date Formats](../20---Concepts/schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
 
 </td>
 </tr>
@@ -307,7 +307,16 @@ For recurring schedules, this denotes the exact time when the job schedule must 
 
 
 
-### Example
+### Examples
+
+```
+POST /scheduler/jobs/3/schedules
+{
+    "active":"true",
+    "description":"One-time schedule that will be executed immediately",
+    "time": "now"
+} 
+```
 
 ```
 PUT /scheduler/jobs/3/schedules
@@ -368,13 +377,15 @@ The API responds with a Location header representing the relative resource URI f
 
 [Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
 
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
-
 [Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
+
+[Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
+
+[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
 [Configure Job Schedule](configure-job-schedule-0a4d939.md "This API configures/updates the runtime information of a job schedule for a specified job.")
 
@@ -387,6 +398,4 @@ The API responds with a Location header representing the relative resource URI f
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
 [Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
-
-[Retrieve Jobs](retrieve-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 

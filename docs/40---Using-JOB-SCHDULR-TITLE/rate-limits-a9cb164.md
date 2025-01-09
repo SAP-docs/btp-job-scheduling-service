@@ -29,7 +29,7 @@ The following limits are available:
 -   If this limit is **fully exceeded**, the service responds with '429 - Too many requests'. A retry header is in place.
 
     > ### Note:  
-    > A 'retry-after'-header is provided. This is the number of seconds after which the same request should be executed again. See https://httpwg.org/specs/rfc7231.html\#header.retry-after.
+    > A 'retry-after'-header is provided. This is the number of seconds after which the same request should be executed again. See [https://httpwg.org/specs/rfc7231.html\#header.retry-after](https://httpwg.org/specs/rfc7231.html#header.retry-after).
 
 
 A client can be seen as a tenant.
