@@ -100,7 +100,7 @@ No, SAP Job Scheduling service does not support the Linux cron format. Only the 
 
 <a name="loiod72c276ec60c4bbe89c0b9328a926500__section_r5v_k41_bbb"/>
 
-## Schedules and their Executions
+## Schedules and Their Executions
 
 **Why is my schedule not getting triggered?**
 
@@ -127,6 +127,21 @@ This can happen if the following applies:
 This occurs in case of asynchronous jobs. SAP Job Scheduling service can access the action endpoint but the application does not update the status of the run log using Run Log Update API as expected. Thus, the job has the ACK\_NOT\_RECVD status.
 
 To resolve the issue, update your application such that it notifies SAP Job Scheduling service after processing of the job is complete.
+
+**How can I create a one-time schedule that is immediately executed using the API?**
+
+You can create a one-time schedule with the following POST request:
+
+```
+POST /scheduler/jobs/3/schedules
+{
+    "active":"true",
+    "description":"One-time schedule that will be executed immediately",
+    "time": "now"
+} 
+```
+
+For more information, see [Create Job Schedule](40---Using-JOB-SCHDULR-TITLE/create-job-schedule-66ab3c1.md).
 
 
 

@@ -65,7 +65,123 @@ string
 </td>
 <td valign="top">
 
-Name of the job to be updated.
+Name of the job to be updated
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`description`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Sets the description of the job.
+
+-   If it's not passed, the value is set to empty.
+
+-   If there is already a description, not sending the property changes the value to "".
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`active`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+boolean
+
+</td>
+<td valign="top">
+
+Determines if a job must be activated or deactivated.
+
+-   If it's not passed, the value is set to `false`.
+
+-   If the `true` value is already set, not sending the property changes the value to `false`.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`httpMethod`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+HTTP method of the job action endpoint URL. Allowed values are `GET`, `POST`, `PUT`, and `DELETE`.
+
+-   If it's not passed, the value is set to `POST`.
+
+-   If a value is already set, not sending the property changes the value to `POST`.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`endTime`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string/object/null
+
+</td>
+<td valign="top">
+
+End time for the job. The scheduler respects the end time of both the schedule and the job. For more information about supported formats, see [Date and Time Format](../20---Concepts/schedule-formats-54615f0.md#loio333e7ce070c245d0bb8493cff2e3027b).
+
+-   If it's not passed, the value is set to `null`.
+
+-   If a value is already set, not sending the property changes the value to `null`.
+
+
+
 
 </td>
 </tr>
@@ -136,8 +252,12 @@ The call was successful.
   "active": true,
   "httpMethod": "PUT",
   "description": "Sales order Job",
-  "startTime": null,
-  "endTime": null,
+  "startTime":
+    {
+      "date": "2015-10-20 04:30 +0000",
+      "format": "YYYY-MM-DD HH:mm Z"
+    },
+  "endTime": "2026-11-05T08:15:30-05:00",
   "signatureVersion": 0,
   "schedules": [
     {
@@ -178,15 +298,13 @@ The API was unable to process the request due to invalid data provided.
 
 [Delete Job](delete-job-cd8feb7.md "This API deletes a job and all its runtime information such as schedules and logs.")
 
-[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
+[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
-[Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
+[Retrieve Job Details](retrieve-job-details-815605d.md "This API retrieves the saved configuration settings of a specified job.")
 
 [Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
 
 [Retrieve Job Run Log Details](retrieve-job-run-log-details-e49a4b2.md "This API retrieves the details for a specified job run log.")
-
-[Update Job Run Log](update-job-run-log-e85da40.md "This API is used by the application to inform the Job Scheduler about the status of an asynchronous, long-running job.")
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
 
@@ -201,6 +319,8 @@ The API was unable to process the request due to invalid data provided.
 [Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
 
 [Retrieve Job Schedules](retrieve-job-schedules-251658d.md "This API retrieves all schedules for a specified job.")
+
+[Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 
 [SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

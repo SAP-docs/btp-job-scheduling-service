@@ -26,6 +26,9 @@ You've logged on to the SAP BTP cockpit. For more information, see [Navigate to 
 
 4.  Choose a name for your service instance, then choose *Next*.
 
+    > ### Note:  
+    > The SAP Job Scheduling service doesn't provide any parameters for customizing the creation of the service instance. Therefore, skip the *Parameters* step of the wizard and proceed to the *Review* step.
+
 5.  Choose *Next* and verify the instance details. Then choose *Create*.
 
     You've created a service instance in your Cloud Foundry Space that's now available in the service instances section.
