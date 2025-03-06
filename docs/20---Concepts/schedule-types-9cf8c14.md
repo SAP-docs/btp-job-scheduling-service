@@ -49,6 +49,9 @@ Schedules that run periodically at specified times, dates, or intervals. You can
     > -   "2 days"
     > -   "5 minutes"
 
+    > ### Note:  
+    > The SAP Job Scheduling service assumes that all months are 30 days long and a year consists of 365 days. If you need a job to run on the same day every month or every few months, you can use the cron format.
+
 -   **cron:** Denotes a crontab expression, which represents a set of times, that determines when the job is executed.
 
     For more information, see [Cron Format](schedule-formats-54615f0.md#loio37af46344c4d46a9b8695d2c9775c34f).
