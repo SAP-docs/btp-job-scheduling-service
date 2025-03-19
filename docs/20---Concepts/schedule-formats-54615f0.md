@@ -306,6 +306,22 @@ a or b or c
 > 
 > </td>
 > </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \*/3 10 \* 9 0 0
+> 
+> or
+> 
+> \* 3,6,9,12 10 \* 9 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Run the schedule every 3 months on the 10th day at 9:00.
+> 
+> </td>
+> </tr>
 > </table>
 
 <a name="loio333e7ce070c245d0bb8493cff2e3027b"/>
