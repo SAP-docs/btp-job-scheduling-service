@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "btp-job-scheduling-service"
+SPDX-PackageSupplier = "Hördt Sylvia (sylvia.hoerdt@sap.com)"
+SPDX-PackageDownloadLocation = "https://github.com/SAP-docs/btp-job-scheduling-service"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022-2023 SAP SE or an SAP affiliate company and btp-job-scheduling-service contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
