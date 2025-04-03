@@ -48,7 +48,7 @@ You've logged on to the SAP BTP cockpit. For more information, see [Navigate in 
 
 ## Results
 
-Your service now has a service binding. To use it, it must be mounted within your application. For more information, see [Using SAP BTP Services in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ea4dd81e49254dd482d32e3c20f4477a.html "With the Kyma environment you can connect SAP BTP services to your cluster and manage them using the SAP BTP Operator module.") :arrow_upper_right:.
+Your service now has a service binding. To use it, it must be mounted within your application. For more information, see [Using SAP BTP Services in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ea4dd81e49254dd482d32e3c20f4477a.html "With the Kyma environment, you can connect SAP BTP services to your cluster and manage them using the SAP BTP Operator module.") :arrow_upper_right:.
 
 **Related Information**  
 
