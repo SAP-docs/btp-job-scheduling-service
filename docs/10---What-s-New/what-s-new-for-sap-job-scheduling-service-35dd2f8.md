@@ -6,7 +6,7 @@
 
 
 
-**2024**
+**2024 - 25**
 
 
 <table>
@@ -71,6 +71,74 @@ Latest Revision
 Available as of
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Deletion of One-Time Schedules Not Run Within Last 30 Days
+
+</td>
+<td valign="top">
+
+As of May 29, 2025, one-time schedules will be deleted if they have not been run within the last 30 days.
+
+Action: Instead of using one-time schedules, you can run recurring schedules. See [Recurring Schedules](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/schedule-types?version=Cloud#recurring-schedules).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-05-15
+
+</td>
+<td valign="top">
+
+2025-05-29
+
+</td>
 </tr>
 <tr>
 <td valign="top">
