@@ -206,8 +206,11 @@ The call was successful and returns the details of the job \(and its schedules, 
   "startTime": null,
   "endTime": null,
   "ansConfig": {
-    "onError": true,
-    "onSuccess": false
+    "onError": true,
+    "onSuccess": false
+  },
+  "calmConfig": {
+    "enabled": true
   },
   "signatureVersion": 0,
   "active": true,
@@ -227,8 +230,6 @@ The call was successful and returns the details of the job \(and its schedules, 
     }
   ]} 
 }
-
-
 ```
 
 

@@ -89,6 +89,151 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+New Horizon Themes in the Job Scheduling Service Dashboard
+
+</td>
+<td valign="top">
+
+You can now switch to new Horizon themes in the user interface of the Job Scheduling service dashboard:
+
+-   Morning Horizon
+
+-   Evening Horizon
+
+-   Horizon High Contrast White
+
+-   Horizon High Contrast Black
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-05-29
+
+</td>
+<td valign="top">
+
+2025-05-29
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Integration with SAP Cloud ALM
+
+</td>
+<td valign="top">
+
+You can now integrate SAP Job Scheduling service with SAP Cloud ALM. This integration allows you to track the status of your job processes directly from the interface of SAP Cloud ALM.
+
+See [Integration with SAP Cloud ALM](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/integration-with-sap-cloud-alm).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-05-29
+
+</td>
+<td valign="top">
+
+2025-05-29
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Deletion of One-Time Schedules Not Run Within Last 30 Days
 
 </td>

@@ -11,3 +11,35 @@ To optimize your experience of SAP Job Scheduling service, SAP Business Technolo
 
 For more information on screen reader support and keyboard shortcuts, see [Accessibility for End Users](https://help.sap.com/docs/SAPUI5/bc5a64aac808463baa95b4230f221716/f562835d0b4e44129aa24a17551a0baa.html).
 
+
+
+<a name="loio12aa90f03da2489d8641384693c934ac__section_pfk_g3w_jfc"/>
+
+## UI Themes
+
+The following themes are currently available in the interface of the Job Scheduling service dashboard:
+
+-   Belize \(Default\)
+
+-   Belize High Contrast Black
+
+-   Belize High Contrast White
+
+-   Morning Horizon
+
+-   Evening Horizon
+
+-   Horizon High Contrast Black
+
+-   Horizon High Contrast White
+
+
+To switch to one of these themes:
+
+1.  Choose your e-mail address from the upper right-hand corner of the page.
+
+2.  From the drop-down list, choose *Change Theme*.
+
+3.  Select a theme from the list. The change is applied immediately.
+
+

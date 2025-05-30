@@ -50,7 +50,7 @@ Description
 <tr>
 <td valign="top">
 
-`name`
+`name` 
 
 </td>
 <td valign="top">
@@ -72,7 +72,7 @@ Name of the job to be updated
 <tr>
 <td valign="top">
 
-`description`
+`description` 
 
 </td>
 <td valign="top">
@@ -101,7 +101,7 @@ Sets the description of the job.
 <tr>
 <td valign="top">
 
-`active`
+`active` 
 
 </td>
 <td valign="top">
@@ -130,7 +130,7 @@ Determines if a job must be activated or deactivated.
 <tr>
 <td valign="top">
 
-`httpMethod`
+`httpMethod` 
 
 </td>
 <td valign="top">
@@ -159,7 +159,7 @@ HTTP method of the job action endpoint URL. Allowed values are `GET`, `POST`, `P
 <tr>
 <td valign="top">
 
-`endTime`
+`endTime` 
 
 </td>
 <td valign="top">
@@ -179,6 +179,65 @@ End time for the job. The scheduler respects the end time of both the schedule a
 -   If it's not passed, the value is set to `null`.
 
 -   If a value is already set, not sending the property changes the value to `null`.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ansConfig` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+object
+
+</td>
+<td valign="top">
+
+The `ansConfig` object has two boolean keys:
+
+-   `onSuccess`: On true, a success alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
+-   `onError`: On true, an error alert notification is sent to the SAP Alert Notification Service. On false, no notification is sent.
+
+> ### Restriction:  
+> This feature is only available in the Cloud Foundry environment.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`calmConfig` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+object
+
+</td>
+<td valign="top">
+
+The `calmConfig` object has the following boolean key:
+
+-   `enabled`: By default, it is set to false. On true, you can start monitoring jobs in the SAP Cloud ALM dashboard.
+
+    For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
 
 
 
@@ -207,6 +266,9 @@ The parameters are the same as in [Create Job](create-job-2c1ecb6.md) API.
   "ansConfig": {
      "onError": false,
      "onSuccess": false
+      },
+  "calmConfig": {
+     "enabled": true
       },
   "schedules": [
     {
@@ -286,6 +348,55 @@ If you use the API to create job, this response code appears indicating that a n
 ### Status Code: 400
 
 The API was unable to process the request due to invalid data provided.
+
+
+
+### Examples
+
+-   You are not allowed to leave the `calmConfig` object empty. Provide either `"enabled": true` or `"enabled": false` as properties in the request body:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'calmConfig' object cannot be empty",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'calmConfig' object cannot be empty"
+    }
+    ```
+
+-   The `enabled` key of the `calmConfig` object is of boolean type. Use `"enabled": true` or `"enabled": false` as properties in the request body:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'enabled' in 'calmConfig' must be of type 'boolean'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'enabled' in 'calmConfig' must be of type 'boolean'"
+    }
+    ```
+
+-   There is a typo or an unsupported property:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'enabled' is a required property for object 'calmConfig'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'enabled' is a required property for object 'calmConfig'"
+    }
+    ```
+
+-   There is an unsupported property:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: '<property>' is not an allowed property for object 'calmConfig'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: '<property>' is not an allowed property for object 'calmConfig'"
+    }
+    ```
+
 
 
 

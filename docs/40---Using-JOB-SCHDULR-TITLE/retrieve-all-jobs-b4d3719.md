@@ -355,8 +355,11 @@ Example:
       "jobType": "HTTP_ENDPOINT",
       "subDomain": null,
       "ansConfig": {
-        "onError": true,
-        "onSuccess": false
+        "onError": true,
+        "onSuccess": false
+      },
+      "calmConfig": {
+        "enabled": true
       },
       "createdAt": "1970-01-01 12:55:55",
       "ACTIVECOUNT": 0,

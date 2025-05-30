@@ -212,7 +212,7 @@ End time for the job. The scheduler respects the end time of both the schedule a
 <tr>
 <td valign="top">
 
-`ansConfig`
+`ansConfig` 
 
 </td>
 <td valign="top">
@@ -234,6 +234,35 @@ The `ansConfig` object has two boolean keys:
 
 > ### Restriction:  
 > This feature is only available in the Cloud Foundry environment.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`calmConfig` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+object
+
+</td>
+<td valign="top">
+
+The `calmConfig` object has the following boolean key:
+
+-   `enabled`: By default, it is set to false. On true, you can start monitoring jobs in the SAP Cloud ALM dashboard.
+
+    For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
+
 
 
 
@@ -501,6 +530,9 @@ For one-time schedules, this denotes the task execution time.
      "onError": false,
      "onSuccess": false
       },
+  "calmConfig": {
+     "enabled": true
+      },
   "schedules": [
     {
       "cron": "* * * * * */10 0",
@@ -563,6 +595,55 @@ The call was successful and the Job has been created. The API responds with a **
 ### Status Code 400
 
 The API was unable to process the request due to invalid data provided.
+
+
+
+### Examples
+
+-   You are not allowed to leave the `calmConfig` object empty. Provide either `"enabled": true` or `"enabled": false` as properties in the request body:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'calmConfig' object cannot be empty",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'calmConfig' object cannot be empty"
+    }
+    ```
+
+-   The `enabled` key of the `calmConfig` object is of boolean type. Use `"enabled": true` or `"enabled": false` as properties in the request body:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'enabled' in 'calmConfig' must be of type 'boolean'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'enabled' in 'calmConfig' must be of type 'boolean'"
+    }
+    ```
+
+-   There is a typo or an unsupported property:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: 'enabled' is a required property for object 'calmConfig'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: 'enabled' is a required property for object 'calmConfig'"
+    }
+    ```
+
+-   There is an unsupported property:
+
+    ```
+    {
+      "code": 400,
+      "message": "Error while creating job: '<property>' is not an allowed property for object 'calmConfig'",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error while creating job: '<property>' is not an allowed property for object 'calmConfig'"
+    }
+    ```
+
 
 
 

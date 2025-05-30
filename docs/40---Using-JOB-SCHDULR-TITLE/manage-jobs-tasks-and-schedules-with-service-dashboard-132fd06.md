@@ -59,7 +59,7 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
 -   *Asynchronous Execution Timeout \(s\):* This value indicates how long \(in seconds\) the SAP Job Scheduling service awaits response for the asynchronous job from the action endpoint as well as from the CF task. If the application doesn't provide a response in the specified duration, or if the CF task isn't complete in the specified duration, the run status is set to COMPLETED/UNKNOWN. For CF tasks, the task is stopped when the timeout is reached.
 
-    You can enter any number that's below or is equal to 604800 seconds.
+    You can enter any number that's below or is equal to 604800 seconds \(corresponds to 7 days\).
 
 
 
@@ -70,6 +70,9 @@ Edit global configurations required for a specific SAP Job Scheduling service in
 
     > ### Note:  
     > Relevant for your **production scenario**: To encrypt data during the communication between the SAP Job Scheduling service and the application, make sure that you use HTTPS in the URL for the action endpoint to be called when the job runs.
+
+    > ### Tip:  
+    > When creating a job or a task, you can enable monitoring with SAP Cloud ALM. For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
 
 -   View the jobs or tasks for a specific service instance.
 
