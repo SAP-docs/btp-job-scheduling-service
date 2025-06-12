@@ -19,19 +19,19 @@ For more information on screen reader support and keyboard shortcuts, see [Acces
 
 The following themes are currently available in the interface of the Job Scheduling service dashboard:
 
--   Belize \(Default\)
-
--   Belize High Contrast Black
-
--   Belize High Contrast White
-
--   Morning Horizon
+-   Morning Horizon \(Default\)
 
 -   Evening Horizon
 
 -   Horizon High Contrast Black
 
 -   Horizon High Contrast White
+
+-   Belize
+
+-   Belize High Contrast Black
+
+-   Belize High Contrast White
 
 
 To switch to one of these themes:

@@ -37,10 +37,15 @@ Schedules that run periodically at specified times, dates, or intervals. You can
 
 -   **repeatInterval:** Denotes the interval between schedules in a human-readable text format \(for example, 5 minutes\).
 
-    If a job runs longer than expected, the next job starts on time as scheduled despite the delay.
+    The next execution is based on the start time of the previous execution. If the start is delayed for some reason, the next executions are also affected.
 
-    > ### Note:  
-    > For example, let's assume that you have a recurring schedule with a `repeatInterval` of 5 minutes and the first job starts at 6:00 p.m., the second job starts at 6:05 p.m., and so on. If the first job is delayed and ends at 6:07 p.m., the second job is still going to start at 6:05 p.m. as planned.
+    > ### Example:  
+    > A schedule is planned to start at 10.00am with a `repeatInterval` of 1 hour. The start is delayed and executed at 10.02am. As a result, the start time of the next executions changes to 11.02am, 12.02pm, 13.02pm, and so on.
+
+    If a job runs longer than expected, the next job starts on time as scheduled.
+
+    > ### Example:  
+    > Let's assume that you have a recurring schedule with a `repeatInterval` of 5 minutes and the first job starts at 6.00pm, the second job starts at 6.05pm., and so on. If the first job ends at 6.07pm, the second job is still going to start at 6.05pm as planned.
 
     For more information, see [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
 

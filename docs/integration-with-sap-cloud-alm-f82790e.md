@@ -38,7 +38,7 @@ There are currently two ways to enable job monitoring with SAP Cloud ALM:
 
     3.  There are three ways to enable SAP Cloud ALM in the dashboard:
 
-        -   In the *Actions* column, choose <span class="Belize-icons"></span> \(SAP Cloud ALM Disabled\). Use the toggle button to enable SAP Cloud ALM, and choose *Save*.
+        -   In the *Actions* column, choose :desktop_computer:. Use the toggle button to enable SAP Cloud ALM, and choose *Save*.
 
         -   Choose *Create Job* or *Create Task*, respectively. Use the toggle button to enable SAP Cloud ALM.
 

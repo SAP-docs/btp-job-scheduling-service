@@ -89,6 +89,72 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+New Default UI Theme
+
+</td>
+<td valign="top">
+
+*Morning Horizon* replaces *Belize* as the default UI theme of the Job Scheduling service dashboard.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-09
+
+</td>
+<td valign="top">
+
+2025-06-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 New Horizon Themes in the Job Scheduling Service Dashboard
 
 </td>

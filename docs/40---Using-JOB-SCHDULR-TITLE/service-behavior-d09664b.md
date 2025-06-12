@@ -50,7 +50,7 @@ Schedule \(ID:2\): The SAP Job Scheduling service executes the last missed execu
 
 <a name="loiod09664b7ae9d453e8b8a3a6e09449916__section_o5j_2w1_mbb"/>
 
-## Behavior of One-time Schedules
+## Behavior of One-Time Schedules
 
 These are schedules that run only once. The behaviors of this schedule are described in the following table:
 
@@ -117,6 +117,8 @@ If time is configured in the past, and *endTime* configured at the job or the sc
 </td>
 </tr>
 </table>
+
+For more information about one-time schedules, see [Schedule Types](../20---Concepts/schedule-types-9cf8c14.md#loio9cf8c14da0144c84aac628dc56b00ffd).
 
 
 
