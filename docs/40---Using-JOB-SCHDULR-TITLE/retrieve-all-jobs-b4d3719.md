@@ -53,37 +53,6 @@ Description
 <tr>
 <td valign="top">
 
-`displaySchedules` 
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-`boolean` 
-
-</td>
-<td valign="top">
-
-Controls whether the API should return the schedules for the job.
-
-Allowed values:
-
--   true
-
--   false
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `name` 
 
 </td>
