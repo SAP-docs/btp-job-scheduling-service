@@ -74,7 +74,7 @@ Schedules that run periodically at specified times, dates, or intervals. You can
 **Related Information**  
 
 
-[Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle states for each run.")
+[Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle statuses for each run.")
 
 [Service Behavior](../40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916 "This topic helps you understand and analyze the behavior of the SAP Job Scheduling service under specific situations.")
 

@@ -2,16 +2,16 @@
 
 # Schedule Lifecycle
 
-A schedule passes through three lifecycle states for each run.
+A schedule passes through three lifecycle statuses for each run.
 
-The lifecycle states are described in the following table:
+The lifecycle statuses are described in the following table:
 
 
 <table>
 <tr>
 <th valign="top">
 
-State
+Status
 
 </th>
 <th valign="top">
@@ -23,7 +23,7 @@ Description
 <tr>
 <td valign="top">
 
-Scheduled
+SCHEDULED
 
 </td>
 <td valign="top">
@@ -35,7 +35,7 @@ The schedule has been queued for a future run.
 <tr>
 <td valign="top">
 
-Running
+RUNNING
 
 </td>
 <td valign="top">
@@ -47,7 +47,7 @@ The schedule is currently being executed.
 <tr>
 <td valign="top">
 
-Completed
+COMPLETED
 
 </td>
 <td valign="top">
@@ -58,7 +58,7 @@ The schedule run has been completed.
 </tr>
 </table>
 
-Each lifecycle state has a transitional state. The combination of these states helps you analyze and understand the schedule run. You can view the state details corresponding to a schedule in the schedule logs.
+Each lifecycle status has a transitional state. Their combination helps you analyze and understand the schedule run. You can view the lifecycle details corresponding to a schedule in the schedule logs.
 
 Each combination is described in the following table:
 
@@ -67,7 +67,7 @@ Each combination is described in the following table:
 <tr>
 <th valign="top">
 
-State
+Status
 
 </th>
 <th valign="top">
@@ -84,12 +84,12 @@ Description
 <tr>
 <td valign="top">
 
-Scheduled
+SCHEDULED
 
 </td>
 <td valign="top">
 
-Scheduled
+SCHEDULED
 
 </td>
 <td valign="top">
@@ -99,14 +99,14 @@ The schedule has been queued for a future run.
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="3">
 
-Running
+RUNNING
 
 </td>
 <td valign="top">
 
-Triggered
+TRIGGERED
 
 </td>
 <td valign="top">
@@ -116,11 +116,6 @@ The scheduler has triggered a request to the job action endpoint.
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="2">
-
-
-
-</td>
 <td valign="top">
 
 ACK\_RECVD
@@ -128,7 +123,7 @@ ACK\_RECVD
 </td>
 <td valign="top">
 
-The application sends an “202-Accepted” message thus acknowledging the request sent by the scheduler.
+The application sends an “202 Accepted” message thus acknowledging the request sent by the scheduler.
 
 </td>
 </tr>
@@ -140,19 +135,19 @@ ACK\_NOT\_RECVD
 </td>
 <td valign="top">
 
-Even after a certain time, the application hasn't sent an “202-Accepted” message acknowledging the request sent by the scheduler.
+Even after a certain time, the application hasn't sent an “202 Accepted” message acknowledging the request sent by the scheduler.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="4">
 
-Completed
+COMPLETED
 
 </td>
 <td valign="top">
 
-Request\_Error
+REQUEST\_ERROR
 
 </td>
 <td valign="top">
@@ -162,26 +157,21 @@ Error encountered while invoking the job action endpoint.
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top">
 
-
+SUCCESS
 
 </td>
 <td valign="top">
 
-Success
-
-</td>
-<td valign="top">
-
-The application has successfully executed the job and has replied with a status code \(ranges from 200 to 399 except 202-ACCEPTED\) to the scheduler.
+The application has successfully executed the job and has replied with a status code \(ranges from 200 to 399 except 202 Accepted\) to the scheduler.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Error
+ERROR
 
 </td>
 <td valign="top">
@@ -193,7 +183,7 @@ The application has encountered some error during the execution and has sent one
 <tr>
 <td valign="top">
 
-Unknown
+UNKNOWN
 
 </td>
 <td valign="top">
@@ -213,7 +203,7 @@ The following table helps you understand the status of actions corresponding to 
 <tr>
 <th valign="top">
 
-State
+Status
 
 </th>
 <th valign="top">
@@ -230,12 +220,12 @@ Description
 <tr>
 <td valign="top">
 
-Scheduled
+SCHEDULED
 
 </td>
 <td valign="top">
 
-Scheduled
+SCHEDULED
 
 </td>
 <td valign="top">
@@ -245,14 +235,14 @@ The schedule has been queued for a future run.
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" rowspan="2">
 
-Running
+RUNNING
 
 </td>
 <td valign="top">
 
-Triggered
+TRIGGERED
 
 </td>
 <td valign="top">
@@ -262,11 +252,6 @@ The scheduler has triggered a request to the cloud controller for creating Cloud
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-
-
-</td>
 <td valign="top">
 
 ACK\_RECVD
@@ -279,31 +264,14 @@ The cloud controller successfully creates a task.
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-Completed
-
-</td>
-<td valign="top">
-
-Request\_Error
-
-</td>
-<td valign="top">
-
-Error encountered while creating a Cloud Foundry task.
-
-</td>
-</tr>
-<tr>
 <td valign="top" rowspan="3">
 
-
+COMPLETED
 
 </td>
 <td valign="top">
 
-Success
+SUCCESS
 
 </td>
 <td valign="top">
@@ -315,7 +283,7 @@ Cloud Foundry task successfully completed.
 <tr>
 <td valign="top">
 
-Failed
+ERROR
 
 </td>
 <td valign="top">
@@ -327,12 +295,12 @@ Task didn't complete successfully resulting in a non-zero exit code.
 <tr>
 <td valign="top">
 
-Unknown
+TIMEOUT
 
 </td>
 <td valign="top">
 
-Task wasn't available for SAP Job Scheduling service to fetch the status.
+Task didn't end within the configured execution timeframe.
 
 </td>
 </tr>

@@ -29,7 +29,7 @@ Run the SAP Job Scheduling service only in the UTC time zone.
 
 ## POST Request Body Size Limit
 
-The POST request body size is limited by 100 KB. If this limit is exceeded, the HTTP response code 400 “request entity too large” is returned.
+The POST request body size is limited by 100 KB. If this limit is exceeded, the HTTP response code 413 “request entity too large” is returned.
 
 **Related Information**  
 

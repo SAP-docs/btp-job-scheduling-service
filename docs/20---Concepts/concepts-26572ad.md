@@ -134,7 +134,7 @@ Schedule lifecycle
 </td>
 <td valign="top">
 
-A schedule passes through three lifecycle states for each run.
+A schedule passes through three lifecycle statuses for each run.
 
 </td>
 </tr>
@@ -188,7 +188,7 @@ For more information, see [Binding Service Instances to Applications](https://he
 
 [Schedule Formats](schedule-formats-54615f0.md#loio54615f087cca45c48f81ce4967c6f7f3 "The SAP Job Scheduling service supports several scheduling formats.")
 
-[Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle states for each run.")
+[Schedule Lifecycle](schedule-lifecycle-e1805f2.md "A schedule passes through three lifecycle statuses for each run.")
 
 [Multitenancy in SAP Job Scheduling Service](multitenancy-in-sap-job-scheduling-service-464b613.md "The SAP Job Scheduling service allows invocation of job actions in the context of Platform-as-a-Service (PaaS) or Software-as-a-Service (SaaS) tenants.")
 

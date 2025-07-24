@@ -89,6 +89,88 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+New Resource Tags for Job Execution and Task Execution Service Events
+
+</td>
+<td valign="top">
+
+The following new resource tags and their respective values are added to the list of event properties that can be matched by SAP Alert Notification service for SAP BTP:
+
+-   `runStatus`
+
+-   `runState`
+
+-   `scheduleDescription`
+
+
+See:
+
+-   [SAP Job Scheduling Service Job Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-job-execution)
+
+-   [SAP Job Scheduling Service Task Execution](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/jobscheduler-task-execution)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-24
+
+</td>
+<td valign="top">
+
+2025-07-24
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 New Default UI Theme
 
 </td>

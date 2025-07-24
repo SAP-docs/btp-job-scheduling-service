@@ -87,7 +87,7 @@ After you choose one of these two enabling options and complete its steps, you c
 
 [Supported Solutions](https://help.sap.com/docs/cloud-alm/setup-administration/supported-solutions)
 
-[Monitoring SAP Job Scheduling Service Jobs](https://support.sap.com/en/alm/sap-cloud-alm/operations/expert-portal/job-monitoring/sap-btp-job-scheduling-service-paas.html)
-
 [Job & Automation Monitoring](https://support.sap.com/en/alm/sap-cloud-alm/operations/expert-portal/job-monitoring.html)
+
+[Integration Scenarios](integration-scenarios-faeec3a.md "You can integrate SAP Job Scheduling service with other solutions and services for improved flexibility, scalability, and efficiency.")
 
