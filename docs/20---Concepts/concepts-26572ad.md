@@ -134,7 +134,7 @@ Schedule lifecycle
 </td>
 <td valign="top">
 
-A schedule passes through three lifecycle statuses for each run.
+A schedule passes through three lifecycle states for each run.
 
 </td>
 </tr>

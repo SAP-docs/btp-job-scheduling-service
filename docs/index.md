@@ -47,6 +47,7 @@
     -   [Node.js Client Library](40---Using-JOB-SCHDULR-TITLE/node-js-client-library-9b86127.md)
     -   [Service Behavior](40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916)
         -   [Deactivated Schedules](40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loio3aaa1cf65a30407da04d0755d5f92ab6)
+-   [Backup and Restore](backup-and-restore-87102ab.md)
 -   [Security](50---Security/security-9fb8213.md)
     -   [Secure Access](50---Security/secure-access-745ca50.md)
         -   [Define and Grant Scopes to SAP Job Scheduling Service](50---Security/define-and-grant-scopes-to-sap-job-scheduling-service-08933d3.md)

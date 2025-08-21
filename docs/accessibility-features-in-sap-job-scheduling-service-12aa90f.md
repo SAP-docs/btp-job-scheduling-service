@@ -27,12 +27,6 @@ The following themes are currently available in the interface of the Job Schedul
 
 -   Horizon High Contrast White
 
--   Belize
-
--   Belize High Contrast Black
-
--   Belize High Contrast White
-
 
 To switch to one of these themes:
 

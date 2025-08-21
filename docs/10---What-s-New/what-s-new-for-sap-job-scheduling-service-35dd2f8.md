@@ -89,6 +89,90 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Belize Themes Removed from the Dashboard UI
+
+</td>
+<td valign="top">
+
+The Belize themes are removed from the user interface of the Job Scheduling service dashboard.
+
+You can choose from the following themes:
+
+-   Morning Horizon \(Default\)
+
+-   Evening Horizon
+
+-   Horizon High Contrast Black
+
+-   Horizon High Contrast White
+
+    If you've been using one of the Belize themes, the system automatically switches to Horizon.
+
+
+> ### Note:  
+> Belize is deprecated as of SAPUI5 1.120. SAP recommends switching to the current Horizon theme. See [Deprecated Themes and Libraries](https://sapui5.hana.ondemand.com/#/topic/a87ca843bcee469f82a9072927a7dcdb).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-08-18
+
+</td>
+<td valign="top">
+
+2025-08-21
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 New Resource Tags for Job Execution and Task Execution Service Events
 
 </td>
