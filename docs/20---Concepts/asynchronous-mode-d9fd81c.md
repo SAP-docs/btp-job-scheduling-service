@@ -10,7 +10,7 @@ The SAP Job Scheduling service executes jobs that support action endpoints in a 
 
 ## Synchronous Mode
 
-Synchronous requests are used if the SAP Job Scheduling service calls the action endpoint of the application and the application logic is executed in a short span of time.
+Synchronous requests are used if the SAP Job Scheduling service calls the action endpoint of the application and the application logic is executed in 15 seconds.
 
 > ### Example:  
 > The exchange rate application fetches the latest currency exchange rates frequently using scheduled jobs.
