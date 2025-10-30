@@ -47,6 +47,15 @@ Schedules that run periodically at specified times, dates, or intervals. You can
     > ### Example:  
     > Let's assume that you have a recurring schedule with a `repeatInterval` of 5 minutes and the first job starts at 6.00pm, the second job starts at 6.05pm., and so on. If the first job ends at 6.07pm, the second job is still going to start at 6.05pm as planned.
 
+    When you activate an inactive `repeatInterval` schedule after the planned start time, the job runs immediately. After this initial execution, the job runs according to the set interval.
+
+    > ### Example:  
+    > You've created a schedule with start time at 6.00pm with a `repeatInterval` of 1 hour. The schedule is currently inactive. There are two options:
+    > 
+    > -   You activate the schedule at 5.50pm. The job runs at 6.00pm as planned. The next job starts at 7.00pm.
+    > 
+    > -   You activate the schedule at 6.10pm. The job runs immediately. The next job starts at 7.10pm.
+
     For more information, see [Human-Readable Date Formats](schedule-formats-54615f0.md#loioa323f2d365904499a83a1b60f473bb78).
 
     > ### Example:  
