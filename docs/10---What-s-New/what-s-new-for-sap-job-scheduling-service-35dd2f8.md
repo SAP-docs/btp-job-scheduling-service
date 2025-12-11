@@ -89,6 +89,74 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Sharing Job Scheduling Service Instances Across Spaces
+
+</td>
+<td valign="top">
+
+You can now share a SAP Job Scheduling service instance with applications across multiple spaces within the same subaccount. This approach streamlines data exchange, reduces costs, and simplifies resource management.
+
+See [Share Service Instances](../40---Using-JOB-SCHDULR-TITLE/share-service-instances-ca93a0b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-12-08
+
+</td>
+<td valign="top">
+
+2025-12-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Belize Themes Removed from the Dashboard UI
 
 </td>

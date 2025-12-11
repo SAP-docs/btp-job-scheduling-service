@@ -288,8 +288,6 @@ Sending notifications using the SAP Alert Notification service for SAP BTP if a 
 
 [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
 
-[Guided Answers](https://ga.support.sap.com/dtp/viewer/#/tree/2797/actions/40871)
-
 [SAP Job Scheduling Service REST APIs](40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md "Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and job schedules.")
 
 [Cloud Foundry Tasks](https://docs.cloudfoundry.org/devguide/using-tasks.html#run-tasks)

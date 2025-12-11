@@ -132,7 +132,7 @@ number
 </td>
 <td valign="top">
 
-Number of job schedules to skip. The default number is 1. The default `offset` is an indicator to fetch results without skipping any schedules.
+Number of job schedules to skip. The default number is 0. The default `offset` is an indicator to fetch results without skipping any schedules.
 
 </td>
 </tr>

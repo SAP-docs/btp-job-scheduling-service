@@ -167,7 +167,7 @@ No
 </td>
 <td valign="top">
 
-Number of jobs to skip. The default number is `1`.
+Number of jobs to skip. The default number is 0.
 
 The default offset is an indicator to fetch results without skipping any jobs.
 

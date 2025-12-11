@@ -10,7 +10,9 @@ Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and
 
 ## Pagination
 
-All SAP Job Scheduling service APIs support pagination. You can retrieve all data if you don’t pass any query parameter.
+All SAP Job Scheduling service APIs support pagination. You can retrieve all data if you don’t pass any optional query parameters.
+
+For more information, see [Understanding Offset and Cursor Pagination](understanding-offset-and-cursor-pagination-96ebd22.md).
 
 
 

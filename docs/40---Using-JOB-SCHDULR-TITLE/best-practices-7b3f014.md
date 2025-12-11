@@ -51,3 +51,18 @@ Use one-time schedules for testing and validation. For repeating schedules, use 
 
 For long-running asynchronous executions, send a 202 Accepted response. Then call the Update Run Logs REST endpoint of the SAP Job Scheduling service. Send only one request that includes all execution logs and the status of the execution.
 
+
+
+## Pagination
+
+Use offset pagination to:
+
+-   See the most recent run logs.
+
+-   Go to a specific page.
+
+
+Use cursor pagination to implement features like limitless scrolling through large sets of results.
+
+For more information, see [Understanding Offset and Cursor Pagination](understanding-offset-and-cursor-pagination-96ebd22.md).
+

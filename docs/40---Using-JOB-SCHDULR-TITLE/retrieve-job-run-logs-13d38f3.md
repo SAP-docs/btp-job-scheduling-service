@@ -159,7 +159,51 @@ integer
 </td>
 <td valign="top">
 
-Number of job run logs to skip. The default number is 1. The default `offset` is an indicator to fetch results without skipping any run logs.
+Number of job run logs to skip. The default number is 0. The default `offset` is an indicator to fetch results without skipping any run logs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`next` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Returns the next page after a specific run log.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`prev` 
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Returns the previous page before a specific run log.
 
 </td>
 </tr>
@@ -167,11 +211,19 @@ Number of job run logs to skip. The default number is 1. The default `offset` is
 
 
 
-### Example
+### Examples
 
 ```
 GET /scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=3&offset=1
 
+```
+
+```
+GET /scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=10&next=ef2581c0-a435-11f0-8c7c-331f5a8a59ef
+```
+
+```
+GET /scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=10&prev=5f1ae560-a481-11f0-988b-27a53d8d12c8
 ```
 
 
@@ -190,49 +242,50 @@ The call was successful and returns the collection of job run logs.
 
 ```
 {
-"total": 6,
-"results": [
-    {
-        "runId": "5646889BB133728EE10000000A61A0D8",
-        "runText": "Something wrong happened",
-        "httpStatus": 500,
-        "executionTimestamp": "2015-11-14T04:15:22",
-        "runStatus": "COMPLETED",
-        "runState": "ERROR",
-        "scheduleTimestamp": "2015-11-14T04:13:22",
-        "completionTimestamp": "2015-11-14T04:15:22"
-    },
-    {
-        "runId": "56468B1AB133728EE10000000A61A0D8",
-        "runText": "Request Error: Code:-ENOTFOUND, Message:-getaddrinfo ENOTFOUND www.app.acme.com",
-        "httpStatus": 404,
-        "executionTimestamp": "2015-11-14T04:17:22",
-        "runStatus": "COMPLETED",
-        "runState": "REQUEST_ERROR",
-        "scheduleTimestamp": "2015-11-14T04:15:22",
-        "completionTimestamp": "2015-11-14T04:17:22"
-    },
-    {
-        "runId": "56468DB7B133728EE10000000A61A0D8",
-        "runText": "Sales order processed",
-        "httpStatus": 200,
-        "executionTimestamp": "2015-11-14T04:19:22", //indicates when actually the scheduler invoked action endpoint
-        "runStatus": "COMPLETED",
-        "runState": "SUCCESS",
-        "scheduleTimestamp": "2015-11-14T04:17:22", //indicates when the schedule was picked up for calculation of next-run
-        "completionTimestamp": "2015-11-14T04:19:22" //indicates when the scheduler received response from the action endpoint
-    }
-    
-  ]
+    "total": 64,
+    "results": [
+        {
+            "runId": "a18633fe-b299-41b5-9562-7902c2332070",
+            "runText": "Something wrong happened",
+            "httpStatus": 500,
+            "executionTimestamp": "2015-11-14T04:15:22",
+            "runStatus": "COMPLETED",
+            "runState": "ERROR",
+            "scheduleTimestamp": "2015-11-14T04:13:22",
+            "completionTimestamp": "2015-11-14T04:15:22"
+        },
+        {
+            "runId": "e23d217a-f061-4052-8740-6ed9284a56b6",
+            "runText": "Request Error: Code:-ENOTFOUND, Message:-getaddrinfo ENOTFOUND www.app.acme.com",
+            "httpStatus": 404,
+            "executionTimestamp": "2015-11-14T04:17:22",
+            "runStatus": "COMPLETED",
+            "runState": "REQUEST_ERROR",
+            "scheduleTimestamp": "2015-11-14T04:15:22",
+            "completionTimestamp": "2015-11-14T04:17:22"
+        },
+        ...
+        {
+            "runId": "d0f0e158-73af-4953-a292-9b82ea82ccf9",
+            "runText": "Sales order processed",
+            "httpStatus": 200,
+            "executionTimestamp": "2015-11-14T04:19:22", //indicates when actually the scheduler invoked action endpoint
+            "runStatus": "COMPLETED",
+            "runState": "SUCCESS",
+            "scheduleTimestamp": "2015-11-14T04:17:22", //indicates when the schedule was picked up for calculation of next-run
+            "completionTimestamp": "2015-11-14T04:19:22" //indicates when the scheduler received response from the action endpoint
+        }
+    ],
+    "next_url": "/scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=10&next=d0f0e158-73af-4953-a292-9b82ea82ccf9",
+    "prev_url": "/scheduler/jobs/2/schedules/5f58c2fb-a428-4f4b-9e1d-312e3be8952c/runs?page_size=10&prev=a18633fe-b299-41b5-9562-7902c2332070"
 }
-
 ```
 
 
 
 ### Status Code: 404
 
-Passing invalid Job ID.
+The call could not find a run log that matches the provided job ID and schedule ID.
 
 
 
@@ -270,4 +323,6 @@ Passing invalid Job ID.
 [Retrieve All Jobs](retrieve-all-jobs-b4d3719.md "This API retrieves all jobs in a service instance.")
 
 [Action on Job Run Logs](service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916__section_RunLogs)
+
+[Understanding Offset and Cursor Pagination](understanding-offset-and-cursor-pagination-96ebd22.md "Pagination helps you manage large data sets by breaking them into smaller, more manageable chunks of data. When you retrieve job run logs, you can use two types of pagination: offset pagination and cursor pagination.")
 

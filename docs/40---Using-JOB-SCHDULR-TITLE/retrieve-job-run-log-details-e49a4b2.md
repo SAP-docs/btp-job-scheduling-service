@@ -147,7 +147,7 @@ The call was successful and returns details of the job run log.
 
 ### Status Code: 404
 
-Passing invalid Job ID.
+The call could not retrieve the run log details that match the provided job ID, schedule ID, and run ID.
 
 
 
