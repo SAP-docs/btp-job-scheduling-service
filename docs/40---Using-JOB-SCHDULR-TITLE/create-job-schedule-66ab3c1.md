@@ -112,7 +112,16 @@ object
 </td>
 <td valign="top">
 
-Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings .
+Data value is passed to the job action endpoint when invoked by Job Scheduler. For the HTTP method “PUT” or “POST”, the data parameters are sent in the request body while invoking the endpoint. For the HTTP method “GET” or “DELETE”, the data parameters are sent as query strings.
+
+For Cloud Foundry \(CF\) tasks, you can configure all parameters listed at [https://v3-apidocs.cloudfoundry.org/version/3.182.0/\#tasks](https://v3-apidocs.cloudfoundry.org/version/3.182.0/#tasks). For example:
+
+```
+{"memory_in_mb": 2048,
+ "disk_in_mb": 256}
+```
+
+
 
 </td>
 </tr>

@@ -84,7 +84,7 @@ Run Cloud Foundry tasks asynchronously and thereby optimize your resources usage
 
 </dd><dt><b>
 
-App and scheduling logic seperated 
+App and scheduling logic separated 
 
 </b></dt>
 <dd>

@@ -6,7 +6,7 @@
 
 
 
-**2024 - 25**
+**2024 - 26**
 
 
 <table>
@@ -89,6 +89,144 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Service Plan Free Now Available on SAP BTP Trial
+
+</td>
+<td valign="top">
+
+Service plan `free` is now available for trial accounts.
+
+As an alternative to service plan `standard`, you can use service plan `free` on SAP BTP Trial to try out the features provided by SAP Job Scheduling service.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-01-22
+
+</td>
+<td valign="top">
+
+2026-01-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Service Plan Lite Deprecated on SAP BTP Trial
+
+</td>
+<td valign="top">
+
+Starting 22 January 2026, service plan `lite` is deprecated on SAP BTP Trial.
+
+As of 19 February 2026, you can no longer create new instances using service plan `lite`. Existing instances with plan `lite` will be removed.
+
+Action: We recommend that you use service plan `free` on SAP BTP Trial instead, which offers more capabilities and works like service plan `standard`.
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-01-22
+
+</td>
+<td valign="top">
+
+2026-01-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Sharing Job Scheduling Service Instances Across Spaces
 
 </td>
@@ -96,7 +234,7 @@ Sharing Job Scheduling Service Instances Across Spaces
 
 You can now share a SAP Job Scheduling service instance with applications across multiple spaces within the same subaccount. This approach streamlines data exchange, reduces costs, and simplifies resource management.
 
-See [Share Service Instances](../40---Using-JOB-SCHDULR-TITLE/share-service-instances-ca93a0b.md).
+See [Share Service Instances](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/share-service-instances).
 
 </td>
 <td valign="top">

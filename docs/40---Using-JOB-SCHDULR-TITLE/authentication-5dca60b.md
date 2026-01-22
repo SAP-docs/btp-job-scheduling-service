@@ -10,6 +10,9 @@ This section describes different ways how the application accesses the SAP Job S
 
 ## Service Plan `lite`
 
+> ### Note:  
+> Starting 22 January 2026, service plan `lite` is deprecated on SAP BTP Trial. As an alternative, you can use service plan `free`.
+
 The SAP Job Scheduling service REST APIs are guarded by HTTP Basic authentication, which requires a user name and a password. Both are fetched from the `VCAP_SERVICES` section of the application environment after binding it to the SAP Job Scheduling service.
 
 Use the following command to view the `VCAP_SERVICES` content:
