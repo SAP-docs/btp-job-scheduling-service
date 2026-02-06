@@ -34,6 +34,9 @@ We recommend that you use the service plan `standard` with certificates to bind 
 
 3.  Create an instance of the service: `cf create-service jobscheduler` `standard` *<instance name\>*.
 
+    > ### Note:  
+    > If you want to use service plan `free` instead, run `cf create-service jobscheduler` `free` *<instance name\>*.
+
 4.  Bind the service instance to the application using the command: `cf bind-service` *<application name\>* *<instance name\>*
 
     Optionally, you can provide a `parameters.json` to get a binding with certificates:

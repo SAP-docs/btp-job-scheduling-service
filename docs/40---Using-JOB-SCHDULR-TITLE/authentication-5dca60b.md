@@ -169,6 +169,18 @@ Depending on the type of credentials you obtain, proceed as follows:
     ```
 
 
+
+
+## Service Plan `free`
+
+> ### Note:  
+> The `free` plan provides the same functionality as the `standard` plan but has usage restrictions and doesn't include support. For more information, see [SAP Job Scheduling service on SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/job-scheduling-service?region=all&tab=service_plan).
+
+You set up authentication the same way you do for service plan `standard`.
+
+> ### Note:  
+> If you upgrade your plan, all executions performed on the same day are charged toward the `standard` plan.
+
 **Related Information**  
 
 
@@ -181,4 +193,6 @@ Depending on the type of credentials you obtain, proceed as follows:
 [Create a Service Instance Using CF CLI](../create-a-service-instance-using-cf-cli-cb56f9e.md "To use the SAP Job Scheduling service with action endpoints in your application or with Cloud Foundry tasks, you create an instance of the SAP Job Scheduling service with the service plan standard using the Cloud Foundry Command Line Interface (CF CLI) and bind the service instance to your application.")
 
 [Create Service Keys Using the Cloud Foundry Command Line Interface](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/7de6b314b62748b9b59df5fc09dbe8fb.html "Use the Cloud Foundry Command Line Interface to create a service key.") :arrow_upper_right:
+
+[Lite Plan Deprecation: Time to Upgrade to Free! \(SAP Community\)](https://community.sap.com/t5/technology-blog-posts-by-sap/lite-plan-deprecation-time-to-upgrade-to-free-sap-job-scheduling-service/ba-p/14314717)
 

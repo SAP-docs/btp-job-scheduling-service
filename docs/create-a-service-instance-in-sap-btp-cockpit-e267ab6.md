@@ -22,7 +22,7 @@ You've logged on to the SAP BTP cockpit. For more information, see [Navigate to 
 
     The *New Instance* wizard appears.
 
-3.  Choose the service plan *standard*.
+3.  Choose service plan *standard* or *free*.
 
 4.  Choose a name for your service instance, then choose *Next*.
 

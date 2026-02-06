@@ -89,6 +89,74 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Service Plan Free Now Available for Enterprise Accounts
+
+</td>
+<td valign="top">
+
+Service plan `free` is now available for enterprise accounts.
+
+The `free` plan provides the same functionality as the `standard` plan but has usage restrictions and doesn't include support. See [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/job-scheduling-service?tab=service_plan&region=all).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-02-05
+
+</td>
+<td valign="top">
+
+2026-02-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Service Plan Free Now Available on SAP BTP Trial
 
 </td>

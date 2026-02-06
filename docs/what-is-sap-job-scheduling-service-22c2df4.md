@@ -40,12 +40,12 @@ For more information, see also SAP Job Scheduling service on [SAP Discovery Cent
 <dl>
 <dt><b>
 
-Use flexible schedule formats 
+Use flexible scheduling 
 
 </b></dt>
 <dd>
 
-Flexibly choose between cron and human-readable date formats for your schedules.
+Choose between human-readable formats, repeatAt, repeatInterval, or cron expressions to fit any scheduling need.
 
 
 
@@ -106,23 +106,45 @@ Use the web-based user interface to create, edit, or delete jobs and tasks for a
 
 </dd><dt><b>
 
-Supports Node-js client libraries 
-
-</b></dt>
-<dd>
-
-Convenient client library to execute CRUD operations, including create job, from your Node.js application.
-
-
-
-</dd><dt><b>
-
 Benefit from multitenancy support 
 
 </b></dt>
 <dd>
 
 Use this service in tenant-aware \(multitenant\) applications. Run them on a shared compute unit that can be used by multiple consumers \(tenants\).
+
+
+
+</dd><dt><b>
+
+Multi-environment consumption 
+
+</b></dt>
+<dd>
+
+Use the Job Scheduling service in both the SAP BTP, Cloud Foundry runtime and SAP BTP, Kyma runtime for maximum flexibility.
+
+
+
+</dd><dt><b>
+
+Send alert notification events 
+
+</b></dt>
+<dd>
+
+Trigger real-time alerts when jobs fail, succeed, or meet specific conditions, and send these events to SAP Alert Notification service for SAP BTP.
+
+
+
+</dd><dt><b>
+
+SAP Cloud ALM automation monitoring 
+
+</b></dt>
+<dd>
+
+Automatically gather and display job execution data in SAP Cloud ALM for centralized operations monitoring.
 
 
 
@@ -157,125 +179,7 @@ This service supports multitenancy. It can be used in tenant-aware applications.
 
 ## Technical Constraints
 
-These are the general technical ranges of this service:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Feature
-
-</th>
-<th valign="top">
-
-Quantity
-
-</th>
-<th valign="top">
-
-Details
-
-</th>
-<th valign="top">
-
-Additional Information
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Minimal schedule interval
-
-</td>
-<td valign="top">
-
-5 minutes
-
-</td>
-<td valign="top">
-
-You cannot create intervals between schedules of less than 5 minutes, for example, the interval for repeating the job execution cannot be 2 minutes.
-
-</td>
-<td valign="top">
-
-[Schedule Types](20---Concepts/schedule-types-9cf8c14.md#loio9cf8c14da0144c84aac628dc56b00ffd)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Synchronous requests timeout
-
-</td>
-<td valign="top">
-
-15 seconds
-
-</td>
-<td valign="top">
-
-The SAP Job Scheduling service awaits response for the synchronous job from the action endpoint for the specified duration. If the application doesn't provide a response in the specified duration, there is a timeout and the application should use asynchronous requests.
-
-</td>
-<td valign="top">
-
-[Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Asynchronous requests timeout
-
-</td>
-<td valign="top">
-
-30 minutes
-
-</td>
-<td valign="top">
-
-The SAP Job Scheduling service awaits response for the asynchronous job from the action endpoint for the specified duration. If the application doesn't provide a response in the specified duration, there is a timeout. You can change this setting in the configuration.
-
-</td>
-<td valign="top">
-
-[Asynchronous Mode](20---Concepts/asynchronous-mode-d9fd81c.md)
-
-[Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Sending notifications
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-Sending notifications using the SAP Alert Notification service for SAP BTP if a job or a task is successful or fails is only available in the Cloud Foundry environment.
-
-</td>
-<td valign="top">
-
-[Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
-
-[Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md)
-
-</td>
-</tr>
-</table>
+For more information about the general technical ranges of this service and its service plans, see [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/job-scheduling-service?region=all&tab=service_plan).
 
 **Related Information**  
 

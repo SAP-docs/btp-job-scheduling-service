@@ -328,7 +328,7 @@ POST /scheduler/jobs/3/schedules
 ```
 
 ```
-PUT /scheduler/jobs/3/schedules
+POST /scheduler/jobs/3/schedules
 {
     "repeatInterval":"2 hours",
     "active":true, 
