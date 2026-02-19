@@ -89,6 +89,229 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+New Page Size Limits for the `GET /scheduler/jobs` API
+
+</td>
+<td valign="top">
+
+Starting 19 March, a new default page size of 10 and a maximum page size of 100 are enforced on the `GET /scheduler/jobs` endpoint. This change aims to ensure stability of the service and makes this endpoint consistent with the other API endpoints of the service.
+
+Action: To retrieve all jobs, implement pagination.
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-02-16
+
+</td>
+<td valign="top">
+
+2026-03-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Dashboard Statistics \(Experimental\)
+
+</td>
+<td valign="top">
+
+We're introducing an experimental feature adding new statistics and recommendations for optimal job configuration across the following pages of the SAP Job Scheduling service dashboard:
+
+-   On the *Service Instance Overview* page, look for the cards *Job Statistics* and *Job Schedule Statistics*.
+
+-   On the overview page of each job, look for the cards *Schedule Statistics* and *Job Best Practices*.
+
+-   On the overview page of each schedule, look for the cards *Execution Success Rate* and *Recent Run Errors*.
+
+
+In selected regions where the service is available, the *Service Instance Overview* page displays the latest schedules in an error state. You can review these issues with two clicks.
+
+> ### Note:  
+> Experimental features aren't part of the officially delivered scope that SAP guarantees for future releases. For more information, see [Important Disclaimers and Legal Information](https://help.sap.com/viewer/disclaimer).
+
+Use these new insights to better monitor job performance, identify errors, and optimize configurations.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Beta
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-02-16
+
+</td>
+<td valign="top">
+
+2026-02-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Streamlined Dashboard UI for Faster Navigation
+
+</td>
+<td valign="top">
+
+The SAP Job Scheduling service dashboard interface is redesigned to reduce navigation steps. Several pages are now merged into their corresponding parent pages:
+
+-   The *Configurations* page is merged into the *Service Instance Overview* page.
+
+-   The *Jobs* \> *Schedules* page is merged into the overview page of each job.
+
+-   The *Schedules* \> *Run Logs* page is merged into the overview page of each schedule.
+
+
+This improved layout helps you access key information more efficiently with fewer clicks.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-02-16
+
+</td>
+<td valign="top">
+
+2026-02-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Service Plan Free Now Available for Enterprise Accounts
 
 </td>
