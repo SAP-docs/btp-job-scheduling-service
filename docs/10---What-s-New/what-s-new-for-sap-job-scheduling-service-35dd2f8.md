@@ -82,6 +82,72 @@ Job Scheduling Service
 
 -   Cloud Foundry
 
+
+
+</td>
+<td valign="top">
+
+REST API Available on SAP Business Accelerator Hub
+
+</td>
+<td valign="top">
+
+The REST API of the SAP Job Scheduling service is now available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language.
+
+Action: Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-02
+
+</td>
+<td valign="top">
+
+2026-03-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
 -   Kyma
 
 

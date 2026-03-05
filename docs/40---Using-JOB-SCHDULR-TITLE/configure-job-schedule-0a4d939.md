@@ -6,6 +6,9 @@ This API configures/updates the runtime information of a job schedule for a spec
 
 
 
+> ### Note:  
+> The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
 All job configuration settings \(Action URL, HTTP Method, User, Password, and Job Activation Status\) will remain valid for the modified schedule. If a job schedule is in the execution queue, calling this API stops the execution process. If the schedule was identified for execution, the updated schedule is executed immediately.
 
 

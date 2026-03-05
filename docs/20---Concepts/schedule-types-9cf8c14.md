@@ -27,6 +27,9 @@ Schedules that run only once. You can create one-time schedules using any one of
     > 1994-11-05T08:15:30-05:00
 
 
+> ### Note:  
+> One-time schedules are deleted if they haven't been run in the last 30 days.
+
 
 
 <a name="loio9cf8c14da0144c84aac628dc56b00ffd__section_fsb_5hp_d4b"/>

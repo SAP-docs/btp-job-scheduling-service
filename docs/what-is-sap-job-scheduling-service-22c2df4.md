@@ -184,15 +184,17 @@ For more information about the general technical ranges of this service and its 
 **Related Information**  
 
 
+[Share Your Feedback, Requirements, Improvement Ideas](https://influence.sap.com/sap/ino/#campaign/2277)
+
+[SAP Job Scheduling Service REST API](https://api.sap.com/api/sap-btpjss-admin-v1/overview)
+
+[Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
+
 [Initial Setup](initial-setup-0adb655.md "You can get started with the SAP Job Scheduling service by following the steps below.")
 
 [Getting Started](getting-started-02e4e8b.md "Once you've created a service instance for the SAP Job Scheduling service and bound it to your application, you can use the service.")
 
- <?sap-ot O2O class="- topic/link " href="8d30095891db417f9b9351570b1679b2.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loio4b3e16d4e4d14242bdc2ab48d2aec6be_en-US/src/content/localization/en-us/22c2df4d22cb4a05af4c9502a67597ae.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
-[Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md "To optimize your experience of SAP Job Scheduling service, SAP Business Technology Platform (SAP BTP) provides features and settings that help you use the software efficiently.")
-
-[SAP Job Scheduling Service REST APIs](40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md "Use SAP Job Scheduling service REST APIs to create, manage, and monitor jobs and job schedules.")
+ <?sap-ot O2O class="- topic/link " href="8d30095891db417f9b9351570b1679b2.xml" text="" desc="" xtrc="link:6" xtrf="file:/home/builder/src/dita-all/jjq1673438782153/loio4b3e16d4e4d14242bdc2ab48d2aec6be_en-US/src/content/localization/en-us/22c2df4d22cb4a05af4c9502a67597ae.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Cloud Foundry Tasks](https://docs.cloudfoundry.org/devguide/using-tasks.html#run-tasks)
 

@@ -78,3 +78,5 @@ All of the limits and response effects are stacking, that means absolute limit a
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 
+[SAP Job Scheduling Service REST API](https://api.sap.com/api/sap-btpjss-admin-v1/overview)
+

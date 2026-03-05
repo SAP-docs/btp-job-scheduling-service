@@ -90,5 +90,5 @@ In SAP Job Scheduling service, you can currently use cursor pagination only with
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 
-[Retrieve Job Run Logs](retrieve-job-run-logs-13d38f3.md "This API retrieves the run logs for a specified job schedule.")
+[SAP Job Scheduling Service REST API](https://api.sap.com/api/sap-btpjss-admin-v1/overview)
 

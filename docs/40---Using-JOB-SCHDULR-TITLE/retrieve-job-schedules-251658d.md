@@ -6,6 +6,11 @@ This API retrieves all schedules for a specified job.
 
 
 
+> ### Note:  
+> The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
+
+
 ## Routes
 
 *GET /scheduler/jobs/\{jobId\}/schedules*
@@ -162,27 +167,27 @@ The API call was successful and the schedules were retrieved.
 
 ```
 {
-				{
-				"total": 2,
-				"results": [
-				{
-				"scheduleId": "52cd418d-4a13-45fb-a9b7-b2b15f546d5f",
-				"description": "updated scheudle",
-				"data": "{\"order_id\":\"1234\"}",
-				"type": "recurring",
-				"cron": "* * * * 10 0 0",
-				"repeatInterval": null,
-				"repeatAt": null,
-				"active": true,
-				"startTime": "2015-10-20 00:00:00",
-				"endTime": null,
-				"time": null,
-				"nextRunAt": "2017-08-11 10:00:00"
-				}
-				],
-				"prev_url": "/scheduler/jobs/27/schedules?page_size=1",
-				"next_url": null
-				}
+	"total": 2,
+	"results": [
+		{
+			"scheduleId": "52cd418d-4a13-45fb-a9b7-b2b15f546d5f",
+			"description": "updated scheudle",
+			"data": "{\"order_id\":\"1234\"}",
+			"type": "recurring",
+			"cron": "* * * * 10 0 0",
+			"repeatInterval": null,
+			"repeatAt": null,
+			"active": true,
+			"startTime": "2015-10-20 00:00:00",
+			"endTime": null,
+			"time": null,
+			"nextRunAt": "2017-08-11 10:00:00",
+			"modifiedAt": "2017-08-10 15:00:00"
+		}
+	],
+	"prev_url": "/scheduler/jobs/27/schedules?page_size=1",
+	"next_url": null
+}
 ```
 
 

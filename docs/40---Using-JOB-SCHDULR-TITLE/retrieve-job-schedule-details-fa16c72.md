@@ -8,6 +8,9 @@ This API retrieves the saved configuration settings of a specified job schedule.
 
 It also retrieves the schedule logs if the `displayLogs` parameter is true.
 
+> ### Note:  
+> The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
 
 
 ## Routes
@@ -175,6 +178,7 @@ The call was successful and returns the details of the schedule \(and its logs, 
     "startTime": "2015-10-20 04:30:00",
     "endTime": null,
     "nextRunAt": "2017-08-11 10:00:00",
+    "modifiedAt": "2017-08-10 15:00:00",
     "logs": [
         {
             "runId": "7841efdb-7ee0-48a6-a8a5-cbcafa1035b9",

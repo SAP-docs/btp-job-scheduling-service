@@ -6,6 +6,11 @@ This API retrieves all jobs in a service instance.
 
 
 
+> ### Note:  
+> The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
+
+
 <a name="loiob4d3719173f641b583c97ff0e8f0a7fa__section_e4z_mt5_ljb"/>
 
 ## Routes

@@ -7,6 +7,9 @@ This API creates a job by accepting one or more job schedules to be created.
 
 
 > ### Note:  
+> The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
+
+> ### Note:  
 > You cannot create CF tasks using the REST API because they are bound to a specific application. For more information, see [Can I create a CF task using the REST API?](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/frequently-asked-questions?version=Cloud#rest-api).
 
 

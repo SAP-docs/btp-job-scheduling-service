@@ -143,6 +143,10 @@ POST /scheduler/jobs/3/schedules
 
 For more information, see [Create Job Schedule](40---Using-JOB-SCHDULR-TITLE/create-job-schedule-66ab3c1.md).
 
+**My schedule has disappeared. Why did this happen?**
+
+Was your job a one-time schedule? One-time schedules are deleted if they haven't been run in the last 30 days.
+
 
 
 <a name="loiod72c276ec60c4bbe89c0b9328a926500__section_uhv_kkh_2fb"/>
