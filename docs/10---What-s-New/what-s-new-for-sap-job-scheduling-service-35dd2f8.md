@@ -1,5 +1,7 @@
 <!-- loio35dd2f8d1060419f896169b928dc590f -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # What's New for SAP Job Scheduling Service 
 
 
@@ -82,6 +84,83 @@ Job Scheduling Service
 
 -   Cloud Foundry
 
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Mark Jobs, Tasks, Schedules as Favorites \(Experimental\)
+
+</td>
+<td valign="top">
+
+The SAP Job Scheduling service dashboard now includes an experimental feature that lets you mark frequently visited jobs, tasks, and schedules as favorites.
+
+On the overview page of each job, task, and schedule, choose the <span class="SAP-icons-V5"></span> \(Add to Favorites\) button to add the resource to your favorites. To view all favorites, go to the *Service Instance Overview* page in the dashboard.
+
+The *Favorite Jobs*, *Favorite Tasks*, and *Favorite Schedules* cards display the top five most visited favorites. If there are fewer than five favorites, the cards also show the most visited resources that aren't yet added as favorites. You can visit each favorite directly from the cards.
+
+> ### Note:  
+> Experimental features aren't part of the officially delivered scope that SAP guarantees for future releases. For more information, see [Important Disclaimers and Legal Information](https://help.sap.com/viewer/disclaimer).
+
+The favorites are currently stored locally in the browser.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Beta
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-16
+
+</td>
+<td valign="top">
+
+2026-03-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
 
 
 </td>
@@ -160,9 +239,9 @@ New Page Size Limits for the `GET /scheduler/jobs` API
 </td>
 <td valign="top">
 
-Starting 19 March, a new default page size of 10 and a maximum page size of 100 are enforced on the `GET /scheduler/jobs` endpoint. This change aims to ensure stability of the service and makes this endpoint consistent with the other API endpoints of the service.
+Starting 25 June, a new default page size of 10 and a maximum page size of 100 are enforced on the `GET /scheduler/jobs` endpoint. This change aims to ensure stability of the service and makes this endpoint consistent with the other API endpoints of the service.
 
-Action: To retrieve all jobs, implement pagination.
+Action: To retrieve all jobs, implement offset pagination. For more information, see [Understanding Offset and Cursor Pagination](../40---Using-JOB-SCHDULR-TITLE/understanding-offset-and-cursor-pagination-96ebd22.md).
 
 </td>
 <td valign="top">
@@ -197,12 +276,12 @@ Not applicable
 </td>
 <td valign="top">
 
-2026-02-16
+2026-03-12
 
 </td>
 <td valign="top">
 
-2026-03-19
+2026-06-25
 
 </td>
 </tr>

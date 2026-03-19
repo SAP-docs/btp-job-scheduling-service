@@ -12,23 +12,83 @@ The SAP Job Scheduling service dashboard enables you to manage jobs and tasks fo
 
 ## Prerequisites
 
-You have the `SpaceDeveloper` role for Cloud Foundry or the `SAP_Job_Scheduling_Service_Admin` and `SAP_Job_Scheduling_Service_Viewer` roles for Kyma.
+You have the required role assigned based on your runtime environment and access needs.
 
-These roles allow you to access the dashboard, and to create, update or delete jobs, schedules and configuration.
 
-> ### Note:  
-> With only one of the following BTP roles, you set read-only access to the SAP Job Scheduling service dashboard for a user:
-> 
-> -   `SpaceAuditor`
-> 
-> -   `SpaceManager`
-> 
-> -   `OrgManager`
-> 
-> -   `SpaceSupporter`
-> 
-> 
-> All change operations in the dashboard aren’t visible.
+<table>
+<tr>
+<th valign="top">
+
+Runtime Environment
+
+</th>
+<th valign="top">
+
+Admin Role
+
+</th>
+<th valign="top">
+
+Read-Only Role
+
+</th>
+<th valign="top">
+
+Scope
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Foundry Environment
+
+</td>
+<td valign="top">
+
+`SpaceDeveloper` 
+
+</td>
+<td valign="top">
+
+`SpaceAuditor`, `SpaceManager`, `OrgManager`, or `SpaceSupporter` 
+
+</td>
+<td valign="top">
+
+Roles are assigned at the space level and provide access to Job Scheduling service instances in that space only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Kyma Environment
+
+</td>
+<td valign="top">
+
+`SAP_Job_Scheduling_Service_Admin` 
+
+</td>
+<td valign="top">
+
+`SAP_Job_Scheduling_Service_Viewer` 
+
+</td>
+<td valign="top">
+
+Roles are assigned at the subaccount level and provide access to all Job Scheduling service instances across all namespaces in the subaccount.
+
+</td>
+</tr>
+</table>
+
+The admin roles let you create, update, or delete jobs, schedules, and configurations in the service dashboard.
+
+The read-only roles provide access to the service dashboard. You can't make changes with these roles and the dashboard hides all change operations.
+
+For more information, see [Role Collections and Roles in Global Accounts, Directories, and Subaccounts](https://help.sap.com/docs/btp/sap-business-technology-platform/role-collections-and-roles-in-global-accounts-directories-and-subaccounts).
 
 
 
