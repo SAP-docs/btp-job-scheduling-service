@@ -1,12 +1,10 @@
-<!-- loiofa16c72ffb31438faa5d896741f52e73 -->
+<!-- loioaa638a72e353444aa1c8935b3d46e34d -->
 
-# Retrieve Job Schedule Details
+# Update Global Parameters
 
-This API retrieves the saved configuration settings of a specified job schedule.
+This API updates the global configuration parameters for a service instance.
 
 
-
-It also retrieves the schedule logs if the `displayLogs` parameter is true.
 
 > ### Note:  
 > The REST API of the SAP Job Scheduling service is available on the SAP Business Accelerator Hub: [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview). You can use this resource to explore the API, interact with its endpoints, and generate client libraries for your desired programming language. Refer to and bookmark the API documentation of this service on the SAP Business Accelerator Hub as the API documentation on the SAP Help Portal is planned to be removed in the coming months.
@@ -15,13 +13,13 @@ It also retrieves the schedule logs if the `displayLogs` parameter is true.
 
 ## Routes
 
-*GET /scheduler/jobs/\{jobId\}/schedules/\{scheduleId\}*
+*PUT /scheduler/globalParameters*
 
 
 
 ### Request Parameters
 
-*Path* 
+*BODY* 
 
 
 <table>
@@ -50,79 +48,7 @@ Description
 <tr>
 <td valign="top">
 
-`jobId` 
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-integer
-
-</td>
-<td valign="top">
-
-ID of the job to which scheduleId belongs
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`scheduleId` 
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-ID of the schedule whose details are to be retrieved
-
-</td>
-</tr>
-</table>
-
-*Body* 
-
-
-<table>
-<tr>
-<th valign="top">
-
-Parameter
-
-</th>
-<th valign="top">
-
-Required
-
-</th>
-<th valign="top">
-
-Data Type
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`displayLogs`
+`ASYNC_EXEC_TIMEOUT` 
 
 </td>
 <td valign="top">
@@ -132,14 +58,14 @@ No
 </td>
 <td valign="top">
 
-boolean
+string
 
 </td>
 <td valign="top">
 
-Controls whether the API should return the logs for the schedule. No more than 200 logs can be returned per request.
+Timeout in seconds for asynchronous job executions.
 
-Allowed value is true or false.
+Valid range: positive integer up to 604800 \(7 days\)
 
 </td>
 </tr>
@@ -149,9 +75,24 @@ Allowed value is true or false.
 
 ### Example
 
-```
-GET /scheduler/jobs/3/schedules/cb5c9def-e2a0-4294-8a51-61e4db373f99?displayLogs=true 
-```
+*PUT /scheduler/globalParameters*
+
+-   Set timeout \(10 minutes\):
+
+    ```
+    {
+      "ASYNC_EXEC_TIMEOUT": "600"
+    }
+    ```
+
+-   Set maximum timeout \(7 days\):
+
+    ```
+    {
+      "ASYNC_EXEC_TIMEOUT": "604800"
+    }
+    ```
+
 
 
 
@@ -161,59 +102,67 @@ GET /scheduler/jobs/3/schedules/cb5c9def-e2a0-4294-8a51-61e4db373f99?displayLogs
 
 ### Status Code: 200
 
-The call was successful and returns the details of the schedule \(and its logs, based on the `displayLogs=true` request parameter\).
+The API call was successful and the global parameters were updated.
 
-
-
-### Example
+Example:
 
 ```
 {
-   "scheduleId": "<schedule ID details>",
-    "description": "this schedule runs every 1 hour",
-    "data": "{\"salesOrderId\":\"1234\"}",
-    "type": "recurring",
-    "cron": "* * * * */1 0 0",
-    "active": false,
-    "startTime": "2015-10-20 04:30:00",
-    "endTime": null,
-    "nextRunAt": "2017-08-11 10:00:00",
-    "modifiedAt": "2017-08-10 15:00:00",
-    "logs": [
-        {
-            "runId": "7841efdb-7ee0-48a6-a8a5-cbcafa1035b9",
-            "httpStatus": null,
-            "executionTimestamp": null,
-            "runStatus": "SCHEDULED",
-            "runState": "SCHEDULED",
-            "statusMessage": "The job has been scheduled for a future run",
-            "scheduleTimestamp": "2017-08-10 11:00:00",
-            "completionTimestamp": null,
-            "runText": "[{\"time\":\"2017-08-10 11:00:00\",\"type\":\"SCHEDULED\",\"text\":\"\",\"code\":null}]",
-            "locale": "en"
-        },
-        {
-            "runId": "a68b86cf-1944-4e78-9cde-889e6bb713b3",
-            "httpStatus": 404,
-            "executionTimestamp": "2017-08-10 11:00:00", //indicates when actually the scheduler invoked action endpoint
-            "runStatus": "COMPLETED",
-            "runState": "REQUEST_ERROR",
-            "statusMessage": "Error encountered while sending job execution request to the endpoint",
-            "scheduleTimestamp": "2017-08-10 10:00:00", //indicates when the schedule was picked up for calculation of next-run
-            "completionTimestamp": "2017-08-10 11:00:00", //indicates when the scheduler received response from the action endpoint
-            "runText": "[{\"time\":\"2017-08-10 10:00:00\",\"type\":\"SCHEDULED\",\"text\":\"\",\"code\":null},{\"time\":\"2017-08-10 11:00:00\",\"type\":\"TRIGGERED\",\"text\":\"\",\"code\":null},{\"time\":\"2017-08-10 11:00:00\",\"type\":\"REQUEST_ERROR\",\"text\":\"Response: Cannot PUT /health_status\\n\",\"code\":404}]",
-            "locale": "en"
-        }
-    ]
+  "success": true
 }
 ```
 
 
 
-### Status Code: 404
+### Status Code: 400
 
-Passing invalid Job ID.
+The API was unable to process the request due to invalid data provided.
 
+Common error scenarios:
+
+-   Unallowed configuration key
+
+    ```
+    {
+      "code": 400,
+      "message": "Error in Job Scheduler action: Unallowed Configuration",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error in Job Scheduler action: Unallowed Configuration"
+    }
+    ```
+
+-   Invalid value \(out of range\)
+
+    ```
+    {
+      "code": 400,
+      "message": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - maximum value for ASYNC_EXEC_TIMEOUT is 604800",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - maximum value for ASYNC_EXEC_TIMEOUT is 604800"
+    }
+    ```
+
+-   Invalid value \(negative value\)
+
+    ```
+    {
+      "code": 400,
+      "message": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - value for ASYNC_EXEC_TIMEOUT must be positive (provided -604800)",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - value for ASYNC_EXEC_TIMEOUT must be positive (provided -604800)"
+    }
+    ```
+
+-   Invalid value \(non-number\)
+
+    ```
+    {
+      "code": 400,
+      "message": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - ASYNC_EXEC_TIMEOUT must be a number",
+      "type": "Bad Request/Invalid Request",
+      "detailedError": "Error in Job Scheduler action: Incorrect ASYNC_EXEC_TIMEOUT value - ASYNC_EXEC_TIMEOUT must be a number"
+    }
+    ```
 
 
 **Related Information**  
@@ -233,6 +182,8 @@ Passing invalid Job ID.
 
 [Create Job Schedule](create-job-schedule-66ab3c1.md "This API creates a job schedule for a specified job.")
 
+[Retrieve Job Schedule Details](retrieve-job-schedule-details-fa16c72.md "This API retrieves the saved configuration settings of a specified job schedule.")
+
 [Configure Job Schedule](configure-job-schedule-0a4d939.md "This API configures/updates the runtime information of a job schedule for a specified job.")
 
 [Delete Job Schedule](delete-job-schedule-3066b6d.md "This API deletes the specified job schedule.")
@@ -251,11 +202,11 @@ Passing invalid Job ID.
 
 [Retrieve Global Parameters](retrieve-global-parameters-06b1142.md "This API retrieves the global configuration parameters for a service instance.")
 
-[Update Global Parameters](update-global-parameters-aa638a7.md "This API updates the global configuration parameters for a service instance.")
-
 [Retrieve Job Count](retrieve-job-count-f9bd567.md "This API retrieves the count of active and inactive jobs for a service instance.")
 
 [Search Jobs](search-jobs-bf8f60b.md "This API searches for jobs in a service instance using a query string with optional qualifiers.")
 
 [Search Schedules](search-schedules-137d28e.md "This API searches for schedules across all jobs in a service instance using a query string with optional qualifiers. Each schedule result includes a parent object with information about the parent job.")
+
+[Retrieve Global Parameters](retrieve-global-parameters-06b1142.md "This API retrieves the global configuration parameters for a service instance.")
 

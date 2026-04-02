@@ -86,7 +86,7 @@ In SAP Job Scheduling service, you can currently use cursor pagination only with
 
 [Rate Limits](rate-limits-a9cb164.md "When you use the SAP Job Scheduling service REST API, rate limits are used to limit the number of requests against the REST API. Requests can be throttled (delayed), and if there is a very high load also denied.")
 
-[Authentication](authentication-5dca60b.md "This section describes different ways how the application accesses the SAP Job Scheduling service REST APIs depending on the service plan you use.")
+[Authentication](authentication-5dca60b.md "This section describes how the application accesses the SAP Job Scheduling service REST APIs. The access method depends on the service plan and authentication method you use.")
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 

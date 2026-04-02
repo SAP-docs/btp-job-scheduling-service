@@ -12,7 +12,7 @@ Define and manage one-time and recurring jobs using flexible schedules.
 
 -   [Share Service Instances](share-service-instances-ca93a0b.md)
 
--   [Node.js Client Library](node-js-client-library-9b86127.md)
+-   [Node.js Client Library \(Deprecated\)](node-js-client-library-deprecated-9b86127.md)
 
 -   [Service Behavior](service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916)
 

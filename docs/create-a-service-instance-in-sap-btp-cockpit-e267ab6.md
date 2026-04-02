@@ -26,14 +26,80 @@ You've logged on to the SAP BTP cockpit. For more information, see [Navigate to 
 
 4.  Choose a name for your service instance, then choose *Next*.
 
-    > ### Note:  
-    > The SAP Job Scheduling service doesn't provide any parameters for customizing the creation of the service instance. Therefore, skip the *Parameters* step of the wizard and proceed to the *Review* step.
+5.  \(Optional\) In the *Parameters* step, you can specify the authentication method for your service instance.
 
-5.  Choose *Next* and verify the instance details. Then choose *Create*.
+    By default, the service instance uses SAP Authorization and Trust Management service \(XSUAA\) authentication. To use Identity Authentication service authentication instead, specify the following JSON configuration:
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >    "authentication": "ias"
+    > }
+    > ```
+
+    **Available Parameters**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Parameter
+    
+    </th>
+    <th valign="top">
+
+    Type
+    
+    </th>
+    <th valign="top">
+
+    Default
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `authentication` 
+    
+    </td>
+    <td valign="top">
+    
+    string
+    
+    </td>
+    <td valign="top">
+    
+    `"xsuaa"` 
+    
+    </td>
+    <td valign="top">
+    
+    The authentication method to use.
+
+    Valid values: `"xsuaa"` \(default\) or `"ias"`
+    
+    </td>
+    </tr>
+    </table>
+    
+    > ### Caution:  
+    > The authentication method can't be changed after you create the service instance. If you need to switch authentication methods, delete the existing service instance and create a new one.
+
+    > ### Note:  
+    > For authentication using Identity Authentication service, make sure that you've established trust between your subaccount and your SAP Cloud Identity Services tenant using OpenID Connect \(OIDC\). If trust isn't established, the service instance can't be created. For more information, see [Establish Trust and Federation Between SAP Authorization and Trust Management Service and SAP Cloud Identity Services](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-between-uaa-and-identity-authentication).
+
+6.  Choose *Next* and verify the instance details. Then choose *Create*.
 
     You've created a service instance in your Cloud Foundry Space that's now available in the service instances section.
 
-6.  Choose a deployed application that you want to bind to the new instance of SAP Job Scheduling service.
+7.  Choose a deployed application that you want to bind to the new instance of SAP Job Scheduling service.
 
     For more information, see [Binding Service Instances to Cloud Foundry Applications](https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/0e6850de6e7146c3a17b86736e80ee2e.html?q=Binding%20service%20instances%20to%20cloud%20foundry%20applications).
 

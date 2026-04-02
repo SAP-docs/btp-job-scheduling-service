@@ -20,7 +20,14 @@ The support component for the SAP Job Scheduling service is **BC-CP-CF-JBS**.
 
 -   You need access to the SAP Job Scheduling service. Check the Cloud Foundry marketplace to see if the service is available.
 
--   For jobs with action endpoints, check if you have access and if you can create a service instance of the User Access and Authorization service \(xsuaa\). This service is available in the service marketplace.
+-   For jobs with action endpoints, you need an authentication service instance. Depending on your chosen authentication method:
+
+    -   XSUAA \(default\): Create a SAP Authorization and Trust Management service instance.
+
+    -   SAP Cloud Identity Services - Identity Authentication: Create a Cloud Identity Services service instance.
+
+
+    Both services are available in the service marketplace.
 
 
 **What is the service level agreement \(SLA\) of a scheduled job?**

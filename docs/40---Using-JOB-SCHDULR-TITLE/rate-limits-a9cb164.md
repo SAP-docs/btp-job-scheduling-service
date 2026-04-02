@@ -74,7 +74,7 @@ All of the limits and response effects are stacking, that means absolute limit a
 
 [Understanding Offset and Cursor Pagination](understanding-offset-and-cursor-pagination-96ebd22.md "Pagination helps you manage large data sets by breaking them into smaller, more manageable chunks of data. When you retrieve job run logs, you can use two types of pagination: offset pagination and cursor pagination.")
 
-[Authentication](authentication-5dca60b.md "This section describes different ways how the application accesses the SAP Job Scheduling service REST APIs depending on the service plan you use.")
+[Authentication](authentication-5dca60b.md "This section describes how the application accesses the SAP Job Scheduling service REST APIs. The access method depends on the service plan and authentication method you use.")
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")
 

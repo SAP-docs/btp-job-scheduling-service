@@ -26,7 +26,7 @@ Integrating SAP Job Scheduling service with SAP Alert Notification service for S
 
 -   Improved operational efficiency
 
-    The integration facilitates automated workflows where alerts can trigger predefined actions or workflows with the help of the SAP Automation Pilot. For example, if a scheduled job fails, an alert can automatically initiate a recovery process or notify the support team to take corrective action. This automation reduces manual intervention, streamlines operations, and enhances overall efficiency in managing scheduled tasks.
+    The integration facilitates automated workflows where alerts can trigger predefined actions or workflows with the help of the Automation Pilot. For example, if a scheduled job fails, an alert can automatically initiate a recovery process or notify the support team to take corrective action. This automation reduces manual intervention, streamlines operations, and enhances overall efficiency in managing scheduled tasks.
 
 
 

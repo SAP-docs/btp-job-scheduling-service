@@ -91,6 +91,153 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Deprecation of Node.js Library
+
+</td>
+<td valign="top">
+
+The Node.js client library is deprecated. The library is planned to receive security updates for one year after deprecation.
+
+See [Node.js Client Library \(Deprecated\)](../40---Using-JOB-SCHDULR-TITLE/node-js-client-library-deprecated-9b86127.md).
+
+Action: Use the REST API published on SAP Business Accelerator Hub instead. You can use it to generate a client library for your preferred programming language that contains all up-to-date APIs and features. See [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-30
+
+</td>
+<td valign="top">
+
+2026-04-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication Support
+
+</td>
+<td valign="top">
+
+As an alternative to SAP Authorization and Trust Management service \(XSUAA\) authentication, the SAP Job Scheduling service now supports SAP Cloud Identity Services - Identity Authentication.
+
+Key features:
+
+-   OAuth 2.0 authentication via Identity Authentication service
+
+-   Integration with `consumed-services` of the SAP Cloud Identity Services - Identity Authentication service instance configuration
+
+-   Support for multitenancy with the Subscription Management service
+
+
+See [Secure Access](../50---Security/secure-access-745ca50.md) and [Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-03-30
+
+</td>
+<td valign="top">
+
+2026-04-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Mark Jobs, Tasks, Schedules as Favorites \(Experimental\)
 
 </td>
@@ -166,7 +313,7 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
-REST API Available on SAP Business Accelerator Hub
+REST API Available on SAP Business Accelerator Hub 
 
 </td>
 <td valign="top">

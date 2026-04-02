@@ -16,9 +16,20 @@ You can get started with the SAP Job Scheduling service by following the steps b
 
 -   You’re a global account administrator.
 
--   You've purchased quota for the SAP Job Scheduling service and for the SAP Authorization and Trust Management service \(XSUAA\) and distributed it to your subaccount.
+-   You've purchased quota for the SAP Job Scheduling service and distributed it to your subaccount.
 
     For the SAP Job Scheduling service, distribute the quota for the service plan *standard*.
+
+-   Depending on your chosen authentication method, you've also purchased and distributed quota for one of the following:
+
+    -   SAP Authorization and Trust Management service \(XSUAA\)
+
+        For more information, see [SAP Authorization and Trust Management Service](https://help.sap.com/docs/btp/sap-business-technology-platform/sap-authorization-and-trust-management-service-in-cloud-foundry-environment).
+
+    -   SAP Cloud Identity Services - Identity Authentication: plan *Application*
+
+        For more information, see [SAP Cloud Identity Services](https://help.sap.com/docs/cloud-identity-services).
+
 
     For more information, see [Configure Entitlements and Quotas for Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/5ba357b4fa1e4de4b9fcc4ae771609da.html "Distribute the entitlements that are available in your global account by adding service plans and their allowed quotas to your subaccounts using SAP BTP cockpit.") :arrow_upper_right: and [SAP Authorization and Trust Management Service](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/6373bb7a96114d619bfdfdc6f505d1b9.html "The global account and subaccounts get their users from identity providers. Administrators make sure that users can only access their dedicated subaccount by making sure that there is a dedicated trust relationship only between the identity providers and the respective subaccounts. Developers configure and deploy application-based security artifacts containing authorizations, and administrators assign these authorizations using the SAP BTP cockpit.") :arrow_upper_right:.
 
@@ -63,10 +74,20 @@ To use the SAP Job Scheduling service, you must create a service instance using 
 
 A service instance is a single instantiation of a service running on SAP BTP. For more information, see [About Services](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d1d0fc8e78474494a59caad02259ec7e.html).
 
-To enable the application to consume the created SAP Job Scheduling service instance, the application must be bound to an instance of the SAP Authorization and Trust Management service.
+To enable the application to consume the created SAP Job Scheduling service instance, the application must be bound to an authentication service instance.
+
+The SAP Job Scheduling service supports two authentication methods:
+
+-   XSUAA \(default\): Uses the SAP Authorization and Trust Management service \(XSUAA\) with OAuth 2.0 authentication.
+-   SAP Cloud Identity Services - Identity Authentication: Uses the Identity Authentication service with OAuth 2.0 authentication.
+
+You choose the authentication method when creating a service instance.
+
+> ### Caution:  
+> Once the service instance is created, you can't change the authentication type.
 
 > ### Remember:  
-> You must also enable the SAP Authorization and Trust Management service.
+> You must enable the corresponding authentication service based on your chosen method: SAP Authorization and Trust Management service for XSUAA, or SAP Cloud Identity Services - Identity Authentication for Identity Authentication service.
 
 The following section provides an overview of the main steps you must follow:
 
@@ -75,17 +96,33 @@ The following section provides an overview of the main steps you must follow:
 
 1.  Create an instance of the SAP Job Scheduling service.
 
-2.  Make sure you have an XSUAA service instance by creating a new one or updating an existing one.
+    When creating the instance, specify your authentication method using the `authentication` parameter:
 
-    > ### Note:  
-    > The instance must be configured using the corresponding security descriptor syntax. For more information, see [Application Security Descriptor Configuration Syntax](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/517895a9612241259d6941dbf9ad81cb.html "The syntax required to set the properties and values defined in the xs-security.json application security descriptor file.") :arrow_upper_right:.
+    -   `"authentication": "xsuaa"` \(default\) for XSUAA authentication
 
-    > ### Note:  
-    > If you already have an XSUAA service instance, remember to update it first with the updated `xs-security.json` file. This is necessary because the content in the `xs-security.json` where the scope is granted to the SAP Job Scheduling service with the `grant-as-authority-to-apps` has changed.
+    -   `"authentication": "ias"` for authentication with Identity Authentication service
 
-3.  Make sure that you've bound the XSUAA service instance to your deployed application.
 
-    For more information about how to bind applications, see:
+2.  Set up your authentication service.
+
+    -   For XSUAA authentication:
+
+        Make sure you have an XSUAA service instance by creating a new one or updating an existing one.
+
+        > ### Note:  
+        > The instance must be configured using the corresponding security descriptor syntax. For more information, see [Application Security Descriptor Configuration Syntax](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/517895a9612241259d6941dbf9ad81cb.html "The syntax required to set the properties and values defined in the xs-security.json application security descriptor file.") :arrow_upper_right:.
+
+        > ### Note:  
+        > If you already have an XSUAA service instance, remember to update it first with the updated `xs-security.json` file. This is necessary because the content in the `xs-security.json` where the scope is granted to the SAP Job Scheduling service with the `grant-as-authority-to-apps` has changed.
+
+    -   For authentication with Identity Authentication service:
+
+        Make sure you have an Identity Authentication service instance \(plan: application\) and configure the `consumed-services` to include your SAP Job Scheduling service instance. For more information, see [Secure Access](50---Security/secure-access-745ca50.md).
+
+
+3.  Bind the authentication service instance to your deployed application.
+
+    For more information on how to bind applications, see:
 
     -   **Cloud Foundry**: [Binding Service Instances to Applications](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e98280a71f17413088f8a10838a1e4cc.html)
 
@@ -93,9 +130,6 @@ The following section provides an overview of the main steps you must follow:
 
 
 4.  Bind the SAP Job Scheduling service instance to your deployed application.
-
-    > ### Note:  
-    > If you don't bind your application to the SAP Job Scheduling service instance, you can't call the SAP Job Scheduling service from your own application.
 
 
 

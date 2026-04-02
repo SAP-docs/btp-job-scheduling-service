@@ -16,7 +16,11 @@ To support a multitenancy scenario, you must:
 
 1.  Deploy a multitenant application to a provider subaccount.
 
-2.  Bind the deployed application to instances of both the SAP SaaS Provisioning service and the SAP Job Scheduling service.
+2.  Bind the deployed application to an instance of the SAP Job Scheduling service and to one of the following:
+
+    -   For XSUAA authentication \(default\): SAP SaaS Provisioning service
+    -   For authentication with Identity Authentication service: Subscription Management service and an SAP Cloud Identity Services - Identity Authentication service instance
+
 
 3.  Define the SAP Job Scheduling service as a dependency.
 
@@ -60,6 +64,51 @@ When a single instance of the SAP Job Scheduling service is used by multiple mul
 -   The data is shared among the applications the SaaS tenant has subscribed to.
 
 -   If you delete a subscription to one of these applications, the data in the SAP Job Scheduling service remains intact until all subscriptions are deleted.
+
+
+
+
+## Set Up Authentication Using Identity Authentication Service
+
+When using authentication with Identity Authentication service for a multitenant scenario, the setup differs from authentication with SAP Authorization and Trust Management service \(XSUAA\):
+
+1.  Create an Identity Authentication service instance with `multi-tenant: true` and specify the SAP Job Scheduling service in `consumed-services`.
+
+    Example for Identity Authentication service configuration for a multitenant scenario:
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >     "display-name": "Multi-Tenant Application",
+    >     "multi-tenant": true,
+    >     "consumed-services": [
+    >         {
+    >             "service-instance-name": "<jobscheduler-instance-name>"
+    >         }
+    >     ]
+    > }
+    > ```
+
+2.  Create a Subscription Management service instance with the Identity Authentication service reference.
+
+    Example for Subsription Management service configuration:
+
+    > ### Sample Code:  
+    > ```
+    >    {
+    >       "iasServiceInstanceName": "<identity-service-instance-name>",
+    >       "applicationType": "application",
+    >       "displayName": "Multi-Tenant Application",
+    >       "appName": "<app-name>",
+    >       "appCallbacks": {
+    >          "subscriptionCallbacks": {
+    >             "url": "https://<app-url>/subscription_manager_callbacks/tenants/{app_tid}"
+    >          }
+    >       }
+    >    }
+    > ```
+
+    For information on making API calls on behalf of subscriber tenants, see [Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
 
 
 

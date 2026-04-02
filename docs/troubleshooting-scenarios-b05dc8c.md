@@ -180,3 +180,22 @@ cf logs <application_name> --recent
 
 For more information, see [https://docs.cloudfoundry.org/devguide/using-tasks.html](https://docs.cloudfoundry.org/devguide/using-tasks.html).
 
+
+
+## Service Instance Not Found in `consumed-services` of the Identity Authentication Service
+
+If you encounter the error message ***Service instance not found in consumed-services of the Identity Authentication service*** when creating a new instance with authentication type IAS or establishing trust for an existing instance, this typically indicates one of two issues:
+
+-   Lack of Established Trust
+
+    **Description:** The service instance isn't referred to in the `consumed-services` of the Identity Authentication service instance.
+
+    **Solution:** Set up the necessary configuration in the Identity Authentication service instance. For more information, see [Reference Information for Identity Service of SAP BTP](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/reference-information-for-identity-service-of-sap-btp).
+
+-   Recent Trust Establishment
+
+    **Description:** Trust was established less than 24 hours ago. Any change performed in the Identity Authentication service instance can take up to 24 hours to propagate.
+
+    **Solution:** Allow up to 24 hours for the changes to fully propagate and ensure that all configurations are up to date.
+
+

@@ -56,7 +56,7 @@ Get secure access
 </b></dt>
 <dd>
 
-Run jobs on behalf of an application secured by an OAuth 2.0 protected communication used when the service calls the action endpoint, and when the application invokes the services' REST APIs.
+Run jobs on behalf of an application with secured communication when the service calls the action endpoint and when the application invokes the service's REST APIs. Choose between Authorization and Trust Management and Identity Authentication.
 
 
 

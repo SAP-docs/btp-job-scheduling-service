@@ -10,9 +10,12 @@ Create and grant a scope to SAP Job Scheduling service.
 
 ## Prerequisites
 
-You've created an xsuaa service instance and bound it to the application.
+You've created an SAP Authorization and Trust Management service \(XSUAA\) instance and bound it to the application.
 
 For more information, see [Getting Started](../getting-started-02e4e8b.md).
+
+> ### Note:  
+> The procedure for defining and granting scopes applies only to SAP Job Scheduling service instances that use **XSUAA authentication**. If you use authentication with Identity Authentication service, see [Secure Access](https://help.sap.com/viewer/07b57c2f4b944bcd8470d024723a1631/Cloud/en-US/745ca502face47af9adb546a916ce1e8.html) for information on configuring the `consumed-services` in your SAP Cloud Identity Services - Identity Authentication service instance.
 
 
 
@@ -40,7 +43,7 @@ For the service plan *standard*, SAP Job Scheduling service uses User Account an
     >     }]
     > ```
 
-2.  Update the xsuaa service instance with the updated `xs-security.json`:
+2.  Update the XSUAA service instance with the updated `xs-security.json`:
 
     ```
     cf update-service <xsuaa-instance-name> -c xs-security.json

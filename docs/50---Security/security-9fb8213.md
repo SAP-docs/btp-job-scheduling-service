@@ -14,7 +14,14 @@ For information on the security features of SAP BTP, see [Security Guide for SAP
 
 ## Identity and Access Management
 
-This section describes how to secure action endpoints based on OAuth 2.0 authentication. For more information, see [Secure Access](secure-access-745ca50.md).
+This section describes how to secure action endpoints. The SAP Job Scheduling service supports two authentication methods:
+
+-   XSUAA \(default\): OAuth 2.0 authentication using the SAP Authorization and Trust Management service
+
+-   Identity Authentication: OAuth 2.0 authentication using SAP Cloud Identity Services - Identity Authentication.
+
+
+For more information, see [Secure Access](secure-access-745ca50.md).
 
 
 

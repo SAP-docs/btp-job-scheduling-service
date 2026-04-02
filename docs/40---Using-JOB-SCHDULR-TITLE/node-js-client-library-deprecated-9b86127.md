@@ -1,8 +1,13 @@
 <!-- loio9b861273d16a41ecbc77b583c7cad5aa -->
 
-# Node.js Client Library
+# Node.js Client Library \(Deprecated\)
 
 Directly access Node.js APIs.
+
+> ### Caution:  
+> The Node.js library is deprecated on 2 April 2026. The library is planned to receive security updates for one year after deprecation. For more information, see [What's New for SAP Job Scheduling Service](../10---What-s-New/what-s-new-for-sap-job-scheduling-service-35dd2f8.md).
+> 
+> Use the REST API published on the SAP Business Accelerator Hub instead. You can use it to generate a client library for your preferred programming language that contains all up-to-date APIs and features. For more information, see [https://api.sap.com/api/sap-btpjss-admin-v1/overview](https://api.sap.com/api/sap-btpjss-admin-v1/overview).
 
 
 
