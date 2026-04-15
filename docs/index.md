@@ -1,4 +1,4 @@
-#  SAP Job Scheduling Service 
+# SAP Job Scheduling Service
 
 -   [What Is SAP Job Scheduling Service?](what-is-sap-job-scheduling-service-22c2df4.md#loio22c2df4d22cb4a05af4c9502a67597ae)
 -   [What's New for SAP Job Scheduling Service](10---What-s-New/what-s-new-for-sap-job-scheduling-service-35dd2f8.md)
@@ -26,6 +26,7 @@
     -   [Best Practices](40---Using-JOB-SCHDULR-TITLE/best-practices-7b3f014.md)
     -   [SAP Job Scheduling Service REST APIs](40---Using-JOB-SCHDULR-TITLE/sap-job-scheduling-service-rest-apis-c513d2d.md)
         -   [Understanding Offset and Cursor Pagination](40---Using-JOB-SCHDULR-TITLE/understanding-offset-and-cursor-pagination-96ebd22.md)
+        -   [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md)
         -   [Rate Limits](40---Using-JOB-SCHDULR-TITLE/rate-limits-a9cb164.md)
         -   [Authentication](40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md)
         -   [REST APIs](40---Using-JOB-SCHDULR-TITLE/rest-apis-3dcd04a.md)

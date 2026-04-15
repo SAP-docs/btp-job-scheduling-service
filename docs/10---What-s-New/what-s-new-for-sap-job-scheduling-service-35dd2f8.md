@@ -388,7 +388,7 @@ New Page Size Limits for the `GET /scheduler/jobs` API
 
 Starting 25 June, a new default page size of 10 and a maximum page size of 100 are enforced on the `GET /scheduler/jobs` endpoint. This change aims to ensure stability of the service and makes this endpoint consistent with the other API endpoints of the service.
 
-Action: To retrieve all jobs, implement offset pagination. For more information, see [Understanding Offset and Cursor Pagination](../40---Using-JOB-SCHDULR-TITLE/understanding-offset-and-cursor-pagination-96ebd22.md).
+Action: To retrieve all jobs, implement offset pagination. For more information, see [Pagination Guide for GET /scheduler/jobs](../40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
 
 </td>
 <td valign="top">

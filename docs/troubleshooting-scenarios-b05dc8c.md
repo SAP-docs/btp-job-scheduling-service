@@ -199,3 +199,70 @@ If you encounter the error message ***Service instance not found in consumed-ser
     **Solution:** Allow up to 24 hours for the changes to fully propagate and ensure that all configurations are up to date.
 
 
+
+
+<a name="loiob05dc8c092fb4ccc9a2ad7efa8ff47b5__section_hnl_bxn_53c"/>
+
+## Experiencing Pagination Issues Related to `GET /scheduler/jobs`
+
+For more information, see [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md) and [Frequently Asked Questions](frequently-asked-questions-d72c276.md).
+
+Here's a list of possible pagination issues:
+
+
+
+### Only Getting 10 Jobs
+
+This is the new default behavior. To collect all jobs, add `page_size` and iterate through pages:
+
+```
+GET /scheduler/jobs?page_size=100
+GET /scheduler/jobs?page_size=100&offset=100
+GET /scheduler/jobs?page_size=100&offset=200
+...
+```
+
+Continue until `next_url` is `null`.
+
+
+
+### Getting a 400 Bad Request Error
+
+Make sure that:
+
+-   The `page_size` is a positive integer between 1 and 100.
+
+-   The `offset` is a non-negative integer \(0 or greater\).
+
+-   You aren't passing `page_size` or `offset` along with `jobId` or `name` query parameters. These are mutually exclusive.
+
+
+Error response example:
+
+```
+{
+  "code": 400,
+  "message": "Error while fetching list of jobs: Invalid Page Size",
+  "type": "Bad Request/Invalid Request",
+  "detailedError": "Error while fetching list of jobs: Invalid Page Size"
+}
+```
+
+
+
+### Getting `"next_url": null`
+
+You are on the last page. Make sure that's the case by verifying that `offset + results.length >= total`.
+
+
+
+### Getting `"prev_url": null`
+
+You are on the first page. This is expected when `offset` is `0` or it isn't provided.
+
+
+
+### The Total Count Keeps Changing Between Pages
+
+If jobs are being created or deleted while you paginate, the total value may change. For a consistent snapshot, try to paginate quickly or account for this in your application logic.
+

@@ -74,6 +74,8 @@ All of the limits and response effects are stacking, that means absolute limit a
 
 [Understanding Offset and Cursor Pagination](understanding-offset-and-cursor-pagination-96ebd22.md "Pagination helps you manage large data sets by breaking them into smaller, more manageable chunks of data. When you retrieve job run logs, you can use two types of pagination: offset pagination and cursor pagination.")
 
+[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 25 June 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
+
 [Authentication](authentication-5dca60b.md "This section describes how the application accesses the SAP Job Scheduling service REST APIs. The access method depends on the service plan and authentication method you use.")
 
 [REST APIs](rest-apis-3dcd04a.md "SAP Job Scheduling service REST APIs")

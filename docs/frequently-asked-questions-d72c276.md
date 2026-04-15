@@ -258,6 +258,131 @@ You cannot create CF tasks using the REST API because they are bound to a specif
 
 If you have the Space Developer role, you can create a task in the Job Scheduling service dashboard. When you access the dashboard, go to *Tasks* and choose *Create Task*.
 
+
+
+<a name="loiod72c276ec60c4bbe89c0b9328a926500__section_t3y_thn_53c"/>
+
+## Pagination for `GET /scheduler/jobs`
+
+**Does this change affect my existing code?**
+
+Yes. If your code calls `GET /scheduler/jobs` without `page_size` and expects all jobs in a single response, it will now only receive the first 10 jobs. To retrieve all jobs, add `page_size` and implement a pagination loop. For more information, see [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
+
+**What happens if I don't update my code?**
+
+During the rollout windows, and permanently after the rollout is complete, any call to `GET /scheduler/jobs` that doesn't include `page_size` will return only the first 10 jobs instead of all jobs.
+
+If your application relies on getting a complete list in one call, it will silently receive an incomplete result. This can lead to missing data, broken reports, or incorrect behavior. The API won't return an error, but it will return fewer results than expected.
+
+**How do I request more time?**
+
+If you need more time to make this change, report a case using the **BC-CP-CF-JBS** component. In the description, include your service instance ID and a brief explanation of your migration timeline.
+
+**How do I test before June 25?**
+
+You can start testing pagination right away. The `page_size` and `offset` parameters are already available. To verify that your code handles the paginated response correctly, add `page_size=100` to your existing calls. For more information, see *step 4: Test the implementation* in [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
+
+**What if I have more than 100 jobs?**
+
+Use a pagination loop to iterate through all pages. Set `page_size=100` \(the maximum\) and increment the `offset` by 100 on each request until you've collected all jobs. For example, if you have 500 jobs, your loop will make 5 requests.
+
+For more information, check the code examples with curl, JavaScript \(async/await\), and JavaScript \(Promises\) in [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
+
+**Does this change affect the SAP Job Scheduling service dashboard?**
+
+No. This change only affects direct API calls to `GET /scheduler/jobs`. If you only interact with jobs through the dashboard, no action is required.
+
+**Is there a way to get all jobs in one call?**
+
+No. After 25 June 2026, all responses are paginated with a maximum of 100 jobs per page. You can't bypass this limit.
+
+**Can I still look up a single job by `name` or `jobId`?**
+
+Yes. Single-job lookups via the `name` or `jobId` query parameters aren't affected by pagination. However, you can't combine `name` or `jobId` with `page_size` or `offset`. If you do, the API returns a 400 Bad Request error:
+
+```
+{
+  "code": 400,
+  "message": "Error while fetching job details: Invalid query",
+  "type": "Bad Request/Invalid Request",
+  "detailedError": "Error while fetching job details: Invalid query"
+}
+```
+
+**Does `next_url` preserve my filters and sort order?**
+
+No. The `next_url` field only includes the `page_size` and `offset` parameters. If you use `jobType`, `sort_by`, `sort_order`, or other filters, they're silently dropped when you follow `next_url`.
+
+When you use filters or sorting, manage pagination manually with `offset` and re-include those parameters in every request:
+
+```
+const BASE_URL = 'https://<jobscheduler-host>/scheduler/jobs';
+const TOKEN = '<your-token>';
+
+async function fetchAllJobs(pageSize = 100, filters = {}) {
+  const allJobs = [];
+  let offset = 0;
+  let total = 0;
+
+  // Build query params once — reuse on every page
+  const params = new URLSearchParams({ page_size: pageSize, ...filters });
+
+  do {
+    params.set('offset', offset);
+    const url = `${BASE_URL}?${params}`;
+    const response = await fetch(url, {
+      headers: { 'Authorization': `Bearer ${TOKEN}` }
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    allJobs.push(...data.results);
+    total = data.total;
+    offset += pageSize;
+  } while (offset < total);
+
+  return allJobs;
+}
+
+// Usage with filters
+const jobs = await fetchAllJobs(100, {
+  jobType: 'HTTP_ENDPOINT',
+  sort_by: 'name',
+  sort_order: 'ASC'
+});
+console.log(`Collected ${jobs.length} jobs total.`);
+```
+
+**What happens if `offset` exceeds the total number of jobs?**
+
+You receive a valid response with an empty `results` array. The `next_url` is `null` and `prev_url` points back to a prior page. This isn't an error. Your pagination loop should stop when `results` is empty or `next_url` is `null`.
+
+```
+{
+  "total": 923,
+  "results": [],
+  "prev_url": "/scheduler/jobs?page_size=10&offset=99989",
+  "next_url": null
+}
+```
+
+**What values of `page_size` are valid?**
+
+The `page_size` must be a positive integer between 1 and 100. Invalid values return a 400 Bad Request error.
+
+**Can I use pagination with `jobType` or other filters?**
+
+Yes. The `page_size` and `offset` parameters work alongside `jobType`, `sort_by`, and `sort_order`. For example:
+
+```
+GET /scheduler/jobs?page_size=50&jobType=HTTP_ENDPOINT&sort_by=name&sort_order=ASC
+```
+
+Just remember that `next_url` won't include these filters. Use the offset-based approach described in *Does `next_url` preserve my filters and sort order?*.
+
 **Related Information**  
 
 

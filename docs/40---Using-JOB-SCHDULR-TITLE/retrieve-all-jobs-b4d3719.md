@@ -395,5 +395,7 @@ The API was unable to process the request due to invalid data provided.
 
 [Search Schedules](search-schedules-137d28e.md "This API searches for schedules across all jobs in a service instance using a query string with optional qualifiers. Each schedule result includes a parent object with information about the parent job.")
 
+[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 25 June 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
+
 [SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 
