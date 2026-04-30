@@ -6,6 +6,15 @@ Learn best practices to optimize the way you use the SAP Job Scheduling service 
 
 
 
+## Managing Job Count for Optimal Performance
+
+Instances with a large number of jobs may experience reduced performance in scheduling and execution. To maintain optimal performance, keep the job count below 10,000 by regularly removing jobs with inactive schedules or jobs that are no longer needed.
+
+> ### Note:  
+> An instance supports a maximum of 500,000 jobs.
+
+
+
 <a name="loio7b3f01449dd14529b902711dffb17cfa__section_v33_zrt_lgc"/>
 
 ## Scheduling Time

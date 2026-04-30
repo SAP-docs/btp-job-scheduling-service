@@ -91,6 +91,142 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Deprecation Response Headers for the `GET /scheduler/jobs` API
+
+</td>
+<td valign="top">
+
+The `GET /scheduler/jobs` endpoint now returns standard HTTP deprecation headers \(`Deprecation`, `Link`, `Sunset`\) and custom headers \(`X-Deprecation-Warning`, `X-Breaking-Change-Date`, `X-Breaking-Change-Type`, `X-Migration-Guide`\). These headers notify you about the upcoming pagination enforcement on June 25, 2026.
+
+Action: To detect upcoming changes, you can monitor programmatically the `X-Deprecation-Warning` or `Sunset` response headers. See [Retrieve All Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-all-jobs-b4d3719.md) and [Pagination Guide for GET /scheduler/jobs](../40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-04-27
+
+</td>
+<td valign="top">
+
+2026-04-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Managing Job Count for Optimal Performance
+
+</td>
+<td valign="top">
+
+SAP Job Scheduling service instances with a large number of jobs may experience reduced performance in scheduling and execution. To maintain optimal performance, an instance now supports a maximum of 500,000 jobs.
+
+Action: Keep the job count below 10,000 by regularly removing jobs with inactive schedules or jobs that are no longer needed. See [Best Practices](../40---Using-JOB-SCHDULR-TITLE/best-practices-7b3f014.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-04-27
+
+</td>
+<td valign="top">
+
+2026-04-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Deprecation of Node.js Library
 
 </td>
@@ -177,7 +313,7 @@ Key features:
 -   Support for multitenancy with the Subscription Management service
 
 
-See [Secure Access](../50---Security/secure-access-745ca50.md) and [Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
+See [Secure Access](../50---Security/secure-access-745ca50.md)[Authentication](../40---Using-JOB-SCHDULR-TITLE/authentication-5dca60b.md).
 
 </td>
 <td valign="top">

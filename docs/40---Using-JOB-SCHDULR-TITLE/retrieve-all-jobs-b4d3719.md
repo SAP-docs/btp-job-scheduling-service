@@ -305,6 +305,170 @@ The "filter" query option currently can make use of the following settings:
 
 
 
+### Deprecation Response Headers
+
+All responses from `GET /scheduler/jobs` include the following HTTP headers. These headers notify you about the upcoming pagination enforcement \(effective June 25, 2026\):
+
+
+<table>
+<tr>
+<th valign="top">
+
+Header
+
+</th>
+<th valign="top">
+
+Example Value
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`X-Deprecation-Warning` 
+
+</td>
+<td valign="top">
+
+`Pagination will be enforced on 2026-06-26. Default pageSize=10, max=100. See: https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/pagination-guide-for-get-scheduler-job` 
+
+</td>
+<td valign="top">
+
+Human-readable deprecation notice
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`X-Breaking-Change-Date` 
+
+</td>
+<td valign="top">
+
+`2026-06-25` 
+
+</td>
+<td valign="top">
+
+Date when the breaking change takes effect
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`X-Breaking-Change-Type` 
+
+</td>
+<td valign="top">
+
+`pagination-required` 
+
+</td>
+<td valign="top">
+
+Type of breaking change
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`X-Migration-Guide` 
+
+</td>
+<td valign="top">
+
+`https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/pagination-guide-for-get-scheduler-job` 
+
+</td>
+<td valign="top">
+
+Link to the migration guide
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Deprecation` 
+
+</td>
+<td valign="top">
+
+`@1782345600` 
+
+</td>
+<td valign="top">
+
+Unix timestamp as defined in RFC 8594: [https://tools.ietf.org/html/rfc8594](https://tools.ietf.org/html/rfc8594) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Link` 
+
+</td>
+<td valign="top">
+
+`<https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/pagination-guide-for-get-scheduler-jobs>; rel="deprecation"; type="text/html"`
+
+</td>
+<td valign="top">
+
+Standard link relation as defined in RFC 8594
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Sunset` 
+
+</td>
+<td valign="top">
+
+`Thu, 25 Jun 2026 00:00:00 GMT` 
+
+</td>
+<td valign="top">
+
+Sunset date as defined in RFC 7231: [https://tools.ietf.org/html/rfc7231](https://tools.ietf.org/html/rfc7231) 
+
+</td>
+</tr>
+</table>
+
+> ### Tip:  
+> You can monitor these headers programmatically to detect upcoming breaking changes:
+> 
+> ```
+> ```javascript
+> const response = await fetch('/scheduler/jobs', {
+>   headers: { 'Authorization': `Bearer ${token}` }
+> });
+> 
+> const warning = response.headers.get('X-Deprecation-Warning');
+> if (warning) {
+>   console.warn('API Deprecation:', warning);
+> }
+> ```
+> ```
+
+These headers remain available until the deprecation period ends. They're informational only and don't affect the response body or API behavior.
+
+
+
 ### Status Code: 200
 
 The API call was successful and the jobs were retrieved.

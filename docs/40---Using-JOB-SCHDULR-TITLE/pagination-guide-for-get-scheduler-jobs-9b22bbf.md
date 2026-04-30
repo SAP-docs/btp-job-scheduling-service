@@ -172,6 +172,12 @@ Returns a paginated response with no more than 100 jobs:
 
 
 
+### Deprecation Response Headers
+
+All responses from `GET /scheduler/jobs` include HTTP headers notifying you about the upcoming pagination enforcement. For more information, see [Responses](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/retrieve-jobs?version=Cloud#responses).
+
+
+
 ### Best Practices
 
 -   Fetch only the jobs you need. Use request parameters like `jobType`, `sort_by`, and `sort_order` to narrow results at the API level. For more information about the available parameter options, see [Retrieve All Jobs](retrieve-all-jobs-b4d3719.md).
