@@ -2,7 +2,7 @@
 
 # Pagination Guide for `GET /scheduler/jobs`
 
-Starting 25 June 2026, the `GET /scheduler/jobs` endpoint enforces pagination on all responses. If you currently call this endpoint without a `page_size` parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.
+Starting 26 October 2026, the `GET /scheduler/jobs` endpoint enforces pagination on all responses. If you currently call this endpoint without a `page_size` parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.
 
 
 
@@ -37,12 +37,12 @@ Aspect
 </th>
 <th valign="top">
 
-Before 25 June 2026
+Before 26 October 2026
 
 </th>
 <th valign="top">
 
-After 25 June 2026
+After 26 October 2026
 
 </th>
 </tr>

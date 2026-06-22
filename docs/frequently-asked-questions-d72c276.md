@@ -278,7 +278,7 @@ If your application relies on getting a complete list in one call, it will silen
 
 If you need more time to make this change, report a case using the **BC-CP-CF-JBS** component. In the description, include your service instance ID and a brief explanation of your migration timeline.
 
-**How do I test before June 25?**
+**How do I test before October 26?**
 
 You can start testing pagination right away. The `page_size` and `offset` parameters are already available. To verify that your code handles the paginated response correctly, add `page_size=100` to your existing calls. For more information, see *step 4: Test the implementation* in [Pagination Guide for GET /scheduler/jobs](40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
 
@@ -294,7 +294,7 @@ No. This change only affects direct API calls to `GET /scheduler/jobs`. If you o
 
 **Is there a way to get all jobs in one call?**
 
-No. After 25 June 2026, all responses are paginated with a maximum of 100 jobs per page. You can't bypass this limit.
+No. After 26 October 2026, all responses are paginated with a maximum of 100 jobs per page. You can't bypass this limit.
 
 **Can I still look up a single job by `name` or `jobId`?**
 

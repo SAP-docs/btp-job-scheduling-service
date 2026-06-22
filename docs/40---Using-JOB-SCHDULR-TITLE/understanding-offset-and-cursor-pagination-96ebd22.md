@@ -84,7 +84,7 @@ In SAP Job Scheduling service, you can currently use cursor pagination only with
 **Related Information**  
 
 
-[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 25 June 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
+[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 26 October 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
 
 [Rate Limits](rate-limits-a9cb164.md "When you use the SAP Job Scheduling service REST API, rate limits are used to limit the number of requests against the REST API. Requests can be throttled (delayed), and if there is a very high load also denied.")
 

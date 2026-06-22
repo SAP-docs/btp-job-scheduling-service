@@ -91,12 +91,82 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Update: New Page Size Limits for the `GET /scheduler/jobs` API Postponed to 26 October
+
+</td>
+<td valign="top">
+
+The implementation of new page size limits for the `GET /scheduler/jobs` endpoint, originally scheduled for 25 June, has been postponed to 26 October. The goal of this extension is to provide you with additional time to implement the required changes.
+
+As previously announced, a new default page size of 10 and a maximum page size of 100 will be enforced on the `GET /scheduler/jobs` endpoint. This change ensures service stability and makes this endpoint consistent with other API endpoints of the service.
+
+Action: To retrieve all jobs, implement pagination according to the guide. See [Pagination Guide for GET /scheduler/jobs](../40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-06-22
+
+</td>
+<td valign="top">
+
+2026-10-26
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Deprecation Response Headers for the `GET /scheduler/jobs` API
 
 </td>
 <td valign="top">
 
-The `GET /scheduler/jobs` endpoint now returns standard HTTP deprecation headers \(`Deprecation`, `Link`, `Sunset`\) and custom headers \(`X-Deprecation-Warning`, `X-Breaking-Change-Date`, `X-Breaking-Change-Type`, `X-Migration-Guide`\). These headers notify you about the upcoming pagination enforcement on June 25, 2026.
+The `GET /scheduler/jobs` endpoint now returns standard HTTP deprecation headers \(`Deprecation`, `Link`, `Sunset`\) and custom headers \(`X-Deprecation-Warning`, `X-Breaking-Change-Date`, `X-Breaking-Change-Type`, `X-Migration-Guide`\). These headers notify you about the upcoming pagination enforcement on October 26, 2026.
 
 Action: To detect upcoming changes, you can monitor programmatically the `X-Deprecation-Warning` or `Sunset` response headers. See [Retrieve All Jobs](../40---Using-JOB-SCHDULR-TITLE/retrieve-all-jobs-b4d3719.md) and [Pagination Guide for GET /scheduler/jobs](../40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
 
@@ -497,74 +567,6 @@ Not applicable
 <td valign="top">
 
 2026-03-05
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Job Scheduling Service
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
-
--   Kyma
-
-
-
-</td>
-<td valign="top">
-
-New Page Size Limits for the `GET /scheduler/jobs` API
-
-</td>
-<td valign="top">
-
-Starting 25 June, a new default page size of 10 and a maximum page size of 100 are enforced on the `GET /scheduler/jobs` endpoint. This change aims to ensure stability of the service and makes this endpoint consistent with the other API endpoints of the service.
-
-Action: To retrieve all jobs, implement offset pagination. For more information, see [Pagination Guide for GET /scheduler/jobs](../40---Using-JOB-SCHDULR-TITLE/pagination-guide-for-get-scheduler-jobs-9b22bbf.md).
-
-</td>
-<td valign="top">
-
-Required
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2026-03-12
-
-</td>
-<td valign="top">
-
-2026-06-25
 
 </td>
 </tr>

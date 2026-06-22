@@ -307,7 +307,7 @@ The "filter" query option currently can make use of the following settings:
 
 ### Deprecation Response Headers
 
-All responses from `GET /scheduler/jobs` include the following HTTP headers. These headers notify you about the upcoming pagination enforcement \(effective June 25, 2026\):
+All responses from `GET /scheduler/jobs` include the following HTTP headers. These headers notify you about the upcoming pagination enforcement \(effective October 26, 2026\):
 
 
 <table>
@@ -336,7 +336,7 @@ Description
 </td>
 <td valign="top">
 
-`Pagination will be enforced on 2026-06-26. Default pageSize=10, max=100. See: https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/pagination-guide-for-get-scheduler-job` 
+`Pagination will be enforced on 2026-10-26. Default pageSize=10, max=100. See: https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/pagination-guide-for-get-scheduler-job` 
 
 </td>
 <td valign="top">
@@ -353,7 +353,7 @@ Human-readable deprecation notice
 </td>
 <td valign="top">
 
-`2026-06-25` 
+`2026-10-26` 
 
 </td>
 <td valign="top">
@@ -438,7 +438,7 @@ Standard link relation as defined in RFC 8594
 </td>
 <td valign="top">
 
-`Thu, 25 Jun 2026 00:00:00 GMT` 
+`Mon, 26 October 2026 00:00:00 GMT` 
 
 </td>
 <td valign="top">
@@ -559,7 +559,7 @@ The API was unable to process the request due to invalid data provided.
 
 [Search Schedules](search-schedules-137d28e.md "This API searches for schedules across all jobs in a service instance using a query string with optional qualifiers. Each schedule result includes a parent object with information about the parent job.")
 
-[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 25 June 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
+[Pagination Guide for GET /scheduler/jobs](pagination-guide-for-get-scheduler-jobs-9b22bbf.md "Starting 26 October 2026, the GET /scheduler/jobs endpoint enforces pagination on all responses. If you currently call this endpoint without a page_size parameter, your response will be limited to 10 jobs by default instead of returning every job in your service instance.")
 
 [SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 
