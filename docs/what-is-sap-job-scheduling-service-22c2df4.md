@@ -2,9 +2,9 @@
 
 # What Is SAP Job Scheduling Service?
 
-Define and manage one-time and recurring jobs or Cloud Foundry tasks.
+Define and manage one-time and recurring HTTP and CF task jobs.
 
-SAP Job Scheduling service allows you to define and manage jobs that run once or on a recurring schedule. Use this runtime-agnostic service to schedule action endpoints in your application or long-running processes using Cloud Foundry tasks. Use REST APIs to schedule jobs, including long-running jobs asynchronously, and create multiple schedule formats for simple and complex recurring schedules. Manage jobs and tasks and manage schedules with a web-based user interface.
+SAP Job Scheduling service allows you to define and manage HTTP and Cloud Foundry \(CF\) task jobs that run once or on a recurring schedule. Use this runtime-agnostic service to schedule action endpoints in your application or long-running processes using CF tasks. Use REST APIs to schedule HTTP jobs, including long-running jobs asynchronously, and create multiple schedule formats for simple and complex recurring schedules. Manage jobs and their schedules with a web-based user interface.
 
 By using the SAP Job Scheduling service in the cloud, you benefit from its multitenancy capabilities, its uniform REST API, and you don’t have to switch feature sets.
 
@@ -56,7 +56,7 @@ Get secure access
 </b></dt>
 <dd>
 
-Run jobs on behalf of an application with secured communication when the service calls the action endpoint and when the application invokes the service's REST APIs. Choose between Authorization and Trust Management and Identity Authentication.
+Run HTTP jobs on behalf of an application with secured communication when the service calls the action endpoint and when the application invokes the service's REST APIs. Choose between Authorization and Trust Management and Identity Authentication.
 
 
 
@@ -67,7 +67,7 @@ Schedule synchronously or asynchronously
 </b></dt>
 <dd>
 
-Define and manage jobs synchronously or asynchronously as well as run long-running CF tasks asynchronously.
+Define and manage HTTP jobs synchronously or asynchronously as well as run long-running CF task job asynchronously.
 
 
 
@@ -78,7 +78,7 @@ Optimize your resources usage
 </b></dt>
 <dd>
 
-Run Cloud Foundry tasks asynchronously and thereby optimize your resources usage.
+Run Cloud Foundry task jobs asynchronously and thereby optimize your resources usage.
 
 
 
@@ -89,18 +89,18 @@ App and scheduling logic separated
 </b></dt>
 <dd>
 
-USE REST APIs to perform CRUD operations on jobs and schedules and to retrieve run logs of executed schedules.
+Use REST APIs to perform CRUD operations on HTTP jobs and schedules and to retrieve run logs of executed schedules.
 
 
 
 </dd><dt><b>
 
-Dashboard for managing jobs and tasks 
+Dashboard for managing jobs 
 
 </b></dt>
 <dd>
 
-Use the web-based user interface to create, edit, or delete jobs and tasks for a service instance. Create, manage, and monitor schedules for your jobs and tasks. Check the logs to see if a schedule was executed successfully.
+Use the web-based user interface to create, edit, or delete HTTP jobs and CF task jobs for a service instance. Create, manage, and monitor schedules for your jobs. Check the logs to see if a schedule was executed successfully.
 
 
 

@@ -34,15 +34,15 @@ There are currently two ways to enable job monitoring with SAP Cloud ALM:
 
     1.  Open the Job Scheduling service dashboard.
 
-    2.  In the navigation area, choose either *Jobs* or *Tasks*.
+    2.  In the navigation area, choose either *HTTP Jobs* or *CF Task Jobs*.
 
     3.  There are three ways to enable SAP Cloud ALM in the dashboard:
 
         -   In the *Actions* column, choose :desktop_computer:. Use the toggle button to enable SAP Cloud ALM, and choose *Save*.
 
-        -   Choose *Create Job* or *Create Task*, respectively. Use the toggle button to enable SAP Cloud ALM.
+        -   Choose *Create Job*. Use the toggle button to enable SAP Cloud ALM, and choose *Create*.
 
-        -   Choose a job or a task from the list. On the *Overview* page of the job or task, choose *Edit Job* or *Edit Task*, respectively. Use the toggle button to enable SAP Cloud ALM, and choose *Save*.
+        -   Choose a job or a task from the list. On the *Overview* page of the job or task, choose *Edit Job*. Use the toggle button to enable SAP Cloud ALM, and choose *Save*.
 
 
 
@@ -57,7 +57,7 @@ There are currently two ways to enable job monitoring with SAP Cloud ALM:
     ```
 
     > ### Remember:  
-    > You cannot create CF tasks using the REST API because they are bound to a specific application. For more information, see [Can I create a CF task using the REST API?](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/frequently-asked-questions?version=Cloud#rest-api).
+    > You cannot create CF task jobs using the REST API because they are bound to a specific application. For more information, see [Can I create a CF task using the REST API?](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/frequently-asked-questions?version=Cloud#rest-api).
 
     For more information, see [Create Job](40---Using-JOB-SCHDULR-TITLE/create-job-2c1ecb6.md).
 

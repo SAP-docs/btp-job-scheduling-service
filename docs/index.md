@@ -52,6 +52,8 @@
             -   [Search Jobs](40---Using-JOB-SCHDULR-TITLE/search-jobs-bf8f60b.md)
             -   [Search Schedules](40---Using-JOB-SCHDULR-TITLE/search-schedules-137d28e.md)
     -   [Manage Jobs, Tasks, and Schedules with Service Dashboard](40---Using-JOB-SCHDULR-TITLE/manage-jobs-tasks-and-schedules-with-service-dashboard-132fd06.md)
+        -   [Create an HTTP Job](40---Using-JOB-SCHDULR-TITLE/create-an-http-job-315a407.md)
+        -   [Create a CF Task Job](40---Using-JOB-SCHDULR-TITLE/create-a-cf-task-job-9c03ae5.md)
     -   [Share Service Instances](40---Using-JOB-SCHDULR-TITLE/share-service-instances-ca93a0b.md)
     -   [Node.js Client Library \(Deprecated\)](40---Using-JOB-SCHDULR-TITLE/node-js-client-library-deprecated-9b86127.md)
     -   [Service Behavior](40---Using-JOB-SCHDULR-TITLE/service-behavior-d09664b.md#loiod09664b7ae9d453e8b8a3a6e09449916)

@@ -69,7 +69,7 @@ string
 Name of the job. Name must not contain special characters or only numbers.
 
 > ### Note:  
-> The job creation request fails if a job with the same name already exists for the technical user.
+> The job creation request fails if a job with the same name already exists within the same service instance, regardless of tenant. Job names are unique per service instance across all tenants. Two different tenants sharing the same service instance cannot create jobs with the same name.
 
 
 
@@ -234,9 +234,6 @@ The `ansConfig` object has two boolean keys:
 
 -   `onSuccess`: On true, a success alert notification is sent to the SAP Alert Notification service. On false, no notification is sent.
 -   `onError`: On true, an error alert notification is sent to the SAP Alert Notification service. On false, no notification is sent.
-
-> ### Restriction:  
-> This feature is only available in the Cloud Foundry environment.
 
 
 
@@ -692,6 +689,8 @@ The API was unable to process the request due to invalid data provided.
 [Search Jobs](search-jobs-bf8f60b.md "This API searches for jobs in a service instance using a query string with optional qualifiers.")
 
 [Search Schedules](search-schedules-137d28e.md "This API searches for schedules across all jobs in a service instance using a query string with optional qualifiers. Each schedule result includes a parent object with information about the parent job.")
+
+[Integration with SAP Alert Notification Service for SAP BTP](../integration-with-sap-alert-notification-service-for-sap-btp-972ef35.md "You can integrate SAP Job Scheduling service with SAP Alert Notification service for SAP BTP to help you maintain high levels of operational reliability, efficiency, and control.")
 
 [SAP Alert Notification service for SAP BTP](https://help.sap.com/docs/ALERT_NOTIFICATION?version=Cloud)
 

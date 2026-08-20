@@ -10,7 +10,7 @@ You can integrate SAP Job Scheduling service with SAP Alert Notification service
 
 ## Overview
 
-When creating a job or task in the dashboard or the REST API of the SAP Job Scheduling service, you can use the integration with SAP Alert Notification service so that the job or task sends an event in case of *Error* or *Success* upon completion.
+When creating an HTTP job or CF \(Cloud Foundry\) task job in the dashboard or the REST API of the SAP Job Scheduling service, you can use the integration with SAP Alert Notification service so that the HTTP job or CF task job sends an event in case of *Error* or *Success* upon completion.
 
 
 
@@ -22,7 +22,7 @@ Integrating SAP Job Scheduling service with SAP Alert Notification service for S
 
 -   Proactive monitoring and response
 
-    By integrating these services, you can set up alerts for various critical events in the job scheduling process. These events include job success, errors when making requests, application failures, timeouts, and others. This proactive monitoring allows for immediate notification to relevant stakeholders, enabling quick response and resolution of issues before they impact business operations. This reduces downtime and ensures that scheduled jobs and tasks are completed on time.
+    By integrating these services, you can set up alerts for various critical events in the job scheduling process. These events include job success, errors when making requests, application failures, timeouts, and others. This proactive monitoring allows for immediate notification to relevant stakeholders, enabling quick response and resolution of issues before they impact business operations. This reduces downtime and ensures that scheduled jobs are completed on time.
 
 -   Improved operational efficiency
 
@@ -74,13 +74,13 @@ To enable the SAP Job Scheduling service to trigger an event for the SAP Alert N
 
     1.  Open the SAP Job Scheduling service dashboard.
 
-    2.  Go to *Jobs*.
+    2.  Go to *HTTP Jobs* or *CF Task Jobs*.
 
     3.  To test the subscription, schedule the execution of a job. Choose *Create Job*.
 
     4.  Fill in all the relevant fields with their corresponding values.
 
-    5.  Depending on the use case, make sure you've switched on the *Error* or *Success* toggles of *SAP Alert Notification Service Events*.
+    5.  Depending on the use case, make sure you've switched on the *Send ANS Error Events* or *Send ANS Success Events*.
 
     6.  Choose *Save*.
 

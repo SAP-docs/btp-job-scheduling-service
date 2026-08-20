@@ -91,6 +91,288 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+Integration with SAP Alert Notification Service Now Available for SAP BTP, Kyma Runtime 
+
+</td>
+<td valign="top">
+
+You can now use the integration with SAP Alert Notification service for SAP BTP in the SAP Job Scheduling service dashboard for both SAP BTP, Cloud Foundry environment and SAP BTP, Kyma runtime.
+
+See [Integration with SAP Alert Notification Service for SAP BTP](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/integration-with-sap-alert-notification-service-for-sap-btp).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-17
+
+</td>
+<td valign="top">
+
+2026-08-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Customizable Table Columns for HTTP Jobs, CF Task Jobs, and Schedules
+
+</td>
+<td valign="top">
+
+In the SAP Job Scheduling service dashboard, you can now customize the columns displayed in the tables for HTTP jobs, CF task jobs, and schedules.
+
+To add or remove columns from a table, choose :gear:.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-17
+
+</td>
+<td valign="top">
+
+2026-08-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Preview Job and Schedule Execution
+
+</td>
+<td valign="top">
+
+You can now test and preview job creation and schedule execution without committing any changes. This release includes the following updates:
+
+-   `POST /scheduler/jobs?dryRun=true` now supports a dry-run option that lets you test job creation, including its schedule, before you decide to release your change.
+
+-   `POST /scheduler/schedules/preview` is a new endpoint that returns information about the next possible execution of a schedule.
+
+
+See [SAP Job Scheduling Service REST API](https://api.sap.com/package/sap-btpjss-public-apis/rest).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-17
+
+</td>
+<td valign="top">
+
+2026-08-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Terminology Update in SAP Job Scheduling Service 
+
+</td>
+<td valign="top">
+
+The SAP Job Scheduling service dashboard now uses updated terminology to more clearly show the distinct types of jobs. The following pages have been renamed:
+
+-   *Jobs* is now *HTTP Jobs*. See [Create an HTTP Job](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/create-http-job).
+
+-   *Tasks* is now *CF Task Jobs*. See [Create a CF Task Job](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/create-cf-task-job).
+
+
+These changes do not affect any existing functionality.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-17
+
+</td>
+<td valign="top">
+
+2026-08-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Update: New Page Size Limits for the `GET /scheduler/jobs` API Postponed to 26 October
 
 </td>
