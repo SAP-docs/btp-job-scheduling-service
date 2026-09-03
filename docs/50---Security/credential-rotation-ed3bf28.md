@@ -65,6 +65,8 @@ Example parameters for Identity Authentication service binding with X.509 certif
 
 [Secure Access](secure-access-745ca50.md "The SAP Job Scheduling service provides options to secure job actions with action endpoints as well as to secure Cloud Foundry tasks.")
 
+[Auditing and Logging Information](auditing-and-logging-information-4b6bf8f.md "Here you can find a list of the security events that are logged by SAP Job Scheduling service.")
+
 [Create a Service Instance Using CF CLI](../create-a-service-instance-using-cf-cli-cb56f9e.md "To use the SAP Job Scheduling service with action endpoints in your application or with Cloud Foundry tasks, you create an instance of the SAP Job Scheduling service with the service plan standard using the Cloud Foundry Command Line Interface (CF CLI) and bind the service instance to your application.")
 
 [Using SAP Job Scheduling Service](../40---Using-JOB-SCHDULR-TITLE/using-sap-job-scheduling-service-9d48597.md "Define and manage one-time and recurring jobs using flexible schedules.")

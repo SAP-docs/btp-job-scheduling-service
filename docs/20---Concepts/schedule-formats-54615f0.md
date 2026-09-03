@@ -266,7 +266,7 @@ a or b or c
 > </td>
 > <td valign="top">
 > 
-> Run the schedule every day between 10:00 and 12:00, every 30 minutes. The schedule is executed at 10:00, 10:30, 11:00, 11:30, 12:00, 12:30, and the next day it starts again at 10:00.
+> Runs the schedule every day between 10:00 and 12:00, every 30 minutes. The schedule is executed at 10:00, 10:30, 11:00, 11:30, 12:00, 12:30, and the next day it starts again at 10:00.
 > 
 > </td>
 > </tr>
@@ -278,7 +278,7 @@ a or b or c
 > </td>
 > <td valign="top">
 > 
-> Run the schedule every Friday in 2015 at 12:00.
+> Runs the schedule every Friday in 2015 at 12:00.
 > 
 > </td>
 > </tr>
@@ -290,7 +290,7 @@ a or b or c
 > </td>
 > <td valign="top">
 > 
-> Run every hour between 12:00 and 14:00 every day between the third and second-to-last day of the month.
+> Runs the schedule every hour between 12:00 and 14:00 every day between the third and second-to-last day of the month.
 > 
 > </td>
 > </tr>
@@ -302,7 +302,7 @@ a or b or c
 > </td>
 > <td valign="top">
 > 
-> Run the schedule on the last Sunday of every month at 09:00.
+> Runs the schedule on the last Sunday of every month at 09:00.
 > 
 > </td>
 > </tr>
@@ -318,7 +318,91 @@ a or b or c
 > </td>
 > <td valign="top">
 > 
-> Run the schedule every 3 months on the 10th day at 9:00.
+> Runs the schedule every 3 months on the 10th day at 9:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* mon:fri 02 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every weekday at 2:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* fri:mon 02 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every Friday, Saturday, Sunday, and Monday at 2:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* mon,wed,fri,sun 02 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every Monday, Wednesday, Friday, and Sunday at 2:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* \* 02:13 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every day, every hour in the range from 2:00 to 13:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* \* 02:13/2 0 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every day, every other hour in the range from 2:00 to 13:00. The schedule is executed at 2:00, 4:00, 6:00, 8:00, 10:00, and 12:00.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* \* 02 0:30/5 0
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every day, every five minutes between 2:00 and 2:30. The schedule is executed at 2:00, 2:05, 2:10, 2:15, 2:20, 2:25, and 2:30.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> \* \* \* \* 02 0:30/5 30
+> 
+> </td>
+> <td valign="top">
+> 
+> Runs the schedule every day, every five minutes between 2:00 and 2:30, on the 30th second of the minute. The schedule is executed at 2:00:30, 2:05:30, 2:10:30, 2:15:30, 2:20:30, 2:25:30, and 2:30:30.
 > 
 > </td>
 > </tr>

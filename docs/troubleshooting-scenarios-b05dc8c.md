@@ -266,3 +266,20 @@ You are on the first page. This is expected when `offset` is `0` or it isn't pro
 
 If jobs are being created or deleted while you paginate, the total value may change. For a consistent snapshot, try to paginate quickly or account for this in your application logic.
 
+
+
+## Auditing and Logging
+
+
+
+### No Audit Log Records Are Found in the Audit Log Viewer for a Provider or Subscriber Subaccount
+
+1.  Check the subscription dependencies of the affected subaccount in the Subscription Management Dashboard.
+
+    For more information, see [Using the Subscription Management Dashboard](https://help.sap.com/docs/btp/sap-business-technology-platform/using-subscription-management-dashboard).
+
+2.  If the SAP Audit Log service is missing from the dependency tree, update the subscription via the dashboard to add it.
+
+3.  Once the dependency is in place, new audit log entries will be recorded in the Audit Log Viewer of your subaccount.
+
+

@@ -126,6 +126,8 @@ The XSUAA isn’t required as Cloud controller. The Cloud Foundry User Account a
 
 [Credential Rotation](credential-rotation-ed3bf28.md "The credential rotation procedure differs based on the authentication method used by your SAP Job Scheduling service instance.")
 
+[Auditing and Logging Information](auditing-and-logging-information-4b6bf8f.md "Here you can find a list of the security events that are logged by SAP Job Scheduling service.")
+
 [Define and Grant Scopes to SAP Job Scheduling Service](define-and-grant-scopes-to-sap-job-scheduling-service-08933d3.md "Create and grant a scope to SAP Job Scheduling service.")
 
 [Web Access Control](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/70a62d12cf91493cb9d1ec3c04d19ff9.html)

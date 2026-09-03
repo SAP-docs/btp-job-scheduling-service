@@ -91,6 +91,83 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+SAP Job Scheduling Service Now Sends Audit Log Events
+
+</td>
+<td valign="top">
+
+SAP Job Scheduling service now sends audit log events for key actions performed within the service. These events are recorded by the SAP Audit Log service and can be accessed via the SAP Audit Log Viewer or the Audit Log Retrieval API.
+
+Audit log events are generated for the following actions:
+
+-   Creating, updating, or deleting jobs
+
+-   Creating, updating, deleting, activating, or deactivating schedules
+
+-   Updating the global configuration of the service instance
+
+
+See [Auditing and Logging Information](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/auditing-and-logging-information).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-09-03
+
+</td>
+<td valign="top">
+
+2026-09-03
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Integration with SAP Alert Notification Service Now Available for SAP BTP, Kyma Runtime 
 
 </td>

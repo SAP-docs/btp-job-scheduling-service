@@ -63,6 +63,7 @@
     -   [Secure Access](50---Security/secure-access-745ca50.md)
         -   [Define and Grant Scopes to SAP Job Scheduling Service](50---Security/define-and-grant-scopes-to-sap-job-scheduling-service-08933d3.md)
     -   [Credential Rotation](50---Security/credential-rotation-ed3bf28.md)
+    -   [Auditing and Logging Information](50---Security/auditing-and-logging-information-4b6bf8f.md)
 -   [Accessibility Features in SAP Job Scheduling Service](accessibility-features-in-sap-job-scheduling-service-12aa90f.md)
 -   [Monitoring and Troubleshooting](monitoring-and-troubleshooting-bd573bd.md)
     -   [Troubleshooting Scenarios](troubleshooting-scenarios-b05dc8c.md)
