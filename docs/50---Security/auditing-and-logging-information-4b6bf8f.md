@@ -133,7 +133,7 @@ The `Info` object contains the calling user, service instance, authentication me
 
 Each audit event follows this pattern:
 
-`Action: <ActionName> - Correlation-ID: <uuid> - Request phase: <START|END> - Info: <json>`
+`JOB-SCHEDULING-SERVICE - Action: <ActionName> - Correlation-ID: <uuid> - Request phase: <START|END> - Info: <json>`
 
 If a request fails, the `END` message also contains a `- Request processing failed: <error>` suffix.
 

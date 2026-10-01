@@ -8,7 +8,7 @@
 
 
 
-**2024 - 26**
+**2024 - 27**
 
 
 <table>
@@ -73,6 +73,79 @@ Latest Revision
 Available as of
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+Events Pages Removed from Dashboard
+
+</td>
+<td valign="top">
+
+The *Events* pages on job level and schedule level will be removed from the SAP Job Scheduling service dashboard at the beginning of January 2027. These pages are redundant, because event data is now recorded by the SAP Audit Log service and remains fully accessible through:
+
+-   SAP Audit Log Viewer
+
+-   Audit Log Retrieval API
+
+
+Action: To monitor your events, use SAP Audit Log Viewer or Audit Log Retrieval API. See [Auditing and Logging Information](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/auditing-and-logging-information).
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-09-28
+
+</td>
+<td valign="top">
+
+2027-01-07
+
+</td>
 </tr>
 <tr>
 <td valign="top">
