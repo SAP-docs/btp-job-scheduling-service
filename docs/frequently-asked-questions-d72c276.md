@@ -43,6 +43,40 @@ Currently, the number of units selected on SAP Store indicates the number of SAP
 
 
 
+## Service Plans
+
+**What is the *free* service plan?**
+
+The *free* service plan is intended for testing and evaluation. It provides the same functionality as the *standard* plan, but with significantly lower usage limits. If you use free service plans, you receive community support only. These plans don't include a service level agreement \(SLA\). Free service plans are also subject to the additional terms described in the SAP Business Technology Platform Supplemental Terms and Conditions.
+
+**Where is the *free* service plan available?**
+
+The *free* service plan is available on all public cloud regions and on SAP BTP Trial.
+
+
+
+## Authentication Methods
+
+**Is SAP Cloud Identity Services - Identity Authentication a replacement for SAP Authorization and Trust Management service \(XSUAA\)?**
+
+No. SAP Cloud Identity Services - Identity Authentication isn't a replacement for XSUAA. It's a complementary authentication method. XSUAA is specific to the Cloud Foundry environment, whereas Identity Authentication supports a broader range of use cases. You choose one authentication method when you create the service instance.
+
+**Will XSUAA authentication be removed?**
+
+No. There are no plans to remove XSUAA authentication. XSUAA remains fully supported and continues to work as before.
+
+**Can I migrate an existing instance from XSUAA to Identity Authentication?**
+
+No. You can't change the authentication method of an existing service instance. If you try, the service broker rejects the update with the following error:
+
+`Service broker error: Service broker jobscheduler-broker failed with: {"message":"Changing the authentication type is not supported."}`
+
+**How do I move a workload from XSUAA to Identity Authentication?**
+
+Because you can't change the authentication method of an existing instance, create a new service instance with Identity Authentication, then re-create your jobs and schedules on the new instance.
+
+
+
 <a name="loiod72c276ec60c4bbe89c0b9328a926500__section_t3s_jhd_x1b"/>
 
 ## Service Dashboard
