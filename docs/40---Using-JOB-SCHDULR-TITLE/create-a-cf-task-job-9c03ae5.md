@@ -86,7 +86,7 @@ A job that runs an app or script as a Cloud Foundry \(CF\) task. The code runs i
     </td>
     <td valign="top">
     
-    Name of the application deployed in the SAP BTP, Cloud Foundry environment
+    Name of the application deployed in the SAP BTP, Cloud Foundry environment 
     
     </td>
     </tr>

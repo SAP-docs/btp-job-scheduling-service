@@ -52,7 +52,16 @@ There are currently two ways to enable job monitoring with SAP Cloud ALM:
 
     ```
     "calmConfig": {  
-          "enabled": true 
+          "enabled": true
+    }
+    ```
+
+    If you want to change the name of your job in the interface of the SAP Cloud ALM dashboard, use the "displayName" property:
+
+    ```
+    "calmConfig": {  
+          "enabled": true,
+          "displayName": My Job Name
     }
     ```
 

@@ -91,6 +91,144 @@ Job Scheduling Service
 </td>
 <td valign="top">
 
+New Job Type: Destination Job
+
+</td>
+<td valign="top">
+
+In addition to HTTP jobs and CF task jobs, you can now create destination jobs. This new job type lets you call external applications located outside your Cloud Foundry space or Kyma namespace. Destination jobs support only destinations created via the SAP Destination service.
+
+See [Create a Destination Job](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/create-destination-job).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-26
+
+</td>
+<td valign="top">
+
+2026-10-29
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
+New `displayName` Property for `calmConfig` 
+
+</td>
+<td valign="top">
+
+You can now set an optional `displayName` property in the `calmConfig` for your jobs. You can configure the new property via the REST API or the dashboard of SAP Job Scheduling service.
+
+When provided, this name is used instead of the original job name when job metadata is propagated to SAP Cloud ALM giving you control over how your jobs appear in the interface of the SAP Cloud ALM dashboard. If no `displayName` is set, the original name continues to be used.
+
+See [Integration with SAP Cloud ALM](https://help.sap.com/docs/job-scheduling/sap-job-scheduling-service/integration-with-sap-cloud-alm).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-10-26
+
+</td>
+<td valign="top">
+
+2026-10-29
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job Scheduling Service
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Kyma
+
+
+
+</td>
+<td valign="top">
+
 Events Pages Removed from Dashboard
 
 </td>

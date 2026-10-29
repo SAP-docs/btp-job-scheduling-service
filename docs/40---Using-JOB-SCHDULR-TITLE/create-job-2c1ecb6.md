@@ -257,14 +257,14 @@ object
 </td>
 <td valign="top">
 
-The `calmConfig` object has the following boolean key:
+The `calmConfig` object has the following properties:
 
 -   `enabled`: By default, it is set to false. On true, you can start monitoring jobs in the SAP Cloud ALM dashboard.
 
-    For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
+-   `displayName`: This property allows you to change the name of your job in the interface of the SAP Cloud ALM dashboard.
 
 
-
+For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
 
 </td>
 </tr>

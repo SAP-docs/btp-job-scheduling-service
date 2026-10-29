@@ -285,10 +285,10 @@ The `calmConfig` object has the following boolean key:
 
 -   `enabled`: By default, it is set to false. On true, you can start monitoring jobs in the SAP Cloud ALM dashboard.
 
-    For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
+-   `displayName`: This property allows you to change the name of your job in the interface of the SAP Cloud ALM dashboard.
 
 
-
+For more information, see [Integration with SAP Cloud ALM](../integration-with-sap-cloud-alm-f82790e.md).
 
 </td>
 </tr>
@@ -340,7 +340,7 @@ The API was unable to process the request because of invalid data provided.
 
 ### Examples
 
--   You are not allowed to leave the `calmConfig` object empty. Provide either `"enabled": true` or `"enabled": false` as properties in the request body:
+-   You are not allowed to leave the `calmConfig` object empty. Use at least one property and specify its value:
 
     ```
     {

@@ -61,7 +61,7 @@ To enable the SAP Job Scheduling service to trigger an event for the SAP Alert N
 
 4.  Select the SAP Alert Notification service instance and open its dashboard.
 
-5.  Use the SAP BTP cockpit to create, edit, and delete actions, conditions, and subscriptions to an event for which you want to get notified. For more information, see [Configuration Management Using the SAP BTP Cockpit](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/configuration-management-using-sap-btp-cockpit).
+5.  Use the SAP BTP cockpit to create, edit, and delete actions, conditions, and subscriptions to an event for which you want to get notified. For more information, see [Configuration Management Using the SAP BTP cockpit](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/configuration-management-using-sap-btp-cockpit).
 
 
 

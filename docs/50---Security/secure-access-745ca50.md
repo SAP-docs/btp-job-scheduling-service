@@ -111,6 +111,37 @@ When using this authentication method:
     > Unlike the SAP Authorization and Trust Management service, the SAP Job Scheduling service bindings that use authentication from the Identity Authentication service don't provide credentials for calling the SAP Job Scheduling service directly. Instead, applications use credentials from their own SAP Cloud Identity Services - Identity Authentication service instance binding. For multitenant applications, X.509 client certificate authentication \(mTLS\) is required. Single-tenant applications can use either client credentials or X.509 certificates.
 
 
+**Validate the Caller's Identity \(`azp` Claim\)**
+
+Validating the token's signature, expiry, issuer, and audience confirms that a request carries a genuine token meant for your application, but it does not by itself confirm that the SAP Job Scheduling service is the one that called you, as opposed to any other Identity Authentication service \(IAS\) client your tenant trusts. To make sure only the SAP Job Scheduling service can successfully call your action endpoint, additionally validate the `azp` \(authorized party\) claim of the incoming token, additionally validate the `azp` claim of the incoming token against the `clientid` from your `jobscheduler` service binding credentials:
+
+```
+{
+    "url": "https://jobscheduler-rest.cfapps.<region>.hana.ondemand.com",
+    "clientid": "<the SAP Job Scheduling service's own IAS client id>"
+}
+```
+
+Reject the request \(HTTP 403\) if the `azp` claim of the incoming token doesn't match this value. This prevents replayed or cross-application tokens from being accepted as if they originated from the SAP Job Scheduling service.
+
+For example, a decoded callback token looks like this:
+
+```
+{
+  "iss": "https://your-tenant.accounts.ondemand.com",
+  "sub": "50ae2e62-9b1a-4c7e-8f1a-3c6a1e9d2b7c",
+  "azp": "0a1b2c3d-4e5f-6789-abcd-ef0123456789",
+  "aud": ["c9d8e7f6-5432-10fe-dcba-9876543210fe"],
+  "app_tid": "8f3a1b2c-4d5e-6f70-8192-a3b4c5d6e7f8",
+  "exp": 1760000600
+}
+```
+
+-   `azp` is the SAP Job Scheduling service's fixed client ID, which must match the clientid from your binding.
+
+-   `aud` is your application's own client ID \(already validated automatically\).
+
+
 
 
 <a name="loio745ca502face47af9adb546a916ce1e8__section_cwb_btm_wnb"/>

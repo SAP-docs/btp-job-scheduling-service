@@ -6,87 +6,50 @@ SAP Job Scheduling service offers you flexible scheduling capabilities for actio
 
 
 
-
-<dl>
-<dt><b>
-
-**Job**
-
-</b></dt>
-<dd>
-
-A collection of schedules with an action endpoint
-
-A job is configured with a URL, which means that your job invokes this URL, for example, every night. A job can also be configured with a Cloud Foundry task.
+## Key Terms
 
 
 
-</dd>
-<dd>
+### Job
 
-Synchronous requests are used if the service calls the action endpoint of the application and the application logic is executed in a short span of time. Jobs can be executed in an asynchronous \(or batch\) mode for job runs with a large span of time.
+A collection of schedules associated with an action to be performed.
 
+Each job defines an action and the schedules that determine when it runs - for example, every night. SAP Job Scheduling service supports three types of jobs, distinguished by the action they perform:
 
+-   **HTTP job**: Invokes an action endpoint \(an HTTP or REST endpoint\) exposed by an application bound to the service.
 
-</dd>
-<dd>
+-   **Destination job**: Calls an external application that is not part of your Cloud Foundry space or Kyma namespace. The call is made through a destination configured in the SAP Destination service.
 
-A service plan within SAP Job Scheduling service considers the number of schedules within a job.
-
-
-
-</dd>
-</dl>
+-   **CF task job**: Runs a Cloud Foundry task, which consists of code deployed as part of an application that runs independently in its own container.
 
 
-<dl>
-<dt><b>
+Jobs can run in two modes:
 
-**Action Endpoint**
+-   **Synchronous**: The service calls the action endpoint and the application logic completes withing a short time span.
 
-</b></dt>
-<dd>
+-   **Asynchronous** \(batch\): Used for job runs that take a longer time to complete.
 
-An HTTP or REST endpoint which is exposed by the application that is bound to the SAP Job Scheduling service and invoked by the service to perform the defined action.
+
+> ### Note:  
+> The number of schedules depends on the SAP Job Scheduling service plan.
 
 
 
-</dd>
-</dl>
+### Action Endpoint
 
-
-<dl>
-<dt><b>
-
-**Cloud Foundry Task**
-
-</b></dt>
-<dd>
-
-An app or script whose code is included as part of a deployed app, but runs independently in its own container and is designed to use minimal resources.
+An HTTP or REST endpoint exposed by an application that is bound to the SAP Job Scheduling service. The service invokes this endpoint to perform the job's defined action.
 
 
 
-</dd>
-</dl>
+### Cloud Foundry Task
+
+An application or script whose code is included as part of a deployed application, but runs independently in its own container and is designed to use minimal resources.
 
 
-<dl>
-<dt><b>
 
-**Schedule**
-
-</b></dt>
-<dd>
+### Schedule
 
 A one-time or a recurring entity within a job without an action endpoint.
-
-
-
-</dd>
-<dd>
-
-****
 
 
 <table>
@@ -134,7 +97,7 @@ Schedule lifecycle
 </td>
 <td valign="top">
 
-A schedule passes through three lifecycle states for each run.
+A schedule passes through three lifecycle statuses for each run.
 
 </td>
 </tr>
@@ -142,42 +105,17 @@ A schedule passes through three lifecycle states for each run.
 
 
 
-</dd>
-</dl>
-
-
-<dl>
-<dt><b>
-
-**Multitenancy**
-
-</b></dt>
-<dd>
+### Multitenancy
 
 You can use the service with multitenant applications developed in the context of a Platform-as-a-Service \(PAAS\) tenant or as a Software-as-a-Service \(SaaS\) tenant.
 
 
 
-</dd>
-</dl>
-
-
-<dl>
-<dt><b>
-
-**Security**
-
-</b></dt>
-<dd>
+### Security
 
 You have to bind the Job Scheduling service instance to the application in the same Cloud Foundry space. When the service calls an endpoint, the request always contains the Authorization header \(JWT token\). To validate this token, make sure that your application is bound to the Job Scheduling service instance.
 
 For more information, see [Binding Service Instances to Applications](https://help.sap.com/docs/btp/sap-business-technology-platform/binding-service-instances-to-applications?version=Cloud).
-
-
-
-</dd>
-</dl>
 
 **Related Information**  
 
